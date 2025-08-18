@@ -5,47 +5,42 @@ import { useState } from 'react';
 export default function DynamicForm() {
   const { id } = useParams();
 
-  // Service configurations
+  // Service configurations based on the provided services object
   const serviceConfig = {
-    'Xactimate-Roof-ESX': {
-      title: 'Xactimate Roof Sketch ESX Request',
-      description: 'Your 100% accurate Xactimate Roof Sketch ESX will be ready in 12-24 hours.',
-      fields: ['address', 'zipCode', 'measurementSource', 'roofMaterial', 'roofPitch', 'roofLayers', 'photos', 'measurementFiles', 'specialInstructions'],
+    'xactimate-estimate': {
+      title: 'Xactimate Estimate',
+      description: 'Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
+      fields: ['address', 'zipCode', 'damageDetails', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'zipCode', 'damageDetails', 'photos'],
+    },
+    'xactimate-roof-esx': {
+      title: 'Xactimate Roof ESX',
+      description: 'Our Xactimate Roof ESX service provides precise roof sketches and ESX files designed for insurance claims and construction projects. Using advanced Xactimate tools, we create detailed diagrams that include pitch, area, and line measurements.',
+      fields: ['address', 'zipCode', 'measurementSource', 'roofMaterial', 'roofPitch', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'photos'],
     },
-    'Xactimate-3D-Wall-Sketch-ESX': {
-      title: 'Xactimate 3D Wall Sketch ESX Request',
-      description: 'Your 3D Wall Sketch ESX will be ready in 12-24 hours.',
+    'xactimate-3d-wall-sketch': {
+      title: 'Xactimate 3D Wall Sketch',
+      description: 'Transform your property restoration or remodeling project with our Xactimate 3D Wall Sketch service. We create precise, three-dimensional wall sketches using Xactimate software, offering a clear visualization of interior and exterior structures.',
       fields: ['address', 'zipCode', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'photos'],
     },
-    'Matterport-to-Xactimate-Sketch-ESX': {
-      title: 'Matterport to Xactimate Sketch ESX Request',
-      description: 'Your Matterport to Xactimate Sketch ESX will be ready in 12-24 hours.',
+    'matterport-to-xactimate-sketch': {
+      title: 'Matterport to Xactimate Sketch',
+      description: 'Bridge the gap between advanced scanning technology and industry-standard estimation with our Matterport to Xactimate Sketch service. We convert detailed Matterport 3D scans into accurate Xactimate sketches.',
       fields: ['address', 'zipCode', 'matterportLink', 'photos', 'specialInstructions'],
       required: ['address', 'zipCode', 'matterportLink'],
     },
-    'Aerial-Roof-Measurements': {
-      title: 'Aerial Roof Measurements Request',
-      description: 'Your Aerial Roof Measurements will be ready in 12-24 hours.',
-      fields: ['address', 'zipCode', 'roofMaterial', 'roofPitch', 'photos', 'specialInstructions'],
+    'xactimate-interior-estimate': {
+      title: 'Xactimate Interior Estimate',
+      description: 'Our Xactimate Interior Estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
+      fields: ['address', 'zipCode', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'photos'],
-    },
-    'Symbility-XML-Roof-Sketch': {
-      title: 'Symbility XML Roof Sketch Request',
-      description: 'Your Symbility XML Roof Sketch will be ready in 12-24 hours.',
-      fields: ['address', 'zipCode', 'measurementSource', 'roofMaterial', 'roofPitch', 'roofLayers', 'photos', 'measurementFiles', 'specialInstructions'],
-      required: ['address', 'zipCode', 'photos'],
-    },
-    'Xactimate-Estimate': {
-      title: 'Xactimate Estimate Request',
-      description: 'Your Xactimate Estimate will be ready in 12-24 hours.',
-      fields: ['address', 'zipCode', 'damageDetails', 'photos', 'measurementFiles', 'specialInstructions'],
-      required: ['address', 'zipCode', 'damageDetails'],
     },
   };
 
-  const currentService = serviceConfig[id] || serviceConfig['Xactimate-Roof-ESX'];
+  // Fallback to a default service if the ID is invalid
+  const currentService = serviceConfig[id] || serviceConfig['xactimate-roof-esx'];
 
   const [formData, setFormData] = useState({
     address: '',
@@ -53,7 +48,6 @@ export default function DynamicForm() {
     measurementSource: currentService.fields.includes('measurementSource') ? '' : undefined,
     roofMaterial: currentService.fields.includes('roofMaterial') ? '' : undefined,
     roofPitch: currentService.fields.includes('roofPitch') ? '' : undefined,
-    roofLayers: currentService.fields.includes('roofLayers') ? '' : undefined,
     matterportLink: currentService.fields.includes('matterportLink') ? '' : undefined,
     damageDetails: currentService.fields.includes('damageDetails') ? '' : undefined,
     specialInstructions: currentService.fields.includes('specialInstructions') ? '' : undefined,
@@ -155,7 +149,6 @@ export default function DynamicForm() {
         measurementSource: currentService.fields.includes('measurementSource') ? '' : undefined,
         roofMaterial: currentService.fields.includes('roofMaterial') ? '' : undefined,
         roofPitch: currentService.fields.includes('roofPitch') ? '' : undefined,
-        roofLayers: currentService.fields.includes('roofLayers') ? '' : undefined,
         matterportLink: currentService.fields.includes('matterportLink') ? '' : undefined,
         damageDetails: currentService.fields.includes('damageDetails') ? '' : undefined,
         specialInstructions: currentService.fields.includes('specialInstructions') ? '' : undefined,
@@ -335,12 +328,16 @@ export default function DynamicForm() {
                   Upload Photos <span className="text-red-500">*</span>
                 </label>
                 <p className="mt-1 text-sm text-gray-500">
-                  {id === 'Xactimate-Roof-ESX' || id === 'Symbility-XML-Roof-Sketch' || id === 'Aerial-Roof-Measurements'
+                  {id === 'xactimate-roof-esx'
                     ? 'Aerial views, close-ups of edges, ridges, etc.'
-                    : id === 'Xactimate-3D-Wall-Sketch-ESX'
+                    : id === 'xactimate-3d-wall-sketch'
                     ? 'Interior/exterior wall photos'
-                    : id === 'Xactimate-Estimate'
+                    : id === 'xactimate-estimate'
                     ? 'Photos of damaged areas'
+                    : id === 'xactimate-interior-estimate'
+                    ? 'Photos of exterior siding areas'
+                    : id === 'matterport-to-xactimate-sketch'
+                    ? 'Optional supporting images for Matterport scan'
                     : 'Optional supporting images'}
                 </p>
                 <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
@@ -396,18 +393,18 @@ export default function DynamicForm() {
                   Roof Material (e.g., asphalt shingles, metal, tile)
                 </label>
                 <select
-                  style={{color : "black" , border: "1px solid black" }}
+                  style={{ color: "black", border: "1px solid black" }}
                   id="roofMaterial"
                   name="roofMaterial"
                   value={formData.roofMaterial}
                   onChange={handleInputChange}
                   className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md"
                 >
-                  <option  value="">Select Material</option>
-                  <option  value="asphalt shingles">Asphalt Shingles</option>
+                  <option value="">Select Material</option>
+                  <option value="asphalt shingles">Asphalt Shingles</option>
                   <option value="metal">Metal</option>
-                  <option  value="tile">Tile</option>
-                  <option  value="other">Other</option>
+                  <option value="tile">Tile</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
             )}
@@ -419,7 +416,7 @@ export default function DynamicForm() {
                   Roof Pitch (e.g., low, medium, steep)
                 </label>
                 <select
-                  style={{color : "black" , border: "1px solid black"}}
+                  style={{ color: "black", border: "1px solid black" }}
                   id="roofPitch"
                   name="roofPitch"
                   value={formData.roofPitch}
@@ -431,24 +428,6 @@ export default function DynamicForm() {
                   <option value="medium">Medium</option>
                   <option value="steep">Steep</option>
                 </select>
-              </div>
-            )}
-
-            {/* Roof Layers */}
-            {currentService.fields.includes('roofLayers') && (
-              <div>
-                <label htmlFor="roofLayers" className="block text-sm font-medium text-gray-700">
-                  Number of Layers
-                </label>
-                <input
-                  type="number"
-                  id="roofLayers"
-                  name="roofLayers"
-                  value={formData.roofLayers}
-                  onChange={handleInputChange}
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  min="1"
-                />
               </div>
             )}
 
