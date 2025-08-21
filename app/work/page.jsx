@@ -17,7 +17,12 @@ export default function OurWork() {
     { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
     { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
     { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
+    { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
+    { id: "stability-roof-sketch", title: "Stability Roof Sketch (XML + PDF)", href: "/work/stability-roof-sketch" },
+
+ 
   ];
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -111,21 +116,26 @@ export default function OurWork() {
       </Head>
 
       {/* Header */}
-      <header className="bg-black shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
+      <header   style={{
+              background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
+             
+            }} className=" shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center" data-aos="fade-right" data-aos-delay="200">
-            <div style={{ width: "180px", height: "150px" }}>
+            <div style={{ width: "150px", height: "180px" }}>
               <img src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
+            <Link style={{color : "black"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
               <i className="ri-home-line mr-2"></i>
               Home
             </Link>
-            <a href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
-              <i className="ri-information-line mr-2"></i>
+            <a 
+            style={{color : "black"}}
+            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
+              <i style={{color : "black"}} className="ri-information-line mr-2"></i>
               About
             </a>
             <div
@@ -137,10 +147,11 @@ export default function OurWork() {
               onMouseLeave={() => handleDesktopHover(false)}
             >
               <button 
+              style={{color : "black"}}
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
               >
-                <i className="ri-service-line mr-2"></i>
+                <i style={{color : "black"}} className="ri-service-line mr-2"></i>
                 Services
                 <i className="ri-arrow-down-s-line ml-1"></i>
               </button>
@@ -165,32 +176,45 @@ export default function OurWork() {
                 </div>
               </div>
             </div>
-            <a href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
-              <i className="ri-star-line mr-2"></i>
+            <a style={{color : "black"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
+              <i style={{color : "black"}}  className="ri-star-line mr-2"></i>
               work
             </a>
-            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
-              <i className="ri-contacts-line mr-2"></i>
+            <Link style={{color : "black"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
+              <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
           </div>
-          <button className="bg-white text-black px-6 py-2 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap" data-aos="fade-left" data-aos-delay="600">
-            Get Quote
-          </button>
+          <a
+  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  className="bg-white text-black px-6 py-2 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+  data-aos="fade-left"
+  data-aos-delay="600"
+  target='_blank'
+>
+  Get Quote
+</a>
           <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} data-aos="fade-left" data-aos-delay="650">
             <div className="w-6 h-6 flex items-center justify-center">
-              <i className="ri-menu-line text-xl text-white"></i>
+              <i           
+ className="ri-menu-line text-xl text-white"></i>
             </div>
           </button>
         </div>
         <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`} data-aos="fade-up" data-aos-delay="700">
           <div className="flex flex-col space-y-4">
-            <a href="/" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="750">
-              <i className="ri-home-line mr-3"></i>
+            <a
+            
+            style={{color : "black"}}
+            href="/" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="750">
+              <i   
+ className="ri-home-line mr-3"></i>
               Home
             </a>
-            <a href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="800">
-              <i className="ri-information-line mr-3"></i>
+            <a
+            style={{color : "black"}}
+            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="800">
+              <i style={{color : "black"}} className="ri-information-line mr-3"></i>
               About
             </a>
             <div className="flex flex-col">
@@ -199,10 +223,15 @@ export default function OurWork() {
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 data-aos="fade-up"
                 data-aos-delay="850"
+                style={{color : "black"}}
               >
-                <i className="ri-service-line mr-3"></i>
+                <i
+                style={{color : "black"}}
+                className="ri-service-line mr-3"></i>
                 Services
-                <i className="ri-arrow-down-s-line ml-1"></i>
+                <i 
+                style={{color : "black"}}
+                className="ri-arrow-down-s-line ml-1"></i>
               </button>
               <div
                 className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
@@ -216,17 +245,23 @@ export default function OurWork() {
                     className="text-gray-300 hover:text-white transition-colors"
                     data-aos="fade-up"
                     data-aos-delay={950 + index * 50}
+                    style={{color : "black"}}
+
                   >
                     {service.title}
                   </Link>
                 ))}
               </div>
             </div>
-            <a href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1000">
+            <a
+            style={{color : "black"}}
+            href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1000">
               <i className="ri-star-line mr-3"></i>
               Our  Work
             </a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1050">
+            <a 
+            style={{color : "black"}}
+            href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1050">
               <i className="ri-contacts-line mr-3"></i>
               Contact
             </a>
@@ -234,7 +269,6 @@ export default function OurWork() {
         </div>
       </nav>
     </header>
-
       {/* Hero Section */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -247,19 +281,21 @@ export default function OurWork() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/80 to-transparent"></div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <h1 className="text-5xl font-bold text-white mb-6">Our Work</h1>
+            <h1 style={{color : "orange"}} className="text-5xl font-bold text-white mb-6">Our Work</h1>
             <p className="text-xl text-white mb-8 leading-relaxed">
               Explore our portfolio of innovative projects that showcase our expertise in transforming challenges into impactful solutions. Each project reflects our commitment to excellence and client success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Contact Us</button>
+              <button style={{border : "2px solid orange" , color : "orange"}} className="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Contact Us</button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 bg-gray-900">
+      <section   style={{
+          background: "linear-gradient(100deg, black 40%, #facc15 100%)",
+        }} className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Our Projects</h2>
@@ -412,62 +448,77 @@ export default function OurWork() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="font-['Pacifico'] text-2xl mb-4">logo</div>
-              <p className="text-gray-400 text-sm">
-                Transforming complex challenges into streamlined solutions for sustainable growth.
-              </p>
+      <footer className="bg-black-900 text-white py-16 border-t border-gray-800" data-aos="fade-up" data-aos-delay="100">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
+                <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
+                <div className="flex space-x-4">
+                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
+                  </a>
+                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="350">
+                    <i style={{color : "orange"}} className="ri-twitter-fill"></i>
+                  </a>
+                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="450">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Rebuild Cost Analysis</a></li>
+                </ul>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="750">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Company</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="#about" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">About Us</a></li>
+                  <li><a href="#pricing" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="850">Pricing</a></li>
+                  <li><a href="#testimonials" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="900">Testimonials</a></li>
+                  <li><a href="#contact" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="950">Contact</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="1000">FAQ</a></li>
+                </ul>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="1050">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1100">
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <i className="ri-mail-line"></i>
+                    </div>
+                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
+                      mxestimation@gmail.com
+                    </a>
+                  </li>
+                 
+                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1200">
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <i className="ri-time-line"></i>
+                    </div>
+                    24/7
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
-                <li><Link href="/team" className="hover:text-white transition-colors">Our Team</Link></li>
-                <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
-                <li><Link href="/news" className="hover:text-white transition-colors">News</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/services/consulting" className="hover:text-white transition-colors">Consulting</Link></li>
-                <li><Link href="/services/estimation" className="hover:text-white transition-colors">Estimation</Link></li>
-                <li><Link href="/services/project-management" className="hover:text-white transition-colors">Project Management</Link></li>
-                <li><Link href="/services/support" className="hover:text-white transition-colors">Support</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold mb-4">Contact</h3>
-              <div className="space-y-2 text-sm text-gray-400">
-                <p>123 Business Avenue</p>
-                <p>New York, NY 10001</p>
-                <p>+1 (555) 123-4567</p>
-                <p>info@mxestimation.com</p>
+            <div className="border-t border-gray-800 pt-8" data-aos="fade-up" data-aos-delay="1250">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <p className="text-gray-400 text-sm" data-aos="fade-up" data-aos-delay="1300">© 2024 MX Estimation. All rights reserved.</p>
+                <div className="flex space-x-6 mt-4 md:mt-0">
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1350">Privacy Policy</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1400">Terms of Service</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1450">Cookie Policy</a>
+                </div>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2024 MX Estimation. All rights reserved.</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <i className="ri-linkedin-fill text-sm"></i>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <i className="ri-twitter-fill text-sm"></i>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <i className="ri-facebook-fill text-sm"></i>
-              </a>
-              <a href="#" className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
-                <i className="ri-instagram-fill text-sm"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </>
   );
 }
