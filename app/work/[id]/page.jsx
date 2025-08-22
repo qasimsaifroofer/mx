@@ -37,13 +37,7 @@ const services = {
       "Bridge the gap between advanced scanning technology and industry-standard estimation with our Matterport to Xactimate Sketch service. We convert detailed Matterport 3D scans into accurate Xactimate sketches, providing a seamless workflow for insurance claims, restoration, and construction projects. Our service ensures that every detail from the scan is translated into precise measurements and diagrams, saving time and enhancing accuracy for contractors and adjusters. Experience a streamlined process with our expert conversion services. By integrating immersive 3D data into Xactimate, we make claim settlements smoother, provide unmatched detail for property documentation, and help professionals deliver better results to clients with confidence and efficiency.",
     image: "/5.jpg",
   },
-  "xactimate-interior-estimate": {
-    title: "xactimate interior estimate",
-    description:
-      "Our xactimate interior estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
-    image: "/s1.jpg",
-  },
-  "xactimate-interior-estimate": {
+  "Xactimate-interior-estimate": {
     title: "xactimate interior estimate",
     description:
       "Our xactimate interior estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
@@ -58,7 +52,7 @@ const services = {
   },
 
 
-  "roof-report-pdf": {
+  "Roof-report-pdf": {
     title: "Roof Report (PDF)",
     description:
       "Our Roof Report (PDF) (XML + PDF) estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",

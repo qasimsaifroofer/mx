@@ -66,7 +66,7 @@ const Home = () => {
     { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
     { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
     { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
-    { id: "stability-roof-sketch", title: "Stability Roof Sketch (XML + PDF)", href: "/work/stability-roof-sketch" },
+    { id: "Symbility-roof-sketch", title: "Symbility Roof Sketch (XML + PDF)", href: "/work/Symbility-roof-sketch" },
 
  
   ];
@@ -206,24 +206,22 @@ const Home = () => {
       <div className="bg-black text-white">
       <header   style={{
               background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
+              
              
             }} className=" shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center" data-aos="fade-right" data-aos-delay="200">
-            <div style={{ width: "150px", height: "180px" }}>
-              <img src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
-            </div>
+          <div  data-aos="fade-right" data-aos-delay="200">
+              <img style={{width : "200px", height : "100px"}} src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link style={{color : "black"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
+            <Link style={{color : "black" , fontSize : "22px"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
               <i className="ri-home-line mr-2"></i>
               Home
             </Link>
             <a 
-            style={{color : "black"}}
+            style={{color : "black" , fontSize : "22px"}}
             href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
-              <i style={{color : "black"}} className="ri-information-line mr-2"></i>
               About
             </a>
             <div
@@ -235,7 +233,7 @@ const Home = () => {
               onMouseLeave={() => handleDesktopHover(false)}
             >
               <button 
-              style={{color : "black"}}
+              style={{color : "black" , fontSize : "22px"}}
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
               >
@@ -264,21 +262,22 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <a style={{color : "black"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
+            <a style={{color : "black" , fontSize : "22px"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
               <i style={{color : "black"}}  className="ri-star-line mr-2"></i>
               work
             </a>
-            <Link style={{color : "black"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
+            <Link style={{color : "black",fontSize : "22px"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
               <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
           </div>
           <a
   href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
-  className="bg-white text-black px-6 py-2 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+  className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
   target='_blank'
+  style={{fontSize : "20px"}}
 >
   Get Quote
 </a>
@@ -673,13 +672,13 @@ const Home = () => {
                   <div className="w-16 h-16 flex items-center justify-center bg-white/10 rounded-xl mb-6 group-hover:bg-white/20 transition-colors">
                     <i className="ri-layout-masonry-line text-2xl text-white"></i>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Stability Roof Sketch (XML + PDF)
+                  <h3 className="text-2xl font-bold text-white mb-4">Symbility Roof Sketch (XML + PDF)
 
                   </h3>
 
                   <div className="text-gray-300 mb-6 space-y-3">
                     <div className="flex justify-between border-b border-gray-700 pb-1">
-                      <span>✔️ Stability XML file + complementary PDF
+                      <span>✔️ Symbility XML file + complementary PDF
                       </span>
                       <span style={{color : "orange" , fontSize : '20px'}} className="font-medium">$20</span>
 
