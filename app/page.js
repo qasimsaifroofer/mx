@@ -517,6 +517,9 @@ const Home = () => {
                     <i style={{color : "orange"}} className="ri-calculator-line text-2xl text-white"></i>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Xactimate Estimate</h3>
+                  <br/>
+                  <p style={{ fontSize : '20px' , textAlign : 'center'}}>Hail, Wind , Hurricane / Storm Damage</p>
+                   <br/>
                   <div className="text-gray-300 mb-6 space-y-3">
                     <div className="flex justify-between border-b border-gray-700 pb-1">
                       <span>Roof Estimate</span>
@@ -547,7 +550,6 @@ const Home = () => {
                     <i style={{color : "orange"}} className="ri-home-4-line text-2xl text-white"></i>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-4">Xactimate Roof ESX</h3>
-                  <span>Hail, Wind , Hurricane / Storm Damage</span>
 
                   <div className="text-gray-300 mb-6 space-y-3">
                     <div className="flex justify-between border-b border-gray-700 pb-1">
