@@ -333,7 +333,7 @@ useEffect(() => {
       <br />
       <p className="text-lg leading-relaxed">{service.description}</p>
       <br />
-      <button onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+      <button onClick={() => router.push(`/form/${id}`)} className="w-full bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
    
