@@ -12,7 +12,7 @@ const navservices =  [
   { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
   { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
   { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
-  { id: "stability-roof-sketch", title: "Stability Roof Sketch (XML + PDF)", href: "/work/stability-roof-sketch" },
+  { id: "Symbility-roof-sketch ", title: "SymbilityRoof Sketch (XML + PDF)", href: "/work/Symbility-roof-sketch " },
 
 
 ];
@@ -37,26 +37,26 @@ const services = {
       "Bridge the gap between advanced scanning technology and industry-standard estimation with our Matterport to Xactimate Sketch service. We convert detailed Matterport 3D scans into accurate Xactimate sketches, providing a seamless workflow for insurance claims, restoration, and construction projects. Our service ensures that every detail from the scan is translated into precise measurements and diagrams, saving time and enhancing accuracy for contractors and adjusters. Experience a streamlined process with our expert conversion services. By integrating immersive 3D data into Xactimate, we make claim settlements smoother, provide unmatched detail for property documentation, and help professionals deliver better results to clients with confidence and efficiency.",
     image: "/5.jpg",
   },
-  "Xactimate-interior-estimate": {
-    title: "xactimate interior estimate",
+  "xactimate-interior-estimate": {
+    title: "Xactimate interior estimate",
     description:
-      "Our xactimate interior estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
+      "Our Xactimate interior estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
     image: "/s1.jpg",
   },
 
-  "stability-roof-sketch": {
-    title: "Stability Roof Sketch (XML + PDF)",
+  "Symbility-roof-sketch": {
+    title: "Symbility Roof Sketch (XML + PDF)",
     description:
-      "Our Stability Roof Sketch (XML + PDF) estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
-    image: "/s1.jpg",
+      "Our Symbility Roof Sketch (XML + PDF) estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
+    image: "/Symbility.jpeg",
   },
 
 
-  "Roof-report-pdf": {
+  "roof-report-pdf": {
     title: "Roof Report (PDF)",
     description:
       "Our Roof Report (PDF) (XML + PDF) estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements, simplifying the process of ordering materials and preparing insurance estimates. Ideal for contractors, property managers, and insurance adjusters, our reports ensure cost-effective planning and accurate documentation. With fast turnaround times and clear, professional outputs, we help you execute siding projects with confidence. Whether for small residential upgrades or large-scale commercial siding replacements, our reports minimize errors, save time, and enhance efficiency in both planning and execution phases.",
-    image: "/s1.jpg",
+    image: "/4 (1).jpg",
   },
 
 
@@ -172,24 +172,24 @@ useEffect(() => {
        {/* Header */}
        <header   style={{
               background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
+              
              
             }} className=" shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center" data-aos="fade-right" data-aos-delay="200">
-            <div style={{ width: "150px", height: "180px" }}>
-              <img src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
-            </div>
+          <div  data-aos="fade-right" data-aos-delay="200">
+              <img style={{width : "200px", height : "100px"}} src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link style={{color : "black"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
+            <Link style={{color : "black" , fontSize : "22px"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
               <i className="ri-home-line mr-2"></i>
               Home
             </Link>
             <a 
-            style={{color : "black"}}
+            style={{color : "black" , fontSize : "22px"}}
             href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
-              <i style={{color : "black"}} className="ri-information-line mr-2"></i>
+                           <i style={{color : "black"}} className="ri-information-line mr-2"></i>
+
               About
             </a>
             <div
@@ -201,7 +201,7 @@ useEffect(() => {
               onMouseLeave={() => handleDesktopHover(false)}
             >
               <button 
-              style={{color : "black"}}
+              style={{color : "black" , fontSize : "22px"}}
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
               >
@@ -223,8 +223,6 @@ useEffect(() => {
                       data-aos="fade-up"
                       data-aos-delay={450 + index * 50}
                       onClick={() => setDesktopDropdownOpen(false)}
-                      style={{color : "black"}}
-
                     >
                       {service.title}
                     </Link>
@@ -232,21 +230,22 @@ useEffect(() => {
                 </div>
               </div>
             </div>
-            <a style={{color : "black"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
+            <a style={{color : "black" , fontSize : "22px"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
               <i style={{color : "black"}}  className="ri-star-line mr-2"></i>
               work
             </a>
-            <Link style={{color : "black"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
+            <Link style={{color : "black",fontSize : "22px"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
               <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
           </div>
           <a
   href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
-  className="bg-white text-black px-6 py-2 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+  className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
   target='_blank'
+  style={{fontSize : "20px"}}
 >
   Get Quote
 </a>
@@ -293,14 +292,16 @@ useEffect(() => {
                 className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
                 data-aos="fade-up"
                 data-aos-delay="900"
+               
               >
                 {navservices.map((service, index) => (
                   <Link
                     key={service.id}
                     href={service.href}
-                    className="text-gray-300 hover:text-white transition-colors"
+                    className="text-black-900 hover:text-white transition-colors"
                     data-aos="fade-up"
                     data-aos-delay={950 + index * 50}
+                    style={{color : "black"}}
                   >
                     {service.title}
                   </Link>
@@ -323,7 +324,6 @@ useEffect(() => {
         </div>
       </nav>
     </header>
-
     <div className="p-10 max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">{service.title}</h1>
       <br />
@@ -338,6 +338,79 @@ useEffect(() => {
                   </button>
    
     </div>
+
+    <footer className="bg-black-900 text-white py-16 border-t border-gray-800" data-aos="fade-up" data-aos-delay="100">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="grid md:grid-cols-4 gap-8 mb-12">
+              <div data-aos="fade-up" data-aos-delay="200">
+                <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
+                <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
+                <div className="flex space-x-4">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="450">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Rebuild Cost Analysis</a></li>
+                </ul>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="750">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Company</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="#about" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">About Us</a></li>
+                  <li><a href="#pricing" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="850">Pricing</a></li>
+                  <li><a href="#testimonials" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="900">Testimonials</a></li>
+                  <li><a href="#contact" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="950">Contact</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="1000">FAQ</a></li>
+                </ul>
+              </div>
+              <div data-aos="fade-up" data-aos-delay="1050">
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1100">
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <i className="ri-mail-line"></i>
+                    </div>
+                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
+                      mxestimation@gmail.com
+                    </a>
+                  </li>
+                 
+                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1200">
+                    <div className="w-4 h-4 flex items-center justify-center mr-2">
+                      <i className="ri-time-line"></i>
+                    </div>
+                    24/7
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="border-t border-gray-800 pt-8" data-aos="fade-up" data-aos-delay="1250">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <p className="text-gray-400 text-sm" data-aos="fade-up" data-aos-delay="1300">© 2024 MX Estimation. All rights reserved.</p>
+                <div className="flex space-x-6 mt-4 md:mt-0">
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1350">Privacy Policy</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1400">Terms of Service</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1450">Cookie Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </>
   );
 }

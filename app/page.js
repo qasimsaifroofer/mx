@@ -222,6 +222,8 @@ const Home = () => {
             <a 
             style={{color : "black" , fontSize : "22px"}}
             href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
+                            <i style={{color : "black"}} className="ri-information-line mr-3"></i>
+
               About
             </a>
             <div
@@ -1031,8 +1033,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Email</h4>
-                  <p className="text-gray-400">info@mxestimation.com</p>
-                  <p className="text-gray-400">estimates@mxestimation.com</p>
+                  <p className="text-black-900">mxestimation@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="700">
@@ -1041,8 +1042,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Phone</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
-                  <p className="text-sm text-gray-500">Monday - Friday, 8 AM - 6 PM EST</p>
+                  <p className="text-sm text-black-900">24/7</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="750">
@@ -1051,8 +1051,8 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Response Time</h4>
-                  <p className="text-gray-400">Quotes within 2 hours</p>
-                  <p className="text-gray-400">Estimates in 24-48 hours</p>
+                  <p className="text-black-900">Quotes within 2 hours</p>
+                  <p className="text-black-900">Estimates in 24-48 hours</p>
                 </div>
               </div>
             </div>
@@ -1106,15 +1106,16 @@ const Home = () => {
                 <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
                 <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
                     <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="350">
-                    <i style={{color : "orange"}} className="ri-twitter-fill"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
                     <i style={{color : "orange"}} className="ri-facebook-fill"></i>
-                  </a>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-delay="450">

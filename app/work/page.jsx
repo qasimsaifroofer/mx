@@ -118,24 +118,24 @@ export default function OurWork() {
       {/* Header */}
       <header   style={{
               background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
+              
              
             }} className=" shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center" data-aos="fade-right" data-aos-delay="200">
-            <div style={{ width: "150px", height: "180px" }}>
-              <img src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
-            </div>
+          <div  data-aos="fade-right" data-aos-delay="200">
+              <img style={{width : "200px", height : "100px"}} src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <Link style={{color : "black"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
+            <Link style={{color : "black" , fontSize : "22px"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
               <i className="ri-home-line mr-2"></i>
               Home
             </Link>
             <a 
-            style={{color : "black"}}
+            style={{color : "black" , fontSize : "22px"}}
             href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
-              <i style={{color : "black"}} className="ri-information-line mr-2"></i>
+                           <i style={{color : "black"}} className="ri-information-line mr-2"></i>
+
               About
             </a>
             <div
@@ -147,7 +147,7 @@ export default function OurWork() {
               onMouseLeave={() => handleDesktopHover(false)}
             >
               <button 
-              style={{color : "black"}}
+              style={{color : "black" , fontSize : "22px"}}
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
               >
@@ -176,21 +176,22 @@ export default function OurWork() {
                 </div>
               </div>
             </div>
-            <a style={{color : "black"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
+            <a style={{color : "black" , fontSize : "22px"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
               <i style={{color : "black"}}  className="ri-star-line mr-2"></i>
               work
             </a>
-            <Link style={{color : "black"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
+            <Link style={{color : "black",fontSize : "22px"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
               <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
           </div>
           <a
   href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
-  className="bg-white text-black px-6 py-2 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+  className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
   target='_blank'
+  style={{fontSize : "20px"}}
 >
   Get Quote
 </a>
@@ -237,16 +238,16 @@ export default function OurWork() {
                 className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
                 data-aos="fade-up"
                 data-aos-delay="900"
+               
               >
                 {services.map((service, index) => (
                   <Link
                     key={service.id}
                     href={service.href}
-                    className="text-gray-300 hover:text-white transition-colors"
+                    className="text-black-900 hover:text-white transition-colors"
                     data-aos="fade-up"
                     data-aos-delay={950 + index * 50}
                     style={{color : "black"}}
-
                   >
                     {service.title}
                   </Link>
@@ -434,7 +435,7 @@ export default function OurWork() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-primary">
+      <section className="py-20 bg-black-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Work With Us?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -455,15 +456,16 @@ export default function OurWork() {
                 <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
                 <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
                     <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="350">
-                    <i style={{color : "orange"}} className="ri-twitter-fill"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
                     <i style={{color : "orange"}} className="ri-facebook-fill"></i>
-                  </a>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
                 </div>
               </div>
               <div data-aos="fade-up" data-aos-delay="450">
