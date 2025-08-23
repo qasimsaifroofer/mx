@@ -7,6 +7,12 @@ export default function DynamicForm() {
 
   // Service configurations based on the provided services object
   const serviceConfig = {
+    'info': {
+      title: 'Form',
+      description: 'Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
+      fields: ['address', 'zipCode', 'damageDetails', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'zipCode', 'damageDetails', 'photos'],
+    },
     'xactimate-estimate': {
       title: 'Xactimate Estimate',
       description: 'Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
@@ -34,6 +40,18 @@ export default function DynamicForm() {
     'xactimate-interior-estimate': {
       title: 'Xactimate Interior Estimate',
       description: 'Our Xactimate Interior Estimate service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
+      fields: ['address', 'zipCode', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'zipCode', 'photos'],
+    },
+    'roof-report': {
+      title: 'roof Report',
+      description: 'Our roof-report service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
+      fields: ['address', 'zipCode', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'zipCode', 'photos'],
+    },
+    'Symbility-roof-sketch': {
+      title: 'Symbility roof sketch',
+      description: 'Our Symbility roof sketch service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
       fields: ['address', 'zipCode', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'photos'],
     },

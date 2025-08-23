@@ -375,7 +375,7 @@ export default function About() {
               At MX Estimation, we combine innovative thinking with proven expertise to deliver exceptional results. Our mission is to transform complex challenges into streamlined solutions that drive sustainable growth and success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button style={{border : "2px solid orange" , color :"orange"}} className="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Contact Us</button>
+              <Link href="/contact" style={{border : "2px solid orange" , color :"orange"}} className="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:text-white transition-colors whitespace-nowrap">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -665,8 +665,7 @@ export default function About() {
             Let's discuss how we can help transform your business challenges into opportunities for growth and success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-500 text-black px-8 py-3 rounded-[8px] font-semibold hover:bg-gray-300 transition-colors whitespace-nowrap">Get Started</button>
-            <button className="border-2 border-gray-600 text-white px-8 py-3 rounded-[8px] font-semibold hover:border-gray-300 hover:text-gray-300 transition-colors whitespace-nowrap">Schedule a Call</button>
+          <Link href="/form/info"  className="border-2 border-orange text-white px-8 py-3 rounded-button hover:bg-orange-500 hover:text-black transition-colors whitespace-nowrap font-medium cursor-pointer">Get Started</Link>
           </div>
         </div>
       </section>
@@ -678,39 +677,18 @@ export default function About() {
               <div data-aos="fade-up" data-aos-delay="200">
                 <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
                 <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
-                <div className="flex space-x-4">
-                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
-                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
-                  </Link>
-                  
-                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
-                  </Link>
-                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
-                  </Link>
-                </div>
+                
               </div>
               <div data-aos="fade-up" data-aos-delay="450">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Rebuild Cost Analysis</a></li>
+                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</Link></li>
+                  <li><Link href="/work/matterport-to-xactimate-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</Link></li>
+                  <li><Link href="/work/xactimate-interior-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Roof Reports PDF</Link></li>
+                  <li><Link href="/work/Symbility-roof-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Symbility roof sketch</Link></li>
                 </ul>
               </div>
-              <div data-aos="fade-up" data-aos-delay="750">
-                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Company</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#about" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">About Us</a></li>
-                  <li><a href="#pricing" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="850">Pricing</a></li>
-                  <li><a href="#testimonials" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="900">Testimonials</a></li>
-                  <li><a href="#contact" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="950">Contact</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="1000">FAQ</a></li>
-                </ul>
-              </div>
+            
               <div data-aos="fade-up" data-aos-delay="1050">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
                 <ul className="space-y-2 text-gray-400">
@@ -731,6 +709,18 @@ export default function About() {
                   </li>
                 </ul>
               </div>
+              <div className="flex space-x-4">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
+                </div>
             </div>
             <div className="border-t border-gray-800 pt-8" data-aos="fade-up" data-aos-delay="1250">
               <div className="flex flex-col md:flex-row justify-between items-center">
@@ -742,7 +732,10 @@ export default function About() {
                 </div>
               </div>
             </div>
+            
           </div>
+
+          
         </footer>
       </div>
     </>

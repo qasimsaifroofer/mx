@@ -12,7 +12,7 @@ const navservices =  [
   { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
   { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
   { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
-  { id: "Symbility-roof-sketch ", title: "SymbilityRoof Sketch (XML + PDF)", href: "/work/Symbility-roof-sketch " },
+  { id: "Symbility-roof-sketch", title: "SymbilityRoof Sketch (XML + PDF)", href: "/work/Symbility-roof-sketch " },
 
 
 ];

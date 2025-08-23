@@ -374,7 +374,7 @@ const Home = () => {
                   <p className="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="500">Expert insurance claim support with 7+ years of experience. Fast, accurate estimates with 24-48 hour turnaround and transparent pricing.</p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-8" data-aos="fade-up" data-aos-delay="600">
                     <button className="bg-orange-500 text-black px-8 py-4 rounded-[8px] text-lg font-semibold hover:bg-gray-300 transition-colors whitespace-nowrap">Get Your Estimate</button>
-                    <button className="border-2 border-gray-600 text-white px-8 py-4 rounded-[8px] text-lg font-semibold hover:border-gray-300 hover:text-gray-300 transition-colors whitespace-nowrap">View Work</button>
+                    <Link href="/work" className="border-2 border-gray-600 text-white px-8 py-4 rounded-[8px] text-lg font-semibold hover:border-gray-300 hover:text-gray-300 transition-colors whitespace-nowrap">View Work</Link>
                   </div>
                   <div className="flex items-center space-x-8 text-sm text-gray-400" data-aos="fade-up" data-aos-delay="700">
                     <div className="flex items-center">
@@ -403,9 +403,25 @@ const Home = () => {
           <section id="about"    className="py-20"
             style={{
               background: "linear-gradient(100deg, black 40%, #facc15 100%)",
+              animation: "gradientAnimation 8s ease infinite",
+              backgroundSize: "200% 200%",
             }}
-
- data-aos="fade-up" data-aos-delay="100">
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <style jsx>{`
+              @keyframes gradientAnimation {
+                0% {
+                  background-position: 0% 50%;
+                }
+                50% {
+                  background-position: 100% 50%;
+                }
+                100% {
+                  background-position: 0% 50%;
+                }
+              }
+            `}</style>
             <div className="max-w-7xl mx-auto px-6">
               <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-4xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="300">About MX Estimation</h2>
@@ -415,7 +431,7 @@ const Home = () => {
                 <div className="space-y-8" data-aos="fade-right" data-aos-delay="500">
                   <div style={{border : '1px solid orange'}} className="bg-black p-8 rounded-2xl shadow-sm" data-aos="fade-up" data-aos-delay="600">
                     <div className="flex items-start space-x-4">
-                      <Image src="/saif.jpeg" alt="Malik Saif" width={64} height={64} className="rounded-full object-cover" />
+                      <Image style={{border : '3px solid orange'}} src="/saif.jpeg" alt="Malik Saif" width={64} height={64} className="rounded-full object-cover" />
                       <div>
                         <h3 className="text-xl font-bold text-white mb-2">Malik Saif</h3>
                         <p style={{color : 'orange'}} className="text-white font-semibold mb-2">Lead Estimator & Founder</p>
@@ -542,7 +558,7 @@ const Home = () => {
                       <p className="text-sm text-gray-400">XACTIMATE INTERIOR ESTIMATE  start at $100 (up to 150 items)</p>
                     </div>
                   </div>
-                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push('/form/xactimate-estimate')} className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -574,7 +590,7 @@ const Home = () => {
                       <span style={{color : "orange" , fontSize : '20px'}} className="font-medium">$15</span>
                     </div>
                   </div>
-                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push('/form/xactimate-roof-esx')} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -604,7 +620,7 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Floor plan/Hand Sketch to ESX: $30</p>
                     </div>
                   </div>
-                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/matterport-to-xactimate-sketch") } className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -637,7 +653,7 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
-                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/xactimate-interior-estimate")} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -666,7 +682,7 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
-                  <button  style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button  style={{border : "2px solid orange" , color : "orange" }}onClick={() => router.push("/form/roof-report")}  className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -696,7 +712,7 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
-                  <button  style={{border : "2px solid orange" , color : "orange" }} onClick={() => window.location.href = 'tel:+923034297361'} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+                  <button  style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/Symbility-roof-sketch")}  className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
                 </div>
@@ -1089,7 +1105,7 @@ const Home = () => {
           <div className="bg-black text-white rounded-2xl p-6" data-aos="fade-up" data-aos-delay="1050">
             <h4 className="font-bold text-white mb-2">Need Urgent Estimates?</h4>
             <p className="text-white/90 mb-4">For rush orders or large projects, contact us directly for expedited service and custom pricing.</p>
-            <button className="bg-black text-white px-6 py-2 rounded-[8px] font-semibold hover:bg-gray-900 transition-colors whitespace-nowrap">Call Now</button>
+           
           </div>
         </div>
       </div>
@@ -1105,39 +1121,18 @@ const Home = () => {
               <div data-aos="fade-up" data-aos-delay="200">
                 <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
                 <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
-                <div className="flex space-x-4">
-                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
-                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
-                  </Link>
-                  
-                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
-                  </Link>
-                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
-                  </Link>
-                </div>
+                
               </div>
               <div data-aos="fade-up" data-aos-delay="450">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Rebuild Cost Analysis</a></li>
+                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</Link></li>
+                  <li><Link href="/work/matterport-to-xactimate-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</Link></li>
+                  <li><Link href="/work/xactimate-interior-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Roof Reports PDF</Link></li>
+                  <li><Link href="/work/Symbility-roof-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Symbility roof sketch</Link></li>
                 </ul>
               </div>
-              <div data-aos="fade-up" data-aos-delay="750">
-                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Company</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#about" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">About Us</a></li>
-                  <li><a href="#pricing" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="850">Pricing</a></li>
-                  <li><a href="#testimonials" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="900">Testimonials</a></li>
-                  <li><a href="#contact" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="950">Contact</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="1000">FAQ</a></li>
-                </ul>
-              </div>
+            
               <div data-aos="fade-up" data-aos-delay="1050">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
                 <ul className="space-y-2 text-gray-400">
@@ -1158,6 +1153,18 @@ const Home = () => {
                   </li>
                 </ul>
               </div>
+              <div className="flex space-x-4">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
+                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
+                </div>
             </div>
             <div className="border-t border-gray-800 pt-8" data-aos="fade-up" data-aos-delay="1250">
               <div className="flex flex-col md:flex-row justify-between items-center">
@@ -1169,7 +1176,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
           </div>
+
+          
         </footer>
       </div>
     </>
