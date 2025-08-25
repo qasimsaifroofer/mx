@@ -816,7 +816,7 @@ const Home = () => {
         {/* Content */}
         <div>
           <h2 className="text-3xl font-bold text-yellow-500 mb-4">
-          Xactimate Roof Estimate          </h2>
+          Xactimate Estimate          </h2>
           <p className="text-white-700 text-xl leading-relaxed mb-6">
           Our Xactimate Roof Estimate  services provide accurate and reliable cost assessments for insurance claims, property damage, and repair projects. With years of experience, we ensure that every estimate is prepared with precision, helping contractors, adjusters, and property owners make informed decisions.
           </p>
