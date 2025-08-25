@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 
 
 const navservices =  [
-  { id: "xactimate-estimate", title: "Xactimate Estimate", href: "/work/xactimate-estimate" },
+  { id: "xactimate-estimate", title: "Xactimate Roof Estimate ", href: "/work/xactimate-estimate" },
   { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
   { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
   { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
@@ -19,9 +19,9 @@ const navservices =  [
 
 const services = {
   "xactimate-estimate": {
-    title: "Xactimate Estimate",
+    title: "Xactimate Roof Estimate ",
     description:
-      "Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses. Whether you're a contractor, insurance adjuster, or property owner, our estimates streamline the claims process, reduce disputes, and ensure compliance with insurance requirements. Trust us to provide transparent, reliable, and timely estimates tailored to your specific needs. With years of experience, we help you maximize efficiency, minimize claim delays, and maintain professional credibility while ensuring fair settlements for all parties involved.",
+      "Our Xactimate Roof Estimate  service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses. Whether you're a contractor, insurance adjuster, or property owner, our estimates streamline the claims process, reduce disputes, and ensure compliance with insurance requirements. Trust us to provide transparent, reliable, and timely estimates tailored to your specific needs. With years of experience, we help you maximize efficiency, minimize claim delays, and maintain professional credibility while ensuring fair settlements for all parties involved.",
     image: "/s1.jpg",
   },
   "xactimate-roof-esx": {
@@ -366,7 +366,7 @@ useEffect(() => {
               <div data-aos="fade-up" data-aos-delay="450">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Roof Estimate s</a></li>
                   <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
                   <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
                   <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>

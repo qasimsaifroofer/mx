@@ -9,13 +9,13 @@ export default function DynamicForm() {
   const serviceConfig = {
     'info': {
       title: 'Form',
-      description: 'Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
+      description: 'Our Xactimate Roof Estimate  service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
       fields: ['address', 'zipCode', 'damageDetails', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'damageDetails', 'photos'],
     },
     'xactimate-estimate': {
-      title: 'Xactimate Estimate',
-      description: 'Our Xactimate Estimate service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
+      title: 'Xactimate Roof Estimate ',
+      description: 'Our Xactimate Roof Estimate  service delivers highly accurate, industry-standard cost estimates for restoration, repair, and insurance claims. Leveraging the latest Xactimate software, our team meticulously prepares detailed reports that cover every aspect of your project, from material costs to labor expenses.',
       fields: ['address', 'zipCode', 'damageDetails', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'zipCode', 'damageDetails', 'photos'],
     },

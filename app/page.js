@@ -61,7 +61,7 @@ const Home = () => {
 
 
   const services = [
-    { id: "xactimate-estimate", title: "Xactimate Estimate", href: "/work/xactimate-estimate" },
+    { id: "xactimate-estimate", title: "Xactimate Roof Estimate ", href: "/work/xactimate-estimate" },
     { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
     { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
     { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
@@ -533,7 +533,7 @@ const Home = () => {
                   <div className="w-16 h-16 flex items-center justify-center bg-white/10 rounded-xl mb-6 group-hover:bg-white/20 transition-colors">
                     <i style={{color : "orange"}} className="ri-calculator-line text-2xl text-white"></i>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Xactimate Estimate</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">Xactimate Roof Estimate </h3>
                   <br/>
                   <p style={{ fontSize : '20px' , textAlign : 'center'}}>Hail, Wind , Hurricane / Storm Damage</p>
                    <br/>
@@ -558,6 +558,11 @@ const Home = () => {
                       <p className="text-sm text-gray-400">XACTIMATE INTERIOR ESTIMATE  start at $100 (up to 150 items)</p>
                     </div>
                   </div>
+                  <br/>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/Roof Sample.pdf" download>Download Sample</Link>
+                  
+                  <br/>
+                  <br/>
                   <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push('/form/xactimate-estimate')} className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -624,6 +629,11 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Floor plan/Hand Sketch to ESX: $30</p>
                     </div>
                   </div>
+                  <br/>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/3952_LOSROBLESDR.ESX" download>Download Sample</Link>
+                  
+                  <br/>
+                  <br/>
                   <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/matterport-to-xactimate-sketch") } className="w-full bg-black-900 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -806,9 +816,9 @@ const Home = () => {
         {/* Content */}
         <div>
           <h2 className="text-3xl font-bold text-yellow-500 mb-4">
-          Xactimate Estimate          </h2>
+          Xactimate Roof Estimate          </h2>
           <p className="text-white-700 text-xl leading-relaxed mb-6">
-          Our Xactimate Estimate services provide accurate and reliable cost assessments for insurance claims, property damage, and repair projects. With years of experience, we ensure that every estimate is prepared with precision, helping contractors, adjusters, and property owners make informed decisions.
+          Our Xactimate Roof Estimate  services provide accurate and reliable cost assessments for insurance claims, property damage, and repair projects. With years of experience, we ensure that every estimate is prepared with precision, helping contractors, adjusters, and property owners make informed decisions.
           </p>
           <p className="text-white-700 text-xl leading-relaxed">
           By using Xactimate, we deliver detailed line-item estimates that follow industry standards and insurance guidelines. This not only speeds up the claims process but also reduces the chances of disputes.
@@ -1280,7 +1290,7 @@ const Home = () => {
               <div data-aos="fade-up" data-aos-delay="450">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</Link></li>
+                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Roof Estimate</Link></li>
                   <li><Link href="/work/matterport-to-xactimate-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</Link></li>
                   <li><Link href="/work/xactimate-interior-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Roof Reports PDF</Link></li>
                   <li><Link href="/work/Symbility-roof-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Symbility roof sketch</Link></li>

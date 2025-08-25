@@ -13,7 +13,7 @@ export default function OurWork() {
   let hoverTimeout;
 
   const services = [
-    { id: "xactimate-estimate", title: "Xactimate Estimate", href: "/work/xactimate-estimate" },
+    { id: "xactimate-estimate", title: "Xactimate Roof Estimate ", href: "/work/xactimate-estimate" },
     { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
     { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
     { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
@@ -318,10 +318,10 @@ export default function OurWork() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Xactimate Estimate
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Xactimate Roof Estimate 
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                Comprehensive Xactimate estimates tailored to accurately assess and document all types of damages.
+                Comprehensive Xactimate Roof Estimate s tailored to accurately assess and document all types of damages.
 </p>
                 <a href="#project1" className="text-primary font-medium hover:underline text-black">Learn More</a>
               </div>
@@ -462,7 +462,7 @@ export default function OurWork() {
               <div data-aos="fade-up" data-aos-delay="450">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Estimates</Link></li>
+                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Roof Estimate s</Link></li>
                   <li><Link href="/work/matterport-to-xactimate-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</Link></li>
                   <li><Link href="/work/xactimate-interior-estimate" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Roof Reports PDF</Link></li>
                   <li><Link href="/work/Symbility-roof-sketch" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Symbility roof sketch</Link></li>
