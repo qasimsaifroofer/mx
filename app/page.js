@@ -274,7 +274,7 @@ const Home = () => {
             </Link>
           </div>
           <a
-  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
   className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
@@ -425,7 +425,7 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-6">
               <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-4xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="300">About MX Estimation</h2>
-                <p className="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">Led by industry experts with proven track records in Xactimate estimation and insurance claim support.</p>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">Led by industry experts with a proven track records in Xactimate estimation and insurance claim support.</p>
               </div>
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-8" data-aos="fade-right" data-aos-delay="500">
@@ -433,9 +433,9 @@ const Home = () => {
                     <div className="flex items-start space-x-4">
                       <Image style={{border : '3px solid orange'}} src="/saif.jpeg" alt="Malik Saif" width={64} height={64} className="rounded-full object-cover" />
                       <div>
-                        <h3 className="text-xl font-bold text-white mb-2">Malik Saif</h3>
-                        <p style={{color : 'orange'}} className="text-white font-semibold mb-2">Lead Estimator & Founder</p>
-                        <p className="text-white-400 mb-3">Xactimate Level 3 Certified with over 7 years of hands-on experience in property damage estimation and insurance claim support.</p>
+                        <h3 className="text-xl font-bold text-white mb-2 text-lg">Malik Saif</h3>
+                        <p style={{color : 'orange'}} className="text-white font-semibold mb-2 text-lg">Lead Estimator & Founder</p>
+                        <p className="text-white-400 mb-3 text-lg">Xactimate Level 3 Certified with over 7 years of hands-on experience in property damage estimation and insurance claim support.</p>
                         <div className="flex items-center space-x-4 text-sm text-gray-500">
                           <span style={{color : 'orange'}} className="flex items-center">
                             <div  className="w-4 h-4 flex items-center justify-center mr-1">
@@ -458,8 +458,8 @@ const Home = () => {
                       <Image style={{border : '3px solid orange'}} src="/hassan.jpeg" alt="Hasnain Sajjad" width={64} height={64} className="rounded-full object-cover" />
                       <div>
                         <h3 className="text-xl font-bold text-white mb-2">Hasnain Sajjad</h3>
-                        <p style={{color : 'orange'}}  className="text-white font-semibold mb-2">CEO & Co-Founder</p>
-                        <p  className="text-white-400 mb-3">Strategic leader driving innovation in estimation services with a focus on client satisfaction and operational excellence.</p>
+                        <p style={{color : 'orange'}}  className="text-white font-semibold mb-2 text-lg">CEO & Co-Founder</p>
+                        <p  className="text-white-400 mb-3 text-lg">Strategic leader driving innovation in estimation services with a focus on client satisfaction and operational excellence.</p>
                         <div className="flex items-center space-x-4 text-sm text-gray-500">
                           <span style={{color : 'orange'}} className="flex items-center">
                             <div className="w-4 h-4 flex items-center justify-center mr-1">
@@ -468,7 +468,7 @@ const Home = () => {
                             Leadership
                           </span>
                           <span style={{color : 'orange'}} className="flex items-center">
-                            <div className="w-4 h-4 flex items-center justify-center mr-1">
+                            <div className="w-4 h-4 flex items-center justify-center mr-1 text-lg">
                               <i className="ri-rocket-line"></i>
                             </div>
                             Innovation
@@ -486,8 +486,8 @@ const Home = () => {
                         <i className="ri-check-line text-white text-sm"></i>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white mb-1">Advanced Certification</h4>
-                        <p className="text-gray-400">Xactimate Level 3 certification ensures the highest standard of accuracy and professionalism in every estimate.</p>
+                        <h4 className="font-semibold text-white mb-1 text-lg">Advanced Certification</h4>
+                        <p className="text-gray-400 text-lg">Xactimate Level 3 certification ensures the highest standard of accuracy and professionalism in every estimate.</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3" data-aos="fade-up" data-aos-delay="800">
@@ -495,8 +495,8 @@ const Home = () => {
                         <i className="ri-check-line text-white text-sm"></i>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white mb-1">Proven Track Record</h4>
-                        <p className="text-gray-400">Over 7 years of successful project completion with insurance companies, contractors, and property owners.</p>
+                        <h4 className="font-semibold text-white mb-1 text-lg">Proven Track Record</h4>
+                        <p className="text-gray-400 text-lg">Over 7 years of successful project completion with insurance companies, contractors, and property owners.</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3" data-aos="fade-up" data-aos-delay="900">
@@ -504,8 +504,8 @@ const Home = () => {
                         <i className="ri-check-line text-white text-sm"></i>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white mb-1">Technology Integration</h4>
-                        <p className="text-gray-400">Seamless Matterport to Xactimate conversion and advanced aerial roof analysis for comprehensive estimates.</p>
+                        <h4 className="font-semibold text-white mb-1 text-lg">Technology Integration</h4>
+                        <p className="text-gray-400 text-lg">Seamless Matterport to Xactimate conversion and advanced aerial roof analysis for comprehensive estimates.</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3" data-aos="fade-up" data-aos-delay="1000">
@@ -590,6 +590,10 @@ const Home = () => {
                       <span style={{color : "orange" , fontSize : '20px'}} className="font-medium">$15</span>
                     </div>
                   </div>
+                  <br/>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050957_BLDG.esx" >Download Sample</Link>
+                  <br/>
+                  <br/>                  
                   <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push('/form/xactimate-roof-esx')} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -682,6 +686,11 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
+                  <br/>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/RR-050888 Senior Airman Rene Irizarry.pdf" >Download Sample</Link>
+                  
+                  <br/>
+                  <br/>
                   <button  style={{border : "2px solid orange" , color : "orange" }}onClick={() => router.push("/form/roof-report")}  className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -712,6 +721,11 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
+                  <br/>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050771_RONALD.XML" >Download Sample</Link>
+                  
+                  <br/>
+                  <br/>
                   <button  style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/Symbility-roof-sketch")}  className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -719,13 +733,93 @@ const Home = () => {
               </div>
             </div>
           </section>
+    <hr/>
+
+          <section data-aos="fade-up" className="bg-black-900 py-16" id="xactimate">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Content */}
+        <div>
+          <h2 className="text-3xl font-bold text-yellow-500 mb-4">
+            Xactimate Roof Sketch ESX
+          </h2>
+          <p className="text-white-700 text-xl leading-relaxed mb-6">
+          Xactimate Roof Sketch ESX gives you the ability to create professional and accurate roof designs. With this tool, contractors, estimators, and insurance adjusters can easily create complex roof layouts.
+          </p>
+          <p className="text-white-700 text-xl leading-relaxed">
+          This software provides precise measurements and automated calculations that save time and minimize errors, making it a must-have solution for roofing projects.
+          </p>
+        </div>
+        <div>
+          <Image
+          style={{boxShadow : "5px 10px 30px yellow"}}
+          width={500}
+          height={500}
+            src="/xactimate roof sketch ESX.jpeg"
+            alt="Xactimate Roof Sketch ESX"
+            className="w-full rounded-2xl "
+          />
+        </div>
+
+      </div>
+    </section>
+
+        <hr/>
+    <section data-aos="fade-up" className="bg-black-900 py-16" id="xactimate">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Content */}
+          <Image
+          style={{boxShadow : "5px 10px 30px yellow"}}
+          width={600}
+          height={600}
+            src="/Matterport to xactimate ESX.jpeg"
+            alt="Xactimate Roof Sketch ESX"
+            className="w-full rounded-2xl "
+          />
+        <div>
+          <h2 className="text-3xl font-bold text-yellow-500 mb-4">
+          Matterport to xactimate ESX
+          </h2>
+          <p className="text-white-700 text-xl leading-relaxed mb-6">
+          Converting Matterport scans into Xactimate ESX files helps contractors, estimators, and insurance adjusters save valuable time while ensuring accuracy. With this process, you can transform 3D scans into detailed, ready-to-use roof or property sketches compatible with Xactimate.
+          </p>
+          <p className="text-white-700 text-xl leading-relaxed">
+          This service eliminates the need for manual measurements by providing precise dimensions and automated calculations directly from Matterport data. It speeds up project estimates, reduces errors, and ensures that your reports are professional and reliable.
+          </p>
+        </div>
+        <div>
+        </div>
+
+      </div>
+    </section>
+    <hr/>
+          <br/>
           <section
+          data-aos="fade-up"
       className="py-16 px-4 sm:px-6 lg:px-8 "
       style={{
         background: "linear-gradient(100deg, black 40%, #facc15 100%)",
+        animation: "gradientAnimation 5s ease infinite",
+        backgroundSize: "200% 200%",
       }}
+      
 
     >
+<style jsx>{`
+              @keyframes gradientAnimation {
+                0% {
+                  background-position: 0% 50%;
+                }
+                50% {
+                  background-position: 100% 50%;
+                }
+                100% {
+                  background-position: 0% 50%;
+                }
+              }
+            `}</style>
+
       <div  className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
           Our Diverse Range of Clients
@@ -746,7 +840,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
+    <section data-aos="fade-up" className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
           Our Xactimate Writing Service
@@ -773,6 +867,9 @@ const Home = () => {
   className="py-20"
   style={{
     background: "linear-gradient(100deg,rgb(145, 120, 20) 10%, black 100%)",
+    animation: "gradientAnimation 5s ease infinite",
+        backgroundSize: "200% 200%",
+
   }}
   data-aos="fade-up"
   data-aos-delay="100"
@@ -973,9 +1070,31 @@ const Home = () => {
   </div>
 </section>
 
-<section style={{
-  background: "linear-gradient(90deg, #facc15 1%, black 200%)",
-}} id="contact" className="py-20" data-aos="fade-up" data-aos-delay="100">
+<section
+  id="contact"
+  className="py-20"
+  style={{
+    background: "linear-gradient(90deg, #facc15 1%, black 200%)",
+    backgroundSize: "200% 200%",
+    animation: "gradientAnimation 8s ease infinite",
+  }}
+  data-aos="fade-up"
+  data-aos-delay="100"
+>
+  {/* Gradient animation keyframes inside JSX */}
+  <style jsx>{`
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  `}</style>
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
       <h2 className="text-4xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="300">Get Your Estimate Today</h2>
@@ -1049,7 +1168,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Email</h4>
-                  <p className="text-black-900">mxestimation@gmail.com</p>
+                  <p className="text-black-900">contact@mxestimation.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="700">
@@ -1140,8 +1259,8 @@ const Home = () => {
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
-                      mxestimation@gmail.com
+                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
+                      contact@mxestimation.com
                     </a>
                   </li>
                  

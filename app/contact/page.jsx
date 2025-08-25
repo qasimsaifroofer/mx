@@ -82,7 +82,7 @@ ${formData.firstName} ${formData.lastName}
     `.trim();
 
     // Open email client with pre-filled data
-    const mailtoLink = `mailto:mxestimation@gmail.com?subject=Service Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:contact@mxestimation.com?subject=Service Inquiry from ${formData.firstName} ${formData.lastName}&body=${encodeURIComponent(emailBody)}`;
     window.open(mailtoLink, '_blank');
   };
 
@@ -249,7 +249,7 @@ ${formData.firstName} ${formData.lastName}
                 </Link>
               </div>
               <a
-                href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+                href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
                 className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
                 data-aos="fade-left"
                 data-aos-delay="600"
@@ -515,8 +515,8 @@ ${formData.firstName} ${formData.lastName}
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Email Us</h3>
                       <p className="text-gray-400 mb-2">Send us your project details</p>
-                      <a href="mailto:mxestimation@gmail.com" className="text-orange-500 hover:text-orange-400 transition-colors font-medium">
-                        mxestimation@gmail.com
+                      <a href="mailto:contact@mxestimation.com" className="text-orange-500 hover:text-orange-400 transition-colors font-medium">
+                        contact@mxestimation.com
                       </a>
                     </div>
                   </div>
@@ -613,8 +613,8 @@ ${formData.firstName} ${formData.lastName}
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
-                      mxestimation@gmail.com
+                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
+                      contact@mxestimation.com
                     </a>
                   </li>
                  

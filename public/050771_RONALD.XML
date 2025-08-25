@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPLICAD_EXPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///c:/temp/applicad-export.xsd">
+<LOCATION address=" " city="" state="20 August 2025" postal="20 August 2025" lat="" long="" />
+<STRUCTURES>
+<ROOF id="ROOF1">
+<FACES>
+<FACE id="F1" orientation="1.570796" slope="3.000000">
+<POLYGON area="85118722.036319" id="P1" path="L12,L6,L1,L4,L2,L8,L9,L5"  />
+</FACE>
+<FACE id="F2" orientation="-1.570796" slope="3.000000">
+<POLYGON area="58711878.549113" id="P2" path="L7,L10,L8,L11"  />
+</FACE>
+<FACE id="F3" orientation="-1.570796" slope="3.000000">
+<POLYGON area="12310221.278081" id="P3" path="L13,L3,L4,L14,L15"  />
+</FACE>
+<FACE id="F4" orientation="-1.570796" slope="1.000000">
+<POLYGON area="14870382.377304" id="P4" path="L16,L21,L20,L19,L18,L17"  />
+</FACE>
+</FACES>
+<LINES>
+<LINE id="L1" overhang="" path="C3,C2" subtype="RAKE" type="EDGE"/>
+<LINE id="L2" overhang="" path="C9,C4" subtype="RAKE" type="EDGE"/>
+<LINE id="L3" overhang="" path="C4,C1" subtype="FLASH" type="EDGE"/>
+<LINE id="L4" overhang="" path="C4,C2" subtype="FLAT" type="RIDGE"/>
+<LINE id="L5" overhang="" path="C5,C7" subtype="EAVE" type="EDGE"/>
+<LINE id="L6" overhang="" path="C12,C3" subtype="EAVE" type="EDGE"/>
+<LINE id="L7" overhang="" path="C8,C6" subtype="EAVE" type="EDGE"/>
+<LINE id="L8" overhang="" path="C9,C11" subtype="FLAT" type="RIDGE"/>
+<LINE id="L9" overhang="" path="C7,C11" subtype="RAKE" type="EDGE"/>
+<LINE id="L10" overhang="" path="C6,C11" subtype="RAKE" type="EDGE"/>
+<LINE id="L11" overhang="" path="C8,C9" subtype="RAKE" type="EDGE"/>
+<LINE id="L12" overhang="" path="C5,C12" subtype="RAKE" type="EDGE"/>
+<LINE id="L13" overhang="" path="C10,C1" subtype="STEPFLASH" type="EDGE"/>
+<LINE id="L14" overhang="" path="C2,C13" subtype="RAKE" type="EDGE"/>
+<LINE id="L15" overhang="" path="C13,C10" subtype="EAVE" type="EDGE"/>
+<LINE id="L16" overhang="" path="C19,C14" subtype="RAKE" type="EDGE"/>
+<LINE id="L17" overhang="" path="C15,C19" subtype="EAVE" type="EDGE"/>
+<LINE id="L18" overhang="" path="C16,C15" subtype="RAKE" type="EDGE"/>
+<LINE id="L19" overhang="" path="C17,C16" subtype="FLASH" type="EDGE"/>
+<LINE id="L20" overhang="" path="C18,C17" subtype="STEPFLASH" type="EDGE"/>
+<LINE id="L21" overhang="" path="C14,C18" subtype="FLASH" type="EDGE"/>
+</LINES>
+<POINTS>
+<POINT id="C1" data="45.512882,23.228324,15.142340"/>
+<POINT id="C2" data="58.778072,23.228323,15.142340"/>
+<POINT id="C3" data="58.778073,39.747239,11.012611"/>
+<POINT id="C4" data="46.514030,23.228324,15.142340"/>
+<POINT id="C5" data="28.243601,35.742653,12.013757"/>
+<POINT id="C6" data="3.214940,7.423335,12.013757"/>
+<POINT id="C7" data="3.214940,35.742654,12.013757"/>
+<POINT id="C8" data="46.514030,7.423335,12.013757"/>
+<POINT id="C9" data="46.514030,21.582994,15.553672"/>
+<POINT id="C10" data="45.512882,13.537560,12.719649"/>
+<POINT id="C11" data="3.214940,21.582994,15.553672"/>
+<POINT id="C12" data="28.243601,39.747239,11.012611"/>
+<POINT id="C13" data="58.778071,13.537560,12.719649"/>
+<POINT id="C14" data="45.012309,8.386024,10.583316"/>
+<POINT id="C15" data="57.504944,1.523803,10.011464"/>
+<POINT id="C16" data="57.504944,14.538706,11.096040"/>
+<POINT id="C17" data="45.512882,14.538706,11.096040"/>
+<POINT id="C18" data="45.512882,8.386024,10.583316"/>
+<POINT id="C19" data="45.012309,1.523803,10.011464"/>
+</POINTS>
+</ROOF>
+</STRUCTURES>
+</APPLICAD_EXPORT>

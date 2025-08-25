@@ -240,7 +240,7 @@ useEffect(() => {
             </Link>
           </div>
           <a
-  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
   className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
@@ -324,16 +324,21 @@ useEffect(() => {
         </div>
       </nav>
     </header>
-    <div className="p-10 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">{service.title}</h1>
+    <div 
+    className="p-10 max-w-3xl mx-auto">
+      <h1      data-aos="fade-up"
+ className="text-3xl font-bold mb-4">{service.title}</h1>
       <br />
-      <Image src={service.image}   
+      <Image      data-aos="fade-up"
+ src={service.image}   
       width={800}  
       height={500}  />
       <br />
-      <p className="text-lg leading-relaxed">{service.description}</p>
+      <p      data-aos="fade-up"
+ className="text-lg leading-relaxed">{service.description}</p>
       <br />
-      <button onClick={() => router.push(`/form/${id}`)} className="w-full bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+      <button      data-aos="fade-up"
+ onClick={() => router.push(`/form/${id}`)} className="w-full bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
    
@@ -385,8 +390,8 @@ useEffect(() => {
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
-                      mxestimation@gmail.com
+                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
+                      contact@mxestimation.com
                     </a>
                   </li>
                  

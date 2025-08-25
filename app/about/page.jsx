@@ -274,7 +274,7 @@ export default function About() {
             </Link>
           </div>
           <a
-  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
   className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
@@ -360,6 +360,7 @@ export default function About() {
     </header>
       {/* Hero Section */}
       <section
+      data-aos="fade-up"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `url('/about.jpg')`,
@@ -382,7 +383,9 @@ export default function About() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 bg-black">
+      <section
+      data-aos="fade-up"
+     className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4 ">Our Story</h2>
@@ -480,6 +483,7 @@ export default function About() {
 
       {/* Core Values Section */}
       <section
+      data-aos="fade-up"
         className="py-20"
         style={{
           background: "linear-gradient(100deg, black 40%, #facc15 100%)",
@@ -552,7 +556,9 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-black">
+      <section
+      data-aos="fade-up"
+      className="py-20 bg-black">
       <h2 className="text-4xl font-bold text-gray-900 mb-4 text-white text-center">Our Team</h2>
       <br />
 
@@ -614,7 +620,9 @@ export default function About() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-black">
+      <section
+      data-aos="fade-up"
+      className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Our Impact</h2>
@@ -656,7 +664,9 @@ export default function About() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20" style={{
+      <section
+      data-aos="fade-up"
+      className="py-20" style={{
         background: "linear-gradient(100deg, black 40%, #facc15 100%)",
       }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -671,7 +681,9 @@ export default function About() {
       </section>
 
       {/* Footer (match Home theme) */}
-      <footer className="bg-black-900 text-white py-16 border-t border-gray-800" data-aos="fade-up" data-aos-delay="100">
+      <footer
+      data-aos="fade-up"
+      className="bg-black-900 text-white py-16 border-t border-gray-800"  data-aos-delay="100">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
               <div data-aos="fade-up" data-aos-delay="200">
@@ -696,8 +708,8 @@ export default function About() {
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
-                      mxestimation@gmail.com
+                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
+                      contact@mxestimation.com
                     </a>
                   </li>
                  

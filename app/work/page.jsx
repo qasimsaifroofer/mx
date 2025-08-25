@@ -186,7 +186,7 @@ export default function OurWork() {
             </Link>
           </div>
           <a
-  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
   className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
@@ -272,6 +272,7 @@ export default function OurWork() {
     </header>
       {/* Hero Section */}
       <section
+      data-aos="fade-up"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
         style={{
           backgroundImage: `url('/work.jpg')`,
@@ -435,7 +436,9 @@ export default function OurWork() {
       </section>
 
       {/* Call to Action Section */}
-      <section style={{backgroundColor : "black"}} className="py-20 bg-white-900">
+      <section 
+       data-aos="fade-up"
+      style={{backgroundColor : "black"}} className="py-20 bg-white-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Work With Us?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
@@ -473,8 +476,8 @@ export default function OurWork() {
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
-                      mxestimation@gmail.com
+                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
+                      contact@mxestimation.com
                     </a>
                   </li>
                  
