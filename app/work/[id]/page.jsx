@@ -327,7 +327,7 @@ useEffect(() => {
     <div 
     className="p-10 max-w-3xl mx-auto">
       <h1      data-aos="fade-up"
- className="text-3xl font-bold mb-4">{service.title}</h1>
+ className="text-3xl font-bold mb-4 text-white">{service.title}</h1>
       <br />
       <Image      data-aos="fade-up"
  src={service.image}   
@@ -335,7 +335,7 @@ useEffect(() => {
       height={500}  />
       <br />
       <p      data-aos="fade-up"
- className="text-lg leading-relaxed">{service.description}</p>
+ className="text-lg leading-relaxed text-white">{service.description}</p>
       <br />
       <button      data-aos="fade-up"
  onClick={() => router.push(`/form/${id}`)} className="w-full bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
@@ -344,49 +344,28 @@ useEffect(() => {
    
     </div>
 
-    <footer className="bg-black-900 text-white py-16 border-t border-gray-800" data-aos="fade-up" data-aos-delay="100">
+    <footer className="bg-black-900 text-white py-16 border-t border-gray-800"  data-aos-delay="100">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
-              <div data-aos="fade-up" data-aos-delay="200">
+              <div  data-aos-delay="200">
                 <div style={{color : "orange"}} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
                 <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
-                <div className="flex space-x-4">
-                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="300">
-                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
-                  </Link>
-                  
-                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
-                  </Link>
-                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos="fade-up" data-aos-delay="400">
-                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
-                  </Link>
-                </div>
+                
               </div>
-              <div data-aos="fade-up" data-aos-delay="450">
+              <div >
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Services</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="500">Xactimate Roof Estimate s</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="550">Matterport Conversion</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="600">Aerial Roof Reports</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="650">Damage Estimates</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="700">Rebuild Cost Analysis</a></li>
+                  <li><Link href="/work/xactimate-estimate" className="hover:text-white transition-colors"  data-aos-delay="500">Xactimate Roof Estimate</Link></li>
+                  <li><Link href="/work/matterport-to-xactimate-sketch" className="hover:text-white transition-colors"  data-aos-delay="550">Matterport Conversion</Link></li>
+                  <li><Link href="/work/xactimate-interior-estimate" className="hover:text-white transition-colors" data-aos-delay="600">Roof Reports PDF</Link></li>
+                  <li><Link href="/work/Symbility-roof-sketch" className="hover:text-white transition-colors"  data-aos-delay="700">Symbility roof sketch</Link></li>
                 </ul>
               </div>
-              <div data-aos="fade-up" data-aos-delay="750">
-                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Company</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li><a href="#about" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">About Us</a></li>
-                  <li><a href="#pricing" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="850">Pricing</a></li>
-                  <li><a href="#testimonials" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="900">Testimonials</a></li>
-                  <li><a href="#contact" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="950">Contact</a></li>
-                  <li><a href="#" className="hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="1000">FAQ</a></li>
-                </ul>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="1050">
+            
+              <div  data-aos-delay="1050">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
                 <ul className="space-y-2 text-gray-400">
-                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1100">
+                  <li className="flex items-center"  data-aos-delay="1100">
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
@@ -395,7 +374,7 @@ useEffect(() => {
                     </a>
                   </li>
                  
-                  <li className="flex items-center" data-aos="fade-up" data-aos-delay="1200">
+                  <li className="flex items-center"  data-aos-delay="1200">
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-time-line"></i>
                     </div>
@@ -403,18 +382,33 @@ useEffect(() => {
                   </li>
                 </ul>
               </div>
+              <div className="flex space-x-4">
+                  <Link target='_blank' href="https://www.linkedin.com/in/malik-saif-a56510249/?originalSubdomain=pk" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos-delay="300">
+                    <i style={{color : "orange"}} className="ri-linkedin-fill"></i>
+                  </Link>
+                  
+                  <Link target='_blank' href="https://www.facebook.com/malik.xactimator" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors" data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-facebook-fill"></i>
+                  </Link>
+                  <Link target='_blank' href="https://www.instagram.com/p/DNKYNXsMsdS/" className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-white transition-colors"  data-aos-delay="400">
+                    <i style={{color : "orange"}} className="ri-instagram-fill"></i>
+                  </Link>
+                </div>
             </div>
-            <div className="border-t border-gray-800 pt-8" data-aos="fade-up" data-aos-delay="1250">
+            <div className="border-t border-gray-800 pt-8"  data-aos-delay="1250">
               <div className="flex flex-col md:flex-row justify-between items-center">
-                <p className="text-gray-400 text-sm" data-aos="fade-up" data-aos-delay="1300">© 2024 MX Estimation. All rights reserved.</p>
+                <p className="text-gray-400 text-sm" data-aos-delay="1300">© 2024 MX Estimation. All rights reserved.</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1350">Privacy Policy</a>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1400">Terms of Service</a>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors" data-aos="fade-up" data-aos-delay="1450">Cookie Policy</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1350">Privacy Policy</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1400">Terms of Service</a>
+                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1450">Cookie Policy</a>
                 </div>
               </div>
             </div>
+            
           </div>
+
+          
         </footer>
       </>
   );
