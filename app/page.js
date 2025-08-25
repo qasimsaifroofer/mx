@@ -927,14 +927,12 @@ const Home = () => {
     >
       <h2
         className="text-4xl font-bold text-white mb-4"
-        data-aos="fade-up"
         data-aos-delay="300"
       >
         Why Choose MX Estimation?
       </h2>
       <p
         className="text-xl text-gray-300 max-w-3xl mx-auto"
-        data-aos="fade-up"
         data-aos-delay="400"
       >
         We deliver exceptional value through expertise, efficiency, and unwavering
@@ -942,7 +940,7 @@ const Home = () => {
       </p>
     </div>
     <div className="grid md:grid-cols-3 gap-8">
-      <div className="text-center" data-aos="fade-up" data-aos-delay="500">
+      <div className="text-center" data-aos-delay="500">
         <div className="w-16 h-16 flex items-center justify-center bg-white/10 rounded-2xl mx-auto mb-6">
           <i className="ri-speed-up-line text-orange-400 text-2xl"></i>
         </div>
@@ -952,7 +950,7 @@ const Home = () => {
           understand time-sensitive insurance claims and project deadlines.
         </p>
       </div>
-      <div className="text-center" data-aos="fade-up" data-aos-delay="600">
+      <div className="text-center"  data-aos-delay="600">
         <div className="w-16 h-16 flex items-center justify-center bg-white/10 rounded-2xl mx-auto mb-6">
           <i className="ri-award-line text-orange-400 text-2xl"></i>
         </div>
@@ -962,7 +960,7 @@ const Home = () => {
           ensures accuracy and industry compliance in every estimate.
         </p>
       </div>
-      <div className="text-center" data-aos="fade-up" data-aos-delay="700">
+      <div className="text-center" data-aos-delay="700">
         <div className="w-16 h-16 flex items-center justify-center bg-white/10 rounded-2xl mx-auto mb-6">
           <i className="ri-price-tag-3-line text-orange-400 text-2xl"></i>
         </div>
