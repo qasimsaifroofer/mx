@@ -445,7 +445,7 @@ export default function OurWork() {
             Let's discuss how we can help transform your business challenges into opportunities for growth and success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button  href="/form/info"  className="border-2 border-orange text-white px-8 py-3 rounded-button hover:bg-orange-500 hover:text-black transition-colors whitespace-nowrap font-medium cursor-pointer">Get Started</button>
+            <a  href="/form/info"  className="border-2 border-orange text-white px-8 py-3 rounded-button hover:bg-orange-500 hover:text-black transition-colors whitespace-nowrap font-medium cursor-pointer">Get Started</a>
           </div>
         </div>
       </section>
