@@ -841,7 +841,6 @@ const Home = () => {
 
           <br/>
           <section
-          data-aos="fade-up"
       className="py-16 px-4 sm:px-6 lg:px-8 "
       style={{
         background: "linear-gradient(100deg, black 40%, #facc15 100%)",
@@ -885,7 +884,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section data-aos="fade-up" className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
+    <section  className="py-16 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
           Our Xactimate Writing Service
@@ -978,26 +977,18 @@ const Home = () => {
 <section
   id="testimonials"
   className="py-20 bg-black"
-  data-aos="fade-up"
-  data-aos-delay="100"
 >
   <div className="max-w-7xl mx-auto px-6">
     <div
       className="text-center mb-16"
-      data-aos="fade-up"
-      data-aos-delay="200"
     >
       <h2
         className="text-4xl font-bold text-white mb-4"
-        data-aos="fade-up"
-        data-aos-delay="300"
       >
         Client Testimonials
       </h2>
       <p
         className="text-xl text-gray-300 max-w-3xl mx-auto"
-        data-aos="fade-up"
-        data-aos-delay="400"
       >
         See what our clients say about our professional Xactimate estimation
         services and customer support.
@@ -1008,8 +999,6 @@ const Home = () => {
       {/* Card 1 */}
       <div
         className="bg-black border border-orange-400 rounded-2xl p-8 shadow-sm"
-        data-aos="fade-up"
-        data-aos-delay="500"
       >
         <div className="flex items-center mb-4">
           <div className="flex space-x-1">
@@ -1034,8 +1023,7 @@ const Home = () => {
       {/* Card 2 */}
       <div
         className="bg-black border border-orange-400 rounded-2xl p-8 shadow-sm"
-        data-aos="fade-up"
-        data-aos-delay="600"
+       
       >
         <div className="flex items-center mb-4">
           <div className="flex space-x-1">
@@ -1064,8 +1052,7 @@ const Home = () => {
       {/* Card 3 */}
       <div
         className="bg-black border border-orange-400 rounded-2xl p-8 shadow-sm"
-        data-aos="fade-up"
-        data-aos-delay="700"
+      
       >
         <div className="flex items-center mb-4">
           <div className="flex space-x-1">
@@ -1139,29 +1126,29 @@ const Home = () => {
     }
   `}</style>
   <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
-      <h2 className="text-4xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="300">Get Your Estimate Today</h2>
-      <p className="text-xl text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">Ready to get started? Contact us for professional Xactimate estimation services with fast turnaround and transparent pricing.</p>
+    <div className="text-center mb-16"  >
+      <h2 className="text-4xl font-bold text-white mb-4" >Get Your Estimate Today</h2>
+      <p className="text-xl text-gray-300 max-w-3xl mx-auto" >Ready to get started? Contact us for professional Xactimate estimation services with fast turnaround and transparent pricing.</p>
     </div>
     <div className="grid lg:grid-cols-2 gap-12">
-      <div data-aos="fade-right" data-aos-delay="500">
+      <div>
         <div className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
-            <div data-aos="fade-up" data-aos-delay="600">
+            <div  data-aos-delay="600">
               <label className="block text-sm font-semibold text-white mb-2">Full Name *</label>
               <input type="text" className="w-full px-4 py-3 border border-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-sm text-white" placeholder="Enter your full name" required />
             </div>
-            <div data-aos="fade-up" data-aos-delay="650">
+            <div  data-aos-delay="650">
               <label className="block text-sm font-semibold text-white mb-2">Email Address *</label>
               <input type="email" className="w-full px-4 py-3 border border-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-sm text-white" placeholder="Enter your email" required />
             </div>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <div data-aos="fade-up" data-aos-delay="700">
+            <div>
               <label className="block text-sm font-semibold text-white mb-2">Phone Number</label>
               <input type="tel" className="w-full px-4 py-3 border border-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-sm text-white" placeholder="Enter your phone" />
             </div>
-            <div data-aos="fade-up" data-aos-delay="750">
+            <div  data-aos-delay="750">
               <label className="block text-sm font-semibold text-white mb-2">Service Type *</label>
               <div className="relative">
                 <button type="button" className="w-full px-4 py-3 border border-white bg-gray-900 rounded-lg focus:ring-2 focus:ring-white focus:border-transparent text-sm text-left text-white pr-8" onClick={() => setServiceDropdownOpen(!serviceDropdownOpen)}>
