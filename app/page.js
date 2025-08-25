@@ -657,6 +657,12 @@ const Home = () => {
                       <p className="text-sm text-gray-400">Larger projects priced accordingly</p>
                     </div>
                   </div>
+                  <br/>
+                  
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/Sample.pdf" download>Download Sample</Link>
+                  <br/>
+                  <br/>
+
                   <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push("/form/xactimate-interior-estimate")} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
                     Order Now
                   </button>
@@ -687,7 +693,7 @@ const Home = () => {
                     </div>
                   </div>
                   <br/>
-                  <Link style={{color : 'orange', fontSize : '20px'}} href="/RR-050888 Senior Airman Rene Irizarry.pdf" >Download Sample</Link>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/RR-050888 Senior Airman Rene Irizarry.pdf" download>Download Sample</Link>
                   
                   <br/>
                   <br/>
@@ -722,7 +728,7 @@ const Home = () => {
                     </div>
                   </div>
                   <br/>
-                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050771_RONALD.XML" >Download Sample</Link>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050771_RONALD.XML" download>Download Sample</Link>
                   
                   <br/>
                   <br/>
@@ -794,6 +800,35 @@ const Home = () => {
       </div>
     </section>
     <hr/>
+    <section data-aos="fade-up" className="bg-black-900 py-16" id="xactimate">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Content */}
+        <div>
+          <h2 className="text-3xl font-bold text-yellow-500 mb-4">
+          Xactimate Estimate          </h2>
+          <p className="text-white-700 text-xl leading-relaxed mb-6">
+          Our Xactimate Estimate services provide accurate and reliable cost assessments for insurance claims, property damage, and repair projects. With years of experience, we ensure that every estimate is prepared with precision, helping contractors, adjusters, and property owners make informed decisions.
+          </p>
+          <p className="text-white-700 text-xl leading-relaxed">
+          By using Xactimate, we deliver detailed line-item estimates that follow industry standards and insurance guidelines. This not only speeds up the claims process but also reduces the chances of disputes.
+          </p>
+        </div>
+          <Image
+          style={{boxShadow : "5px 10px 30px yellow"}}
+          width={600}
+          height={600}
+            src="/s1.jpg"
+            alt="Xactimate Roof Sketch ESX"
+            className="w-full rounded-2xl "
+          />
+        <div>
+        </div>
+
+      </div>
+    </section>
+    <hr/>
+
           <br/>
           <section
           data-aos="fade-up"
