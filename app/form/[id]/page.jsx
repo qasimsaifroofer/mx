@@ -162,23 +162,23 @@ export default function DynamicForm() {
       const sheetData = {
         Timestamp: new Date().toISOString(),
         Email: formData.email,
-        OrderStatus: 'pending',
+        'Order Status': 'pending',
         Address: formData.address,
         Coordinates: formData.coordinates,
-        MeasurementSource: formData.measurementSource || '',
-        RoofMaterial: formData.roofMaterial || '',
-        RoofPitch: formData.roofPitch || '',
-        MatterportLink: formData.matterportLink || '',
-        DamageDetails: formData.damageDetails || '',
-        SpecialInstructions: formData.specialInstructions || '',
+        'Measurement Source': formData.measurementSource || '',
+        'Roof Material': formData.roofMaterial || '',
+        'Roof Pitch': formData.roofPitch || '',
+        'Matterport Link': formData.matterportLink || '',
+        'Damage Details': formData.damageDetails || '',
+        'Special Instructions': formData.specialInstructions || '',
         Photos: photoUrls.join(','),
-        MeasurementFiles: measurementFileUrls.join(','),
+        'Measurement Files': measurementFileUrls.join(','),
         Service: currentService.title,
       };
 
-      // Remove any undefined values to avoid SheetDB issues
+      // Remove only undefined values, keep empty strings for required fields
       const cleanData = Object.fromEntries(
-        Object.entries(sheetData).filter(([key, value]) => value !== undefined && value !== '')
+        Object.entries(sheetData).filter(([key, value]) => value !== undefined)
       );
 
       console.log('Sending data to SheetDB:', cleanData);
