@@ -926,7 +926,7 @@ const Home = () => {
     >
       <h2
         className="text-4xl font-bold text-white mb-4"
-        data-aos-delay="300"
+        data-aos-delay="100"
       >
         Why Choose MX Estimation?
       </h2>
