@@ -596,7 +596,7 @@ const Home = () => {
                     </div>
                   </div>
                   <br/>
-                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050957_BLDG.esx" >Download Sample</Link>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/7_TREE_CREST.ESX" >Download Sample</Link>
                   <br/>
                   <br/>                  
                   <button style={{border : "2px solid orange" , color : "orange" }} onClick={() => router.push('/form/xactimate-roof-esx')} className="w-full bg-black-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
@@ -703,7 +703,7 @@ const Home = () => {
                     </div>
                   </div>
                   <br/>
-                  <Link style={{color : 'orange', fontSize : '20px'}} href="/RR-050888 Senior Airman Rene Irizarry.pdf" download>Download Sample</Link>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/20208 cook oil Rd Mitchell NE 69357.pdf" download>Download Sample</Link>
                   
                   <br/>
                   <br/>
@@ -738,7 +738,7 @@ const Home = () => {
                     </div>
                   </div>
                   <br/>
-                  <Link style={{color : 'orange', fontSize : '20px'}} href="/050771_RONALD.XML" download>Download Sample</Link>
+                  <Link style={{color : 'orange', fontSize : '20px'}} href="/10910 Observatory Way.XML" download>Download Sample</Link>
                   
                   <br/>
                   <br/>

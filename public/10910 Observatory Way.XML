@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APPLICAD_EXPORT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///c:/temp/applicad-export.xsd">
+<LOCATION address=" " city="" state="21 July 2025" postal="21 July 2025" lat="" long="" />
+<STRUCTURES>
+<ROOF id="ROOF1">
+<FACES>
+<FACE id="F1" orientation="-0.785398" slope="5.342875">
+<POLYGON area="1731957.700022" id="P1" path="L9,L13,L12"  />
+</FACE>
+<FACE id="F2" orientation="-1.570796" slope="6.000000">
+<POLYGON area="91370636.457069" id="P2" path="L27,L36,L20,L22,L13,L15"  />
+</FACE>
+<FACE id="F3" orientation="-1.570796" slope="6.000000">
+<POLYGON area="30267714.670331" id="P3" path="L16,L5,L23,L34,L35,L24"  />
+</FACE>
+<FACE id="F4" orientation="0.000000" slope="6.000000">
+<POLYGON area="18047773.318158" id="P4" path="L38,L40,L25,L33,L8,L21,L39,L34,L28,L20"  />
+</FACE>
+<FACE id="F5" orientation="1.570796" slope="6.000000">
+<POLYGON area="1858154.394820" id="P5" path="L10,L6,L2,L38,L22,L11"  />
+</FACE>
+<FACE id="F6" orientation="0.785398" slope="5.342875">
+<POLYGON area="1731957.937310" id="P6" path="L3,L11,L4"  />
+</FACE>
+<FACE id="F7" orientation="0.000000" slope="6.000000">
+<POLYGON area="3181313.379094" id="P7" path="L3,L9,L14"  />
+</FACE>
+<FACE id="F8" orientation="1.570796" slope="6.000000">
+<POLYGON area="5356544.174451" id="P8" path="L37,L31,L21,L1,L32"  />
+</FACE>
+<FACE id="F9" orientation="-1.570796" slope="6.000000">
+<POLYGON area="5356544.174451" id="P9" path="L29,L31,L8,L33,L7"  />
+</FACE>
+<FACE id="F10" orientation="1.570796" slope="6.000000">
+<POLYGON area="119882745.384606" id="P10" path="L17,L26,L35,L28,L36,L19"  />
+</FACE>
+<FACE id="F11" orientation="3.141593" slope="6.000000">
+<POLYGON area="46062322.194583" id="P11" path="L18,L19,L27"  />
+</FACE>
+</FACES>
+<LINES>
+<LINE id="L1" overhang="" path="C20,C17" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L2" overhang="" path="C19,C4" subtype="FLASH" type="EDGE"/>
+<LINE id="L3" overhang="" path="C16,C5" subtype="HIP" type="RIDGE"/>
+<LINE id="L4" overhang="" path="C5,C3" subtype="EAVE" type="EDGE"/>
+<LINE id="L5" overhang="" path="C2,C1" subtype="STEPFLASH" type="EDGE"/>
+<LINE id="L6" overhang="" path="C19,C11" subtype="STEPFLASH" type="EDGE"/>
+<LINE id="L7" overhang="" path="C22,C21" subtype="EAVE" type="EDGE"/>
+<LINE id="L8" overhang="" path="C8,C27" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L9" overhang="" path="C16,C6" subtype="HIP" type="RIDGE"/>
+<LINE id="L10" overhang="" path="C3,C11" subtype="EAVE" type="EDGE"/>
+<LINE id="L11" overhang="" path="C3,C16" subtype="HIP" type="RIDGE"/>
+<LINE id="L12" overhang="" path="C6,C14" subtype="EAVE" type="EDGE"/>
+<LINE id="L13" overhang="" path="C14,C16" subtype="HIP" type="RIDGE"/>
+<LINE id="L14" overhang="" path="C5,C6" subtype="EAVE" type="EDGE"/>
+<LINE id="L15" overhang="" path="C15,C14" subtype="EAVE" type="EDGE"/>
+<LINE id="L16" overhang="" path="C12,C2" subtype="EAVE" type="EDGE"/>
+<LINE id="L17" overhang="" path="C10,C13" subtype="EAVE" type="EDGE"/>
+<LINE id="L18" overhang="" path="C15,C10" subtype="EAVE" type="EDGE"/>
+<LINE id="L19" overhang="" path="C10,C23" subtype="HIP" type="RIDGE"/>
+<LINE id="L20" overhang="" path="C18,C28" subtype="HIP" type="RIDGE"/>
+<LINE id="L21" overhang="" path="C20,C27" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L22" overhang="" path="C16,C18" subtype="FLAT" type="RIDGE"/>
+<LINE id="L23" overhang="" path="C1,C26" subtype="FLASH" type="EDGE"/>
+<LINE id="L24" overhang="" path="C12,C25" subtype="RAKE" type="EDGE"/>
+<LINE id="L25" overhang="" path="C21,C8" subtype="TUCK-UNDER" type="TUCK-UNDER"/>
+<LINE id="L26" overhang="" path="C13,C25" subtype="RAKE" type="EDGE"/>
+<LINE id="L27" overhang="" path="C15,C23" subtype="HIP" type="RIDGE"/>
+<LINE id="L28" overhang="" path="C24,C28" subtype="HIP" type="RIDGE"/>
+<LINE id="L29" overhang="" path="C9,C22" subtype="RAKE" type="EDGE"/>
+<LINE id="L30" overhang="" path="C17,C20" subtype="TUCK-UNDER" type="TUCK-UNDER"/>
+<LINE id="L31" overhang="" path="C9,C27" subtype="FLAT" type="RIDGE"/>
+<LINE id="L32" overhang="" path="C7,C17" subtype="EAVE" type="EDGE"/>
+<LINE id="L33" overhang="" path="C8,C21" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L34" overhang="" path="C26,C24" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L35" overhang="" path="C24,C25" subtype="FLAT" type="RIDGE"/>
+<LINE id="L36" overhang="" path="C23,C28" subtype="FLAT" type="RIDGE"/>
+<LINE id="L37" overhang="" path="C7,C9" subtype="RAKE" type="EDGE"/>
+<LINE id="L38" overhang="" path="C4,C18" subtype="VALLEY" type="VALLEY"/>
+<LINE id="L39" overhang="" path="C20,C26" subtype="STEPFLASH" type="EDGE"/>
+<LINE id="L40" overhang="" path="C8,C4" subtype="STEPFLASH" type="EDGE"/>
+</LINES>
+<POINTS>
+<POINT id="C1" data="72.281010,32.243534,13.062500"/>
+<POINT id="C2" data="72.281010,30.118534,12.000000"/>
+<POINT id="C3" data="73.450060,25.587599,12.000000"/>
+<POINT id="C4" data="70.686944,23.993534,12.797033"/>
+<POINT id="C5" data="76.422119,22.615540,12.000000"/>
+<POINT id="C6" data="76.422119,14.126973,12.000000"/>
+<POINT id="C7" data="72.281010,33.243534,15.750000"/>
+<POINT id="C8" data="63.781010,23.993534,16.250000"/>
+<POINT id="C9" data="72.281010,28.118534,18.312500"/>
+<POINT id="C10" data="10.359625,53.272207,12.000000"/>
+<POINT id="C11" data="72.281010,25.587599,12.000000"/>
+<POINT id="C12" data="91.858872,30.118534,12.000000"/>
+<POINT id="C13" data="91.858872,53.272207,12.000000"/>
+<POINT id="C14" data="73.450060,11.154914,12.000000"/>
+<POINT id="C15" data="10.359625,11.154914,12.000000"/>
+<POINT id="C16" data="69.205776,18.371257,15.608171"/>
+<POINT id="C17" data="64.781010,33.243534,15.750000"/>
+<POINT id="C18" data="65.064667,18.371257,15.608171"/>
+<POINT id="C19" data="72.281010,23.993534,12.797033"/>
+<POINT id="C20" data="63.781010,32.243534,16.250000"/>
+<POINT id="C21" data="64.781010,22.993534,15.750000"/>
+<POINT id="C22" data="72.281010,22.993534,15.750000"/>
+<POINT id="C23" data="31.418271,32.213560,22.529323"/>
+<POINT id="C24" data="60.704173,41.695370,17.788418"/>
+<POINT id="C25" data="91.858872,41.695370,17.788418"/>
+<POINT id="C26" data="70.156010,32.243534,13.062500"/>
+<POINT id="C27" data="59.656010,28.118534,18.312500"/>
+<POINT id="C28" data="51.222363,32.213560,22.529323"/>
+</POINTS>
+</ROOF>
+</STRUCTURES>
+</APPLICAD_EXPORT>
