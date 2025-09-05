@@ -144,8 +144,8 @@ const Home = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>MX Estimation - Professional Xactimate Estimator Services | Insurance Claims Support</title>
-        <meta name="description" content="Professional Xactimate estimation services by Level 3 certified estimators. Matterport conversion, aerial roof reports, fire/water/mold damage estimates. 24-48hr turnaround." />
+        <title>Xactimate Services in the USA: Precision Estimating with MX Estimation | Professional Xactimate Estimator</title>
+        <meta name="description" content="Leading Xactimate estimating services in the USA. Professional Xactimate estimators with Level 3 certification. Fast turnaround, expert customer service, and comprehensive estimation solutions for contractors, adjusters, and property owners nationwide." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
@@ -370,8 +370,8 @@ const Home = () => {
                     </div>
                     Level 3 Certified Xactimate Estimators
                   </div>
-                  <h1 style={{color  : "orange"}} className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="400">Professional Xactimate Estimation Services</h1>
-                  <p className="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="500">Expert insurance claim support with 7+ years of experience. Fast, accurate estimates with 24-48 hour turnaround and transparent pricing.</p>
+                  <h1 style={{color  : "orange"}} className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up" data-aos-delay="400">Xactimate Services in the USA: Precision Estimating with MX Estimation</h1>
+                  <p className="text-xl text-gray-300 mb-8 leading-relaxed" data-aos="fade-up" data-aos-delay="500">In the fast-paced world of property restoration and insurance claims, accuracy and speed matter. Our expert Xactimate estimating services provide reliable, professional solutions that help contractors, adjusters, and homeowners navigate complex repairs with confidence.</p>
                   <div className="flex flex-col sm:flex-row gap-4 mb-8" data-aos="fade-up" data-aos-delay="600">
                     <button className="bg-orange-500 text-black px-8 py-4 rounded-[8px] text-lg font-semibold hover:bg-gray-300 transition-colors whitespace-nowrap">Get Your Estimate</button>
                     <Link href="/work" className="border-2 border-gray-600 text-white px-8 py-4 rounded-[8px] text-lg font-semibold hover:border-gray-300 hover:text-gray-300 transition-colors whitespace-nowrap">View Work</Link>
@@ -400,6 +400,148 @@ const Home = () => {
               </div>
             </div>
           </section>
+
+          {/* New SEO Section - Why Choose Xactimate Estimating Services */}
+          <section className="py-20 bg-black" data-aos="fade-up" data-aos-delay="100">
+            <div className="max-w-7xl mx-auto px-6">
+              <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
+                <h2 className="text-4xl font-bold text-white mb-6" data-aos="fade-up" data-aos-delay="300">
+                  Why Choose Xactimate Estimating Services?
+                </h2>
+                <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+                  When it comes to damage assessment and cost projection, Xactimate estimating services offer unmatched precision. Whether you're a contractor handling storm damage or an insurance adjuster reviewing claims, having a Xactimate professional on your side ensures every detail is accounted for.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div className="space-y-8" data-aos="fade-right" data-aos-delay="500">
+                  <h3 className="text-3xl font-bold text-orange-400 mb-6">Benefits of Using a Xactimate Estimating Service</h3>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="600">
+                      <div className="w-8 h-8 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                        <i className="ri-check-line text-white text-lg"></i>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-white mb-2">Detailed and Accurate Estimates</h4>
+                        <p className="text-gray-300 text-lg">Tailored to industry standards with comprehensive line-item breakdowns that meet insurance requirements and regulatory compliance.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="700">
+                      <div className="w-8 h-8 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                        <i className="ri-time-line text-white text-lg"></i>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-white mb-2">Fast Turnaround Times</h4>
+                        <p className="text-gray-300 text-lg">Keep projects moving with our 24-48 hour delivery guarantee, ensuring you never miss critical deadlines.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="800">
+                      <div className="w-8 h-8 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                        <i className="ri-user-star-line text-white text-lg"></i>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-white mb-2">Expert Xactimate Estimators</h4>
+                        <p className="text-gray-300 text-lg">Years of field experience combined with Level 3 certification ensures professional-grade estimates every time.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="900">
+                      <div className="w-8 h-8 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                        <i className="ri-customer-service-2-line text-white text-lg"></i>
+                      </div>
+                      <div>
+                        <h4 className="text-xl font-semibold text-white mb-2">Seamless Communication</h4>
+                        <p className="text-gray-300 text-lg">Backed by responsive Xactimate customer service that keeps you informed throughout the entire estimation process.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-6" data-aos="fade-left" data-aos-delay="500">
+                  <div className="bg-gray-900 rounded-2xl p-8 border border-orange-400" data-aos="fade-up" data-aos-delay="600">
+                    <h4 className="text-2xl font-bold text-orange-400 mb-4">🛠 What Makes a Great Xactimate Estimator?</h4>
+                    <p className="text-gray-300 text-lg mb-6">A skilled Xactimate estimator doesn't just crunch numbers—they understand the nuances of property damage, regional pricing, and insurance protocols. In the USA, top estimation companies rely on certified professionals who combine technical expertise with real-world insight.</p>
+                    <div className="space-y-4">
+                      <div className="flex items-center space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full">
+                          <i className="ri-check-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white font-medium">Deep knowledge of Xactimate estimating software</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full">
+                          <i className="ri-check-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white font-medium">Ability to produce comprehensive Xactimate estimates</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full">
+                          <i className="ri-check-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white font-medium">Clear communication with clients and insurance carriers</span>
+                      </div>
+                      <div className="flex items-center space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full">
+                          <i className="ri-check-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white font-medium">Commitment to accuracy and transparency</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* USA-Based Solutions */}
+              <div className="bg-gradient-to-r from-orange-500/10 to-yellow-500/10 rounded-3xl p-12" data-aos="fade-up" data-aos-delay="700">
+                <div className="text-center mb-12">
+                  <h3 className="text-3xl font-bold text-white mb-4">🌎 Estimation Companies in the USA: Setting the Standard</h3>
+                  <p className="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Across the United States, estimation companies are raising the bar by offering specialized Xactimate estimating services. From Florida hurricanes to Midwest hailstorms, these firms provide localized expertise and scalable solutions.
+                  </p>
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="space-y-6">
+                    <h4 className="text-2xl font-bold text-orange-400">📍 USA-Based Xactimate Estimate Solutions</h4>
+                    <p className="text-gray-300 text-lg">Whether you're in Texas, California, or New York, you'll find Xactimate estimating professionals who understand your region's unique challenges. These experts deliver:</p>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                          <i className="ri-home-4-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white">Residential and commercial Xactimate estimates</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                          <i className="ri-file-shield-2-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white">Insurance claim support and documentation</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                          <i className="ri-search-eye-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white">On-site inspections and virtual assessments</span>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full flex-shrink-0 mt-1">
+                          <i className="ri-heart-line text-white text-sm"></i>
+                        </div>
+                        <span className="text-white">Personalized service that feels human—not automated</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-black/50 rounded-2xl p-8 border border-orange-400">
+                    <h4 className="text-2xl font-bold text-orange-400 mb-4">💬 Xactimate Customer Service That Cares</h4>
+                    <p className="text-gray-300 text-lg mb-6">
+                      Behind every great estimate is a team that listens. Leading Xactimate estimation companies in the USA prioritize customer support, ensuring you're never left in the dark.
+                    </p>
+                    <p className="text-white font-medium">
+                      From initial consultation to final report, our Xactimate customer service is built around your needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section id="about"    className="py-20"
             style={{
               background: "linear-gradient(100deg, black 40%, #facc15 100%)",
@@ -890,7 +1032,7 @@ const Home = () => {
           Our Xactimate Writing Service
         </h2>
         <p className="text-lg text-gray-200 mb-12 max-w-2xl mx-auto">
-          Our expert freelance and remote Xactimate estimators provide professional support for construction projects affected by destructive weather conditions and other disasters, delivering precise insurance estimates for millions in claims.
+          Our expert Xactimate estimators provide professional support for construction projects affected by destructive weather conditions and other disasters, delivering precise insurance estimates with exceptional customer service and personalized attention to every client's needs.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {otherservices.map((service, index) => (
@@ -1128,7 +1270,7 @@ const Home = () => {
   <div className="max-w-7xl mx-auto px-6">
     <div className="text-center mb-16"  >
       <h2 className="text-4xl font-bold text-white mb-4" >Get Your Estimate Today</h2>
-      <p className="text-xl text-gray-300 max-w-3xl mx-auto" >Ready to get started? Contact us for professional Xactimate estimation services with fast turnaround and transparent pricing.</p>
+      <p className="text-xl text-gray-300 max-w-3xl mx-auto" >Ready to get started? Contact us for professional Xactimate estimation services with fast turnaround, transparent pricing, and dedicated customer service that puts your needs first.</p>
     </div>
     <div className="grid lg:grid-cols-2 gap-12">
       <div>
