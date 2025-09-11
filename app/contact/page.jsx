@@ -21,13 +21,22 @@ const ContactPage = () => {
   const dropdownRef = useRef(null);
   let hoverTimeout;
 
-  const services = [
-    { id: "xactimate-estimate", title: "Xactimate Estimate", href: "/work/xactimate-estimate" },
-    { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
-    { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
-    { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
-    { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
-    { id: "stability-roof-sketch", title: "Stability Roof Sketch (XML + PDF)", href: "/work/stability-roof-sketch" },
+
+  const services =  [
+    { id: "xactimate-estimate", title: "Xactimate Roof Estimate", href: "/work/xactimate-estimate" },
+      { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
+      { id: "matterport-to-xactimate-sketch", title: "Matterport to Xactimate Sketch", href: "/work/matterport-to-xactimate-sketch" },
+      { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/work/xactimate-interior-estimate" },
+      { id: "roof-report-pdf", title: "Roof Report (PDF)", href: "/work/roof-report-pdf" },
+      { id: "Symbility-roof-sketch", title: "Symbility Roof Sketch (XML + PDF)", href: "/work/Symbility-roof-sketch" },
+    
+      // 👇 nayi entries add ki gayi hain
+      { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
+      { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/work/matterpoint-to-xactimate-sketch" },
+      { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
+      { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
+  
+  
   ];
 
   const serviceOptions = [
