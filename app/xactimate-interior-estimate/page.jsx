@@ -10,7 +10,6 @@ export default function InteriorDamageEstimate() {
             const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
             const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
           
-
             const services =  [
                 { id: "xactimate-estimate", title: "Xactimate Roof Estimate", href: "/work/xactimate-estimate" },
                   { id: "xactimate-roof-esx", title: "Xactimate Roof ESX", href: "/work/xactimate-roof-esx" },
@@ -21,12 +20,13 @@ export default function InteriorDamageEstimate() {
                 
                   // 👇 nayi entries add ki gayi hain
                   { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
-                  { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/work/matterpoint-to-xactimate-sketch" },
+                  { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
                   { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
                   { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
               
               
               ];
+            
               let hoverTimeout;
     
               const handleDesktopHover = (isHovering) => {
