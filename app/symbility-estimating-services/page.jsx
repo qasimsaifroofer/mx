@@ -4,46 +4,45 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-export default function XactimateGuide() {
+export default function InteriorDamageEstimate() {
 
-     const dropdownRef = useRef(null);
-            const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-            const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-            const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
-          
-          
-
-            const services =  [
-            
-                // 👇 nayi entries add ki gayi hain
-                { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
-                { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
-                { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
-                { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
-                { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
-            
-            
-            ];
-          
-              let hoverTimeout;
-    
-              const handleDesktopHover = (isHovering) => {
-                clearTimeout(hoverTimeout);
-                if (isHovering) {
-                  setDesktopDropdownOpen(true);
-                } else {
-                  hoverTimeout = setTimeout(() => {
-                    setDesktopDropdownOpen(false);
-                  }, 300); // 300ms delay before closing
-                }
-              };
+      const dropdownRef = useRef(null);
+                const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+                const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+                const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+              
+                const services =  [
+                    
+                    
+                      // 👇 nayi entries add ki gayi hain
+                      { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
+                      { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
+                      { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
+                      { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
+                      { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
+                    
+                  
+                  ];
+                
+                  let hoverTimeout;
+        
+                  const handleDesktopHover = (isHovering) => {
+                    clearTimeout(hoverTimeout);
+                    if (isHovering) {
+                      setDesktopDropdownOpen(true);
+                    } else {
+                      hoverTimeout = setTimeout(() => {
+                        setDesktopDropdownOpen(false);
+                      }, 300); // 300ms delay before closing
+                    }
+                  };
   return (
     <div className="min-h-screen bg-black text-gray-200">
       <Head>
-        <title>Comprehensive Guide to Xactimate Estimation for Contractors</title>
+        <title>Best Interior Damage Estimate Services in the USA</title>
         <meta
           name="description"
-          content="A detailed guide on using Xactimate for accurate cost estimation in construction and restoration projects across the USA."
+          content="Explore the best interior damage estimate services in the USA. From tornado and fire-related damage to professional restoration planning, learn how MX Estimation provides accurate and reliable assessments."
         />
       </Head>
 
@@ -201,153 +200,23 @@ export default function XactimateGuide() {
         </div>
       </nav>
     </header>
-
-
       {/* Main Content */}
       <main className="container mx-auto px-6 py-16 space-y-16">
         <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent text-center leading-tight">
-          Comprehensive Guide to Xactimate Estimation for Contractors in the USA
+          Best Interior Damage Estimate Services in the USA
         </h1>
         <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-          In the competitive world of construction and restoration, accurate cost
-          estimation is crucial for project success. Xactimate, a leading
-          software developed by Xactware, has become the industry standard for
-          property insurance claims, restoration, and construction estimates
-          across the United States. This guide provides an in-depth look at
-          Xactimate estimation, highlighting the best online options, its
-          application for contractors, roofing estimates, and cost
-          considerations for remodel projects.
+          When disaster strikes—be it a tornado, fire, or other unforeseen
+          events—understanding the extent of interior damage is crucial for
+          effective restoration and insurance claims. As a trusted AI assistant,
+          MX Estimation is here to guide you through the essential aspects of
+          interior damage estimates in the USA. Our goal is to provide clear,
+          professional insights into how assessment services can help you
+          recover swiftly and confidently.
         </p>
         <center>
-        <Link href="/form/xactimate-estimate">
-            <button      data-aos="fade-up"
-  className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
-                    Order Now
-                  </button>
-            
-            </Link>
 
-        </center>
-
-        {/* Sections */}
-        <section className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-            Why I Choose MX Estimation?
-          </h2>
-          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md">
-            <p className="text-lg leading-relaxed">
-              MX Estimation has Xactimate skills which is a powerful,
-              user-friendly software designed to help contractors, adjusters,
-              and insurance professionals create precise property estimates.
-              When it combines a comprehensive database of pricing information
-              with intuitive tools to streamline the estimation process. Whether
-              you're working on a small repair or a large-scale remodel,
-              Xactimate ensures your estimates are accurate, consistent, and
-              compliant with industry standards.
-            </p>
-          </div>
-        </section>
-    
-        
-            <br /><br />
-        <section className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-            Best Xactimate Online Platforms for Contractors
-          </h2>
-          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
-            <p className="text-lg">
-              You are landed in the right place because for contractors seeking
-              flexibility and efficiency, the best online Xactimate platforms
-              offer cloud-based access, real-time updates, and collaborative
-              features. Some top options include:
-            </p>
-           
-            <ul className="list-disc pl-6 space-y-3">
-              <li>
-                <strong>Xactimate Online:</strong> The official web-based
-                version of Xactimate allows users to access their estimates from
-                any device with internet connectivity.
-              </li>
-              <li>
-                <strong>By MX Xactimate Mobile App:</strong> Designed for
-                on-the-go estimations, the mobile app enables contractors to
-                create and modify estimates directly from the field.
-              </li>
-              <li>
-                <strong>Third-Party Integrations:</strong> Several platforms
-                integrate with Xactimate, providing additional project
-                management and communication tools tailored for contractors.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-            Xactimate for Contractors: Streamlining Your Workflow
-          </h2>
-          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
-            <p className="text-lg">
-              Contractors across the USA rely on Xactimate to improve accuracy
-              and efficiency in their estimating process. Here’s how Xactimate
-              benefits contractors:
-            </p>
-            <ul className="list-disc pl-6 space-y-3">
-              <li>
-                <strong>Accurate Cost Data:</strong> The software’s extensive
-                database includes up-to-date pricing for materials, labor, and
-                equipment.
-              </li>
-              <li>
-                <strong>Time Savings:</strong> Automated features and pre-built
-                templates reduce manual entry.
-              </li>
-              <li>
-                <strong>Insurance Compatibility:</strong> Widely accepted by
-                insurance companies, simplifying claim submissions.
-              </li>
-              <li>
-                <strong>Detailed Reporting:</strong> Provides comprehensive
-                reports that support transparency and client communication.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="space-y-6">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-            Best Xactimate Roofing Estimates
-          </h2>
-          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
-            <p className="text-lg">
-              Roofing projects often require specialized estimation due to the
-              complexity of materials and labor involved. Xactimate offers
-              dedicated tools and templates for roofing estimates, ensuring
-              accuracy in these specialized projects.
-            </p>
-            <ul className="list-disc pl-6 space-y-3">
-              <li>
-                <strong>Roofing Materials and Labor:</strong> Includes detailed
-                pricing for shingles, metal roofing, tiles, and more.
-              </li>
-              <li>
-                <strong>Damage Assessment:</strong> Assess storm, hail, or fire
-                damage accurately.
-              </li>
-              <li>
-                <strong>Permits and Additional Costs:</strong> Include fees,
-                debris removal, and other ancillary costs.
-              </li>
-              <li>
-                <strong>Visual Aids:</strong> Sketch tools help contractors
-                create detailed roof diagrams.
-              </li>
-            </ul>
-          </div>
-        </section>
-        <center>
-
-<Link href="/form/xactimate-estimate">
+<Link href="/form/symbility-estimating-services">
     <button      data-aos="fade-up"
 className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
             Order Now
@@ -355,40 +224,151 @@ className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg
     
     </Link>
 </center>
+        {/* Sections */}
         <section className="space-y-6">
           <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
-            Xactremodel Cost: Estimating Remodel Projects Accurately
+            Understanding Interior Damage Estimates
+          </h2>
+          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md">
+            <p className="text-lg leading-relaxed">
+              An interior damage estimate is a detailed assessment of the
+              destruction caused inside a property due to storms, fires, or
+              other catastrophic events. This includes evaluating structural
+              components, finishes, fixtures, and personal property. Accurate
+              estimates are vital for insurance claims, budgeting, and planning
+              restoration efforts.
+            </p>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
+            Why Are Interior Damage Estimates Important?
           </h2>
           <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
-            <p className="text-lg">
-              Remodel projects can vary significantly in scope and complexity.
-              Xactimate provides contractors with the tools needed to produce
-              reliable remodel estimates, covering everything from minor
-              upgrades to extensive renovations.
-            </p>
-            <ul className="list-disc pl-6 space-y-3">
+            <ul className="list-disc pl-6 space-y-2 text-lg">
               <li>
-                <strong>Material and Labor Costs:</strong> Database ensures
-                estimates reflect local market rates.
+                <strong>Insurance Claims:</strong> Precise estimates ensure you
+                receive fair compensation.
               </li>
               <li>
-                <strong>Scope of Work:</strong> Allows detailed breakdowns of
-                tasks, materials, and labor.
+                <strong>Restoration Planning:</strong> Helps contractors develop
+                effective strategies.
               </li>
               <li>
-                <strong>Change Management:</strong> Contractors can update
-                estimates easily during progress.
+                <strong>Cost Management:</strong> Prevents unexpected expenses.
               </li>
               <li>
-                <strong>Cost Analysis:</strong> Compare different options and
-                select cost-effective solutions.
+                <strong>Property Value Preservation:</strong> Ensures your home
+                or business is restored to pre-damage condition.
               </li>
             </ul>
           </div>
         </section>
+
+        <section className="space-y-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
+            Roof Damage from Tornadoes and Its Impact
+          </h2>
+          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
+            <p className="text-lg">
+              Tornadoes often cause extensive roof damage, which leads to
+              interior issues such as:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Water stains on ceilings and walls</li>
+              <li>Mold growth</li>
+              <li>Warped or swollen flooring and drywall</li>
+              <li>Damage to electrical systems</li>
+            </ul>
+            <p className="text-lg">
+              When roofs fail, water infiltration can ruin insulation, damage
+              furniture, and weaken structural elements. Estimators assess these
+              areas to determine the full scope of repairs.
+            </p>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
+            Fire-Related Interior Damage and Its Assessment
+          </h2>
+          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
+            <p className="text-lg">
+              Fires cause devastating damage, often affecting multiple layers of
+              a property’s structure:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>
+                <strong>Structural Damage:</strong> Charred beams, walls, and
+                floors
+              </li>
+              <li>
+                <strong>Smoke Damage:</strong> Residue and odor permeating
+                surfaces
+              </li>
+              <li>
+                <strong>Water Damage:</strong> From firefighting efforts
+              </li>
+              <li>
+                <strong>Secondary Damage:</strong> Mold growth from moisture
+              </li>
+            </ul>
+            <p className="text-lg">
+              Professional estimators inspect walls, ceilings, electrical
+              systems, belongings, and HVAC systems to determine what can be
+              salvaged and what needs replacement.
+            </p>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
+            Interior Estimate Services: What to Expect
+          </h2>
+          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
+            <ul className="list-disc pl-6 space-y-2 text-lg">
+              <li>
+                <strong>On-Site Inspection:</strong> Estimators document damage,
+                take measurements, and photos.
+              </li>
+              <li>
+                <strong>Detailed Documentation:</strong> Comprehensive reports
+                for insurance and contractors.
+              </li>
+              <li>
+                <strong>Advanced Tools:</strong> Moisture meters, thermal
+                cameras, and modeling detect hidden issues.
+              </li>
+              <li>
+                <strong>Customized Plans:</strong> Tailored restoration
+                strategies for safety and efficiency.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text text-transparent">
+            Why Choose Professional Estimation in the USA?
+          </h2>
+          <div className="bg-zinc-900 rounded-2xl p-6 shadow-md">
+            <p className="text-lg leading-relaxed">
+              Choosing experienced professionals ensures accurate assessments,
+              fair settlements, and high-quality restoration. In a country prone
+              to natural disasters, having a reliable damage estimate reduces
+              stress and expedites recovery.
+            </p>
+            <p className="text-lg leading-relaxed mt-4">
+              While technology plays a vital role, human expertise remains
+              essential. Skilled estimators understand nuances, prioritize
+              safety, and communicate clearly—ensuring every detail is covered
+              and your property is restored effectively.
+            </p>
+          </div>
+        </section>
       </main>
 
-      {/* Footer */}
       <footer className="bg-black-900 text-white py-16 border-t border-gray-800"  data-aos-delay="100">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
