@@ -209,7 +209,7 @@ export default function XactimateGuide() {
           Comprehensive Guide to Xactimate Estimation for Contractors in the USA
         </h1>
         <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-          In the competitive world of construction and restoration, accurate cost
+          In this competitive world of construction and restoration, accurate cost
           estimation is crucial for project success. Xactimate, a leading
           software developed by Xactware, has become the industry standard for
           property insurance claims, restoration, and construction estimates
