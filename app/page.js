@@ -69,8 +69,10 @@ const Home = () => {
       { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
       { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
       { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
-  
-  ];
+      { id: "aerial-roof-measurements-pdf", title: "Aerial Roof Measurements PDF", href: "/Aerial-Roof-Measurements-PDF" },
+      { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
+      { id: "Xactimate-Roof-Sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
+    ];
 
   
   
