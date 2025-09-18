@@ -278,6 +278,10 @@ const Home = () => {
               <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
+            <Link style={{color : "black",fontSize : "22px"}} href="#pricing" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
+            <i style={{color : "black",fontSize : "22px"}} className="ri-exchange-dollar-line mr-2"></i>
+              Pricing
+            </Link>
           </div>
           <a
   href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
@@ -670,7 +674,7 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <section id="services" className="py-20 bg-black" data-aos="fade-up" data-aos-delay="100">
+          <section id="pricing" className="py-20 bg-black" data-aos="fade-up" data-aos-delay="100">
             <div className="max-w-7xl mx-auto px-6">
               <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-4xl font-bold text-white mb-4" data-aos="fade-up" data-aos-delay="300">Our Services</h2>
