@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import Footer from "../components/Footer";
 
 export default function XactimateRoofSketchGuide() {
     const dropdownRef = useRef(null);
@@ -117,6 +118,10 @@ export default function XactimateRoofSketchGuide() {
               <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
               Contact
             </Link>
+            <Link href="/pricing" className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl" data-aos="fade-left" data-aos-delay="550">
+              <i className="ri-exchange-dollar-line mr-2"></i>
+              Pricing
+            </Link>
           </div>
           <a
   href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
@@ -199,6 +204,10 @@ export default function XactimateRoofSketchGuide() {
               <i className="ri-contacts-line mr-3"></i>
               Contact
             </a>
+            <Link href="/pricing" className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl" data-aos="fade-left" data-aos-delay="550">
+              <i className="ri-exchange-dollar-line mr-2"></i>
+              Pricing
+            </Link>
           </div>
         </div>
       </nav>
@@ -226,7 +235,15 @@ export default function XactimateRoofSketchGuide() {
         </p>
 
         <center>
-    <Image src="/Xactimate-Roof-Sketch.jpeg" alt="Xactimate Roof Sketch" width={800} height={600} />
+    <Image src="/xactimate roof ESX.jpeg" alt="Xactimate Roof Sketch" width={800} height={600} />
+    <br />
+                <Link href="/form/xactimate-estimate">
+    <button      data-aos="fade-up"
+className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+            Order Now
+          </button>
+    
+    </Link>
 </center>
 
         {/* Card Sections */}
@@ -471,13 +488,7 @@ export default function XactimateRoofSketchGuide() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-orange-900 text-orange-500 py-8 mt-16">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-lg">
-            &copy; 2025 MX Estimation. All rights reserved.
-          </p>
-        </div>
-      </footer>
+              <Footer/>
     </div>
     </>
   );

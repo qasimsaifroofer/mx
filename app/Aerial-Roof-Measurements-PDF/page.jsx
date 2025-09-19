@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
+import Footer from "../components/Footer";
 
 export default function AerialRoofMeasurementsGuide() {
   const services =  [
@@ -227,6 +228,14 @@ export default function AerialRoofMeasurementsGuide() {
         </p>
          <center>
           <Image src="/Arial roof measurements PDF.jpeg" alt="Aerial Roof Measurements PDF" width={800} height={600} />
+          <br />
+         <Link href="/form/Aerial-Roof-Measurements-PDF">
+    <button      data-aos="fade-up"
+className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
+            Order Now
+          </button>
+    
+    </Link>
          </center>
         {/* Card Sections */}
         <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -472,13 +481,7 @@ export default function AerialRoofMeasurementsGuide() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-orange-900 text-orange-500 py-8 mt-16">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-lg">
-            &copy; 2025 MX Estimation. All rights reserved.
-          </p>
-        </div>
-      </footer>
+              <Footer/>
     </div>
   );
 }

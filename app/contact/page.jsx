@@ -253,6 +253,10 @@ ${formData.firstName} ${formData.lastName}
                   <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
                   Contact
                 </Link>
+                <Link href="/pricing" className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl" data-aos="fade-left" data-aos-delay="550">
+              <i className="ri-exchange-dollar-line mr-2"></i>
+              Pricing
+            </Link>
               </div>
               <a
                 href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
@@ -332,6 +336,10 @@ ${formData.firstName} ${formData.lastName}
                   <i className="ri-contacts-line mr-3"></i>
                   Contact
                 </a>
+                <Link href="/pricing" className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl" data-aos="fade-left" data-aos-delay="550">
+              <i className="ri-exchange-dollar-line mr-2"></i>
+              Pricing
+            </Link>
               </div>
             </div>
           </nav>

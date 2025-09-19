@@ -12,14 +12,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "MX Estimation",
+  title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
   description:
-    "Our Xactimate Estimate services provide precise and reliable cost estimates for insurance claims, property damage assessments, and repairs.",
+    "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
   metadataBase: new URL("https://mxestimation.com"),
   openGraph: {
-    title: "MX Estimation - Xactimate Estimate Services",
+    title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
     description:
-      "Accurate and reliable cost estimates for insurance claims, property damage assessments, and repairs.",
+      "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
     url: "https://mxestimation.com",
     siteName: "MX Estimation",
     images: [

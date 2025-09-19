@@ -55,6 +55,18 @@ export default function DynamicForm() {
       fields: ['address', 'email', 'coordinates', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
       required: ['address', 'email', 'coordinates', 'photos'],
     },
+    'Symbility-Sketch-XML': {
+      title: 'Symbility Sketch XML',
+      description: 'Our Symbility Sketch XML service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
+      fields: ['address', 'email', 'coordinates', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'email', 'coordinates', 'photos'],
+    },
+    'Aerial-Roof-Measurements-PDF': {
+      title: 'Aerial Roof Measurements PDF',
+      description: 'Our Aerial Roof Measurements-PDF service offers comprehensive, high-precision measurement reports for exterior siding projects. Using advanced aerial imagery, we provide detailed data on surface areas, dimensions, and material requirements.',
+      fields: ['address', 'email', 'coordinates', 'measurementSource', 'photos', 'measurementFiles', 'specialInstructions'],
+      required: ['address', 'email', 'coordinates', 'photos'],
+    },
   };
 
   // Fallback to a default service if the ID is invalid
