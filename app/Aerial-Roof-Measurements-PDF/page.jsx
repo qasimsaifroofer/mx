@@ -1,24 +1,44 @@
-"use client"
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
-import Footer from "../components/Footer";
+'use client';
+
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState, useRef } from 'react';
+import Footer from '../components/Footer';
 
 export default function AerialRoofMeasurementsGuide() {
-  const services =  [
-  
-    
-    // 👇 nayi entries add ki gayi hain
-    { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
-    { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
-    { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
-    { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
-    { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
-    { id: "aerial-roof-measurements-pdf", title: "Aerial Roof Measurements PDF", href: "/Aerial-Roof-Measurements-PDF" },
-    { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
-    { id: "Xactimate-Roof-Sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
+  const services = [
+    { id: 'estimator-accelerator', title: 'Estimator Accelerator', href: '/estimator-accelerator' },
+    { id: 'matterpoint-to-xactimate-sketch', title: 'Matterpoint to Xactimate Sketch', href: '/matterpoint-to-xactimate-sketch' },
+    { id: 'xactimate-estimation', title: 'Xactimate Estimation', href: '/xactimate-estimation' },
+    { id: 'xactimate-interior-estimate', title: 'Xactimate Interior Estimate', href: '/xactimate-interior-estimate' },
+    { id: 'symbility-estimating-services', title: 'Symbility Estimating Services', href: '/symbility-estimating-services' },
+    { id: 'aerial-roof-measurements-pdf', title: 'Aerial Roof Measurements PDF', href: '/Aerial-Roof-Measurements-PDF' },
+    { id: 'symbility-sketch-xml', title: 'Symbility Sketch XML', href: '/Symbility-Sketch-XML' },
+    { id: 'Xactimate-Roof-Sketch', title: 'Xactimate Roof Sketch', href: '/Xactimate-Roof-Sketch' },
   ];
+
+  const dropdownRef = useRef(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState('Select a service');
+  const [termsChecked, setTermsChecked] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+  let hoverTimeout;
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDesktopDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const handleDesktopHover = (isHovering) => {
     clearTimeout(hoverTimeout);
     if (isHovering) {
@@ -26,36 +46,17 @@ export default function AerialRoofMeasurementsGuide() {
     } else {
       hoverTimeout = setTimeout(() => {
         setDesktopDropdownOpen(false);
-      }, 300); // 300ms delay before closing
+      }, 300);
     }
   };
-    const dropdownRef = useRef(null);
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
-    const [selectedService, setSelectedService] = useState('Select a service');
-    const [termsChecked, setTermsChecked] = useState(false);
-    const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
-    const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
-    let hoverTimeout;
-    useEffect(() => {
-      function handleClickOutside(event) {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-          setDesktopDropdownOpen(false);
-        }
-      }
-      document.addEventListener("mousedown", handleClickOutside);
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, []);
-  
+
   return (
     <div className="min-h-screen bg-black text-orange-300">
       <Head>
-        <title>From Sky to Estimate: Mastering Xactimate with Aerial Roof Measurements</title>
+        <title>Aerial Roof Measurements PDF & Property Reports | MX Estimation</title>
         <meta
           name="description"
-          content="Master Xactimate with accurate aerial roof measurements. Learn to leverage property aerial imagery and measurement reports to create precise, bulletproof roof estimates."
+          content="Get property measurement reports. Learn how to use an aerial roof measurements PDF for flawless Xactimate sketches & accurate insurance estimates. Get Quote Now!"
         />
         <link
           rel="stylesheet"
@@ -63,162 +64,203 @@ export default function AerialRoofMeasurementsGuide() {
         />
       </Head>
 
-      <header   style={{
-              background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
-              
-             
-            }} className=" shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
-      <nav className="px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div  data-aos="fade-right" data-aos-delay="200">
-              <img style={{width : "200px", height : "100px"}} src="/logo.jpeg" alt="MX Estimation Logo" className="w-full h-full object-contain rounded-lg" />
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <Link style={{color : "black" , fontSize : "22px"}} href="/" className="text-black-900 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="300">
-              <i className="ri-home-line mr-2"></i>
-              Home
-            </Link>
-            <a 
-            style={{color : "black" , fontSize : "22px"}}
-            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="350">
-                            <i style={{color : "black"}} className="ri-information-line mr-3"></i>
-
-              About
-            </a>
-            <div
-              className="relative group"
-              data-aos="fade-left"
-              data-aos-delay="400"
-              ref={dropdownRef}
-              onMouseEnter={() => handleDesktopHover(true)}
-              onMouseLeave={() => handleDesktopHover(false)}
-            >
-              <button 
-              style={{color : "black" , fontSize : "22px"}}
+      <header
+        style={{
+          background: 'linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)',
+        }}
+        className="shadow-sm sticky top-0 z-50 border-b border-gray-800"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        <nav className="px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div data-aos="fade-right" data-aos-delay="200">
+              <img
+                style={{ width: '200px', height: '100px' }}
+                src="/logo.jpeg"
+                alt="MX Estimation Logo"
+                className="w-full h-full object-contain rounded-lg"
+              />
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <Link
+                style={{ color: 'black', fontSize: '22px' }}
+                href="/"
+                className="text-black-900 hover:text-white transition-colors flex items-center"
+                data-aos="fade-left"
+                data-aos-delay="300"
+              >
+                <i className="ri-home-line mr-2"></i>
+                Home
+              </Link>
+              <a
+                style={{ color: 'black', fontSize: '22px' }}
+                href="/about"
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
-                onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                data-aos="fade-left"
+                data-aos-delay="350"
               >
-                <i style={{color : "black"}} className="ri-service-line mr-2"></i>
-                Services
-                <i className="ri-arrow-down-s-line ml-1"></i>
-              </button>
+                <i style={{ color: 'black' }} className="ri-information-line mr-3"></i>
+                About
+              </a>
               <div
-                className={`absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out transform origin-top ${
-                  desktopDropdownOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'
-                } z-50`}
+                className="relative group"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                ref={dropdownRef}
+                onMouseEnter={() => handleDesktopHover(true)}
+                onMouseLeave={() => handleDesktopHover(false)}
               >
-                <div className="py-2">
+                <button
+                  style={{ color: 'black', fontSize: '22px' }}
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
+                >
+                  <i style={{ color: 'black' }} className="ri-service-line mr-2"></i>
+                  Services
+                  <i className="ri-arrow-down-s-line ml-1"></i>
+                </button>
+                <div
+                  className={`absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out transform origin-top ${
+                    desktopDropdownOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'
+                  } z-50`}
+                >
+                  <div className="py-2">
+                    {services.map((service, index) => (
+                      <Link
+                        key={service.id}
+                        href={service.href}
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                        data-aos="fade-up"
+                        data-aos-delay={450 + index * 50}
+                        onClick={() => setDesktopDropdownOpen(false)}
+                      >
+                        {service.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <a
+                style={{ color: 'black', fontSize: '22px' }}
+                href="/work"
+                className="text-gray-300 hover:text-white transition-colors flex items-center"
+                data-aos="fade-left"
+                data-aos-delay="500"
+              >
+                <i style={{ color: 'black' }} className="ri-star-line mr-2"></i>
+                Work
+              </a>
+              <Link
+                style={{ color: 'black', fontSize: '22px' }}
+                href="/contact"
+                className="text-gray-300 hover:text-white transition-colors flex items-center"
+                data-aos="fade-left"
+                data-aos-delay="550"
+              >
+                <i style={{ color: 'black' }} className="ri-contacts-line mr-2"></i>
+                Contact
+              </Link>
+            </div>
+            <a
+              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+              className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+              data-aos="fade-left"
+              data-aos-delay="600"
+              target="_blank"
+              style={{ fontSize: '20px' }}
+            >
+              Get Quote
+            </a>
+            <button
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              data-aos="fade-left"
+              data-aos-delay="650"
+            >
+              <div className="w-6 h-6 flex items-center justify-center">
+                <i className="ri-menu-line text-xl text-white"></i>
+              </div>
+            </button>
+          </div>
+          <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`} data-aos="fade-up" data-aos-delay="700">
+            <div className="flex flex-col space-y-4">
+              <a
+                style={{ color: 'black' }}
+                href="/"
+                className="text-gray-300 hover:text-white transition-colors flex items-center"
+                data-aos="fade-up"
+                data-aos-delay="750"
+              >
+                <i className="ri-home-line mr-3"></i>
+                Home
+              </a>
+              <a
+                style={{ color: 'black' }}
+                href="/about"
+                className="text-gray-300 hover:text-white transition-colors flex items-center"
+                data-aos="fade-up"
+                data-aos-delay="800"
+              >
+                <i style={{ color: 'black' }} className="ri-information-line mr-3"></i>
+                About
+              </a>
+              <div className="flex flex-col">
+                <button
+                  className="text-gray-300 hover:text-white transition-colors flex items-center"
+                  onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                  data-aos="fade-up"
+                  data-aos-delay="850"
+                  style={{ color: 'black' }}
+                >
+                  <i style={{ color: 'black' }} className="ri-service-line mr-3"></i>
+                  Services
+                  <i style={{ color: 'black' }} className="ri-arrow-down-s-line ml-1"></i>
+                </button>
+                <div
+                  className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                >
                   {services.map((service, index) => (
                     <Link
                       key={service.id}
                       href={service.href}
-                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                      className="text-black-900 hover:text-white transition-colors"
                       data-aos="fade-up"
-                      data-aos-delay={450 + index * 50}
-                      onClick={() => setDesktopDropdownOpen(false)}
+                      data-aos-delay={950 + index * 50}
+                      style={{ color: 'black' }}
                     >
                       {service.title}
                     </Link>
                   ))}
                 </div>
               </div>
-            </div>
-            <a style={{color : "black" , fontSize : "22px"}} href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="500">
-              <i style={{color : "black"}}  className="ri-star-line mr-2"></i>
-              work
-            </a>
-            <Link style={{color : "black",fontSize : "22px"}} href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-left" data-aos-delay="550">
-              <i style={{color : "black"}} className="ri-contacts-line mr-2"></i>
-              Contact
-            </Link>
-          </div>
-          <a
-  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
-  className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
-  data-aos="fade-left"
-  data-aos-delay="600"
-  target='_blank'
-  style={{fontSize : "20px"}}
->
-  Get Quote
-</a>
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} data-aos="fade-left" data-aos-delay="650">
-            <div className="w-6 h-6 flex items-center justify-center">
-              <i           
- className="ri-menu-line text-xl text-white"></i>
-            </div>
-          </button>
-        </div>
-        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`} data-aos="fade-up" data-aos-delay="700">
-          <div className="flex flex-col space-y-4">
-            <a
-            
-            style={{color : "black"}}
-            href="/" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="750">
-              <i   
- className="ri-home-line mr-3"></i>
-              Home
-            </a>
-            <a
-            style={{color : "black"}}
-            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="800">
-              <i style={{color : "black"}} className="ri-information-line mr-3"></i>
-              About
-            </a>
-            <div className="flex flex-col">
-              <button
+              <a
+                style={{ color: 'black' }}
+                href="/work"
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
-                onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 data-aos="fade-up"
-                data-aos-delay="850"
-                style={{color : "black"}}
+                data-aos-delay="1000"
               >
-                <i
-                style={{color : "black"}}
-                className="ri-service-line mr-3"></i>
-                Services
-                <i 
-                style={{color : "black"}}
-                className="ri-arrow-down-s-line ml-1"></i>
-              </button>
-              <div
-                className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
+                <i className="ri-star-line mr-3"></i>
+                Our Work
+              </a>
+              <a
+                style={{ color: 'black' }}
+                href="/contact"
+                className="text-gray-300 hover:text-white transition-colors flex items-center"
                 data-aos="fade-up"
-                data-aos-delay="900"
-               
+                data-aos-delay="1050"
               >
-                {services.map((service, index) => (
-                  <Link
-                    key={service.id}
-                    href={service.href}
-                    className="text-black-900 hover:text-white transition-colors"
-                    data-aos="fade-up"
-                    data-aos-delay={950 + index * 50}
-                    style={{color : "black"}}
-                  >
-                    {service.title}
-                  </Link>
-                ))}
-              </div>
+                <i className="ri-contacts-line mr-3"></i>
+                Contact
+              </a>
             </div>
-            <a
-            style={{color : "black"}}
-            href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1000">
-              <i className="ri-star-line mr-3"></i>
-              Our  Work
-            </a>
-            <a 
-            style={{color : "black"}}
-            href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1050">
-              <i className="ri-contacts-line mr-3"></i>
-              Contact
-            </a>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-      {/* Main Content */}
       <main className="container mx-auto px-6 py-16 space-y-16">
         <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent text-center leading-tight">
           From Sky to Estimate: Mastering Xactimate with Aerial Roof Measurements
@@ -226,18 +268,19 @@ export default function AerialRoofMeasurementsGuide() {
         <p className="text-xl text-orange-200 text-center max-w-4xl mx-auto leading-relaxed">
           The foundation of a flawless claim lies in the sky. Accurate aerial roof measurements transform the estimation process, delivering irrefutable precision. By leveraging property aerial imagery and detailed measurement reports, you can create bulletproof Xactimate Roof Sketches that ensure fast approvals and maximize profitability. This guide walks you through the journey from aerial data to a professional estimate.
         </p>
-         <center>
+        <center>
           <Image src="/Arial roof measurements PDF.jpeg" alt="Aerial Roof Measurements PDF" width={800} height={600} />
           <br />
-         <Link href="/form/Aerial-Roof-Measurements-PDF">
-    <button      data-aos="fade-up"
-className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors">
-            Order Now
-          </button>
-    
-    </Link>
-         </center>
-        {/* Card Sections */}
+          <Link href="/form/Aerial-Roof-Measurements-PDF">
+            <button
+              data-aos="fade-up"
+              className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors"
+            >
+              Order Now
+            </button>
+          </Link>
+        </center>
+
         <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
             <div className="flex items-center space-x-3 mb-4">
@@ -480,8 +523,7 @@ className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg
         </section>
       </main>
 
-      {/* Footer */}
-              <Footer/>
+      <Footer />
     </div>
   );
 }
