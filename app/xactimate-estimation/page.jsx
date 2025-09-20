@@ -36,13 +36,13 @@ export default function XactimateGuide() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      <Head>
+      <head>
         <title>Xactimate Estimation Online | Freelance Xactimation Services</title>
         <meta
           name="description"
           content="Get the accuract xactimate estimation for your project with our experienced and skillful engineers lines. get the 100% accurate estimate for your work quote now!"
         />
-      </Head>
+      </head>
 
       <header
         style={{
