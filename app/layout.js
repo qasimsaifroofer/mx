@@ -51,6 +51,9 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
           rel="stylesheet"
         />
+        
+        <meta name="google-site-verification" content="almZ8-c0gXrYmAK90agGqyEDDjEMxCwhazN7p6LjmPc" />
+        
       </head>
       <body
         style={{ backgroundColor: "black" }}
