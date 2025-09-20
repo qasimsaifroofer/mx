@@ -148,8 +148,8 @@ export default function About() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About Us - MX Estimation</title>
-        <meta name="description" content="Professional Xactimate estimation services by Level 3 certified estimators. Matterport conversion, aerial roof reports, fire/water/mold damage estimates. 24-48hr turnaround." />
+        <title>About Us</title>
+        <meta name="description" content="" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
