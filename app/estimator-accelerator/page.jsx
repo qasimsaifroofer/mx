@@ -130,7 +130,7 @@ export default function EstimatorAccelerator() {
                 data-aos-delay="500"
               >
                 <i style={{ color: "black" }} className="ri-star-line mr-2"></i>
-                work
+                Work
               </a>
               <Link
                 style={{ color: "black", fontSize: "22px" }}
