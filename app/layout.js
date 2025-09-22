@@ -5,7 +5,6 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -13,8 +12,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "default title",
-  description:
-    "default description",
+  description: "default description",
   metadataBase: new URL("https://mxestimation.com"),
   openGraph: {
     title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
@@ -24,7 +22,7 @@ export const metadata = {
     siteName: "MX Estimation",
     images: [
       {
-        url: "https://mxestimation.com/logo.jpeg", // 👈 apni hosted image ka link lagao
+        url: "https://mxestimation.com/logo.jpeg",
         width: 1200,
         height: 630,
         alt: "MX Estimation Preview",
@@ -38,7 +36,7 @@ export const metadata = {
     title: "MX Estimation - Xactimate Estimate Services",
     description:
       "Accurate and reliable cost estimates for insurance claims, property damage assessments, and repairs.",
-    images: ["https://mxestimation.com/logo.jpeg"], // 👈 same OG image
+    images: ["https://mxestimation.com/logo.jpeg"],
   },
 };
 
@@ -46,32 +44,35 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ AOS CSS CDN */}
+        {/* AOS CSS CDN */}
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
           rel="stylesheet"
         />
-        
-        <meta name="google-site-verification" content="almZ8-c0gXrYmAK90agGqyEDDjEMxCwhazN7p6LjmPc" />
-     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ML5BTCL6RB');
-</script>
-<!-- End Google Tag Manager -->
-
+        <meta
+          name="google-site-verification"
+          content="almZ8-c0gXrYmAK90agGqyEDDjEMxCwhazN7p6LjmPc"
+        />
+        {/* Google Tag Manager Script */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ML5BTCL6RB');
+            `,
+          }}
+        />
+        {/* End Google Tag Manager */}
       </head>
       <body
         style={{ backgroundColor: "black" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-
-        {/* ✅ AOS JS CDN */}
+        {/* AOS JS CDN */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script
           dangerouslySetInnerHTML={{
