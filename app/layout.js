@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         />
         
         <meta name="google-site-verification" content="almZ8-c0gXrYmAK90agGqyEDDjEMxCwhazN7p6LjmPc" />
-        <!-- Google tag (gtag.js) -->
+     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
