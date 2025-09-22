@@ -52,7 +52,7 @@ export default function AerialRoofMeasurementsGuide() {
 
   return (
     <div className="min-h-screen bg-black text-orange-300">
-      <Head>
+      <head>
         <title>Aerial Roof Measurements PDF & Property Reports | MX Estimation</title>
         <meta
           name="description"
@@ -62,7 +62,7 @@ export default function AerialRoofMeasurementsGuide() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
         />
-      </Head>
+      </head>
 
       <header
         style={{
