@@ -807,7 +807,7 @@ export default function AerialRoofMeasurementsGuide() {
                   <strong>Eliminate Mistakes:</strong> Avoid under-scoping projects.
                 </span>
               </li>
-              <li className.="flex items-start">
+              <li className="flex items-start">
                 <svg
                   className="w-5 h-5 text-orange-400 mr-2 mt-1"
                   fill="none"
