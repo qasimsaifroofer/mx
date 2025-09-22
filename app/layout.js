@@ -1,5 +1,22 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+
+// Client Component to handle dynamic title
+function DynamicTitle() {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    let title = "Get Accurate Xactimate Estimating Services - Mx Estimation";
+    if (pathname === "/aerial-roof-measurements") {
+      title = "Aerial Roof Measurements PDF & Property Reports | MX Estimation";
+    }
+    document.title = title;
+  }, [pathname]);
+
+  return null; // No UI, just updates the title
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,7 +29,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
-  description: "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
+  description:
+    "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
   metadataBase: new URL("https://mxestimation.com"),
   openGraph: {
     title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
@@ -71,6 +89,7 @@ export default function RootLayout({ children }) {
         style={{ backgroundColor: "black" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DynamicTitle />
         {children}
         {/* AOS JS CDN */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
