@@ -1,5 +1,4 @@
 'use client';
-
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,7 +13,6 @@ export default function XactimateRoofSketchGuide() {
   const [termsChecked, setTermsChecked] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
-
   let hoverTimeout;
 
   const services = [
@@ -172,7 +170,7 @@ export default function XactimateRoofSketchGuide() {
               </Link>
             </div>
             <a
-              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like“不包含任何外部图片文件 to get a quote for your services."
+              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
               className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
               data-aos="fade-left"
               data-aos-delay="600"
@@ -286,7 +284,6 @@ export default function XactimateRoofSketchGuide() {
           <p className="text-xl text-orange-200 text-center max-w-4xl mx-auto leading-relaxed">
             The accuracy of your roof estimate can make or break a job. It’s the foundation of your claim, the blueprint for your work, and the key to your profitability. In today’s fast-paced market, guessing doesn’t cut it. You need precision, speed, and clarity. This guide dives deep into mastering the Xactimate Roof Sketch, transforming complex roof structures into detailed, data-driven estimates that insurance carriers respect and approve.
           </p>
-
           <center>
             <Image src="/xactimate roof ESX.jpeg" alt="Xactimate Roof Sketch" width={800} height={600} />
             <br />
@@ -299,7 +296,6 @@ export default function XactimateRoofSketchGuide() {
               </button>
             </Link>
           </center>
-
           <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
@@ -324,8 +320,9 @@ export default function XactimateRoofSketchGuide() {
                   <span><strong>Faster Claims Approval:</strong> Professional sketches reduce back-and-forth with adjusters.</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3nodejs
-
+                  <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
                   <span><strong>Professional Credibility:</strong> Builds trust with adjusters and homeowners.</span>
                 </li>
                 <li className="flex items-start">
@@ -336,7 +333,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -370,7 +366,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +405,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -450,7 +444,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -484,7 +477,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -522,7 +514,6 @@ export default function XactimateRoofSketchGuide() {
                 </li>
               </ul>
             </div>
-
             <div className="bg-gray-900 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="flex items-center space-x-3 mb-4">
                 <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -538,7 +529,6 @@ export default function XactimateRoofSketchGuide() {
             </div>
           </section>
         </main>
-
         <Footer />
       </div>
     </>
