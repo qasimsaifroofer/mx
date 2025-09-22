@@ -1,22 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
-
-// Client Component to handle dynamic title
-function DynamicTitle() {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    let title = "Get Accurate Xactimate Estimating Services - Mx Estimation";
-    if (pathname === "/aerial-roof-measurements") {
-      title = "Aerial Roof Measurements PDF & Property Reports | MX Estimation";
-    }
-    document.title = title;
-  }, [pathname]);
-
-  return null; // No UI, just updates the title
-}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +10,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+// Default metadata
+const defaultMetadata = {
   title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
   description:
     "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
@@ -58,40 +42,73 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+// Metadata for Aerial Roof Measurements PDF page
+const aerialRoofMetadata = {
+  title: "Aerial Roof Measurements PDF",
+  description:
+    "Download accurate Aerial Roof Measurements PDFs for precise construction and estimation projects with MX Estimation.",
+  metadataBase: new URL("https://mxestimation.com"),
+  openGraph: {
+    title: "Aerial Roof Measurements PDF",
+    description:
+      "Download accurate Aerial Roof Measurements PDFs for precise construction and estimation projects with MX Estimation.",
+    url: "https://mxestimation.com/aerial-roof-measurements-pdf",
+    siteName: "MX Estimation",
+    images: [
+      {
+        url: "https://mxestimation.com/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Aerial Roof Measurements PDF Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aerial Roof Measurements PDF - MX Estimation",
+    description:
+      "Accurate Aerial Roof Measurements PDFs for construction and estimation projects.",
+    images: ["https://mxestimation.com/logo.jpeg"],
+  },
+};
+
+export default function RootLayout({ children, pageProps }) {
+  // Determine if the current page is the Aerial Roof Measurements PDF page
+  // Replace this logic with your actual page detection mechanism (e.g., based on route or pageProps)
+  const isAerialRoofPage = pageProps?.pageName === "aerial-roof-measurements-pdf" || false;
+  const metadata = isAerialRoofPage ? aerialRoofMetadata : defaultMetadata;
+
   return (
     <html lang="en">
       <head>
-        {/* AOS CSS CDN */}
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:site_name" content={metadata.openGraph.siteName} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
+        <meta property="og:image:width" content={metadata.openGraph.images[0].width} />
+        <meta property="og:image:height" content={metadata.openGraph.images[0].height} />
+        <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
+        <meta property="og:locale" content={metadata.openGraph.locale} />
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.images[0]} />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
           rel="stylesheet"
         />
-        <meta
-          name="google-site-verification"
-          content="almZ8-c0gXrYmAK90agGqyEDDjEMxCwhazN7p6LjmPc"
-        />
-        {/* Google Tag Manager Script */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ML5BTCL6RB');
-            `,
-          }}
-        />
-        {/* End Google Tag Manager */}
       </head>
       <body
         style={{ backgroundColor: "black" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DynamicTitle />
         {children}
-        {/* AOS JS CDN */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -107,3 +124,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+export const metadata = (pageProps) => {
+  const isAerialRoofPage = pageProps?.pageName === "aerial-roof-measurements-pdf" || false;
+  return isAerialRoofPage ? aerialRoofMetadata : defaultMetadata;
+};
