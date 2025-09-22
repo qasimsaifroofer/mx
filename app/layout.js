@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+ult import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
+  title: "default title",
   description:
     "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
   metadataBase: new URL("https://mxestimation.com"),
