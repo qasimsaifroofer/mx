@@ -1,12 +1,10 @@
+"use client"
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
 import Footer from "../components/Footer";
-export const metadata = {
-  title: "Aerial Roof Measurements PDF & Property Reports | MX Estimation",
-  description: "Master Xactimate with accurate aerial roof measurements. Learn to leverage property aerial imagery and measurement reports to create precise, bulletproof roof estimates.",
-};
+
 export default function AerialRoofMeasurementsGuide() {
   const services =  [
   
@@ -54,7 +52,11 @@ export default function AerialRoofMeasurementsGuide() {
   return (
     <div className="min-h-screen bg-black text-orange-300">
       <Head>
-      
+        <title>Aerial Roof Measurements PDF & Property Reports | MX Estimation</title>
+        <meta
+          name="description"
+          content="Master Xactimate with accurate aerial roof measurements. Learn to leverage property aerial imagery and measurement reports to create precise, bulletproof roof estimates."
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
