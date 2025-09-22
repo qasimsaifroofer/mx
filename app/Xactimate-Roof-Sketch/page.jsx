@@ -53,6 +53,17 @@ export default function XactimateRoofSketchGuide() {
 
   return (
     <>
+      <Head>
+        <title>Master Xactimate Roof Sketching for Faster Estimates</title>
+        <meta
+          name="description"
+          content="Learn how to master Xactimate roof sketching for faster, more accurate estimates. Boost your efficiency and improve your workflow with expert tips and tools."
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
+        />
+      </Head>
       <header
         style={{
           background: 'linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)',
@@ -161,7 +172,7 @@ export default function XactimateRoofSketchGuide() {
               </Link>
             </div>
             <a
-              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like“不包含任何外部图片文件 to get a quote for your services."
               className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
               data-aos="fade-left"
               data-aos-delay="600"
@@ -268,18 +279,6 @@ export default function XactimateRoofSketchGuide() {
         </nav>
       </header>
       <div className="min-h-screen bg-black text-orange-300">
-        <Head>
-          <title>Master the Xactimate Roof Sketch | Accurate Estimating Guide</title>
-          <meta
-            name="description"
-            content="Get a precise roof sketch in Xactimate. Our guide for complex measurements accurate estimates for faster approvals and maximized profitability for contractors."
-          />
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
-          />
-        </Head>
-
         <main className="container mx-auto px-6 py-16 space-y-16">
           <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent text-center leading-tight">
             Master Your Roof Estimates: The Ultimate Guide to Xactimate Roof Sketch
@@ -325,9 +324,8 @@ export default function XactimateRoofSketchGuide() {
                   <span><strong>Faster Claims Approval:</strong> Professional sketches reduce back-and-forth with adjusters.</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+                  <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3nodejs
+
                   <span><strong>Professional Credibility:</strong> Builds trust with adjusters and homeowners.</span>
                 </li>
                 <li className="flex items-start">
