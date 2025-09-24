@@ -28,6 +28,10 @@ export default function MatterportPage() {
           { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
           { id: "Xactimate-Roof-Sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
         ];
+
+  useEffect(() => {
+  document.title = "Convert Matterport Scans into Xactimate Sketch Easily";
+}, []);
           let hoverTimeout;
 
           const handleDesktopHover = (isHovering) => {
