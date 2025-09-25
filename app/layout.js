@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 const defaultMetadata = {
   title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
   description:
-    "Mx Estamation Offers accurate, construction estimating services and handling all the trade like commercial, industrial, and residential projects so qoute us now!",
+    "",
   metadataBase: new URL("https://mxestimation.com"),
   openGraph: {
     title: "Get Accurate Xactimate Estimating Services - Mx Estimation",
