@@ -44,7 +44,7 @@ export default function InteriorDamageEstimate() {
                 <title>Interior Damage Estimate Services | Roof & Fire Damage Experts</title>
                 <meta
                     name="description"
-                    content="Explore the best interior damage estimate services in the USA. From tornado and fire-related damage to professional restoration planning, learn how MX Estimation provides accurate and reliable assessments."
+                    content="Get accurate interior damage estimates for roof damage from tornadoes or interior damage caused by fire. Our professional interior estimate services help."
                 />
             </Head>
             <header style={{
