@@ -46,6 +46,7 @@ export default function InteriorDamageEstimate() {
                     name="description"
                     content="Get accurate interior damage estimates for roof damage from tornadoes or interior damage caused by fire. Our professional interior estimate services help."
                 />
+                <link rel="canonical" href="https://mxestimation.com/xactimate-interior-estimate" />
             </Head>
             <header style={{
                 background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
