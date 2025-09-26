@@ -109,7 +109,7 @@ export default function OurWork() {
 
   return (
     <>
-      <Head>
+      <head>
         <title>Our Work - MX Estimation</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -117,7 +117,7 @@ export default function OurWork() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
-      </Head>
+      </head>
 
       {/* Header */}
       <header   style={{
