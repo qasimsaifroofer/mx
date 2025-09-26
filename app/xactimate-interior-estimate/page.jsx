@@ -1,6 +1,5 @@
 "use client"
 
-import Head from "next/head";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 
@@ -40,14 +39,14 @@ export default function InteriorDamageEstimate() {
 
     return (
         <div className="min-h-screen bg-black text-gray-200">
-            <Head>
+            <head>
                 <title>Interior Damage Estimate Services | Roof & Fire Damage Experts</title>
                 <meta
                     name="description"
                     content="Get accurate interior damage estimates for roof damage from tornadoes or interior damage caused by fire. Our professional interior estimate services help."
                 />
                 <link rel="canonical" href="https://mxestimation.com/xactimate-interior-estimate" />
-            </Head>
+            </head>
             <header style={{
                 background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
             }} className="shadow-sm sticky top-0 z-50 border-b border-gray-800" data-aos="fade-down" data-aos-delay="100">
