@@ -1,5 +1,4 @@
 'use client';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
@@ -51,7 +50,7 @@ export default function XactimateRoofSketchGuide() {
 
   return (
     <>
-      <Head>
+      <head>
         <title>Master Xactimate Roof Sketching for Faster Estimates</title>
         <meta
           name="description"
@@ -61,7 +60,7 @@ export default function XactimateRoofSketchGuide() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
         />
-      </Head>
+      </head>
       <header
         style={{
           background: 'linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)',
