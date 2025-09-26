@@ -217,17 +217,6 @@ export default function SymbilitySketchGuide() {
       </nav>
     </header>
     <div className="min-h-screen bg-black text-orange-300">
-      <Head>
-        <title>Understanding Symbility Sketch XML: A Comprehensive Guide</title>
-        <meta
-          name="description"
-          content="A comprehensive guide to Symbility Sketch XML, covering conversion from Xactimate, interior sketches, symbols, and best practices for insurance and restoration professionals."
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
-        />
-      </Head>
 
       {/* Main Content */}
       <main className="container mx-auto px-6 py-16 space-y-16">
