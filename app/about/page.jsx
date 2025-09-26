@@ -145,7 +145,7 @@ export default function About() {
 
   return (
     <>
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> MX Estimation | About Us</title>
@@ -205,7 +205,7 @@ export default function About() {
             -moz-osx-font-smoothing: grayscale;
           }
         `}</style>
-      </Head>
+      </head>
       <div className="bg-black text-white">
 
       {/* Header */}
