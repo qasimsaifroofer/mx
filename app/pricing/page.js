@@ -51,10 +51,10 @@ const PricingPage = () => {
 
   return (
     <>
-      <Head>
+      <head>
         <title>Pricing - MX Estimation</title>
         <meta name="description" content="Transparent fixed pricing for Xactimate estimates, roof ESX, Matterport conversions, interior estimates, and more." />
-      </Head>
+      </head>
       <div className="bg-black text-white overflow-x-hidden">
         <Header />
 
