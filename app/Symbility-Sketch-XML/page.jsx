@@ -1,5 +1,4 @@
 "use client"
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
@@ -51,6 +50,10 @@ export default function SymbilitySketchGuide() {
 
   return (
     <>
+    <head>
+  <title>Symbility Sketch XML Guide</title>
+  <meta name="description" content="Explore our comprehensive guide to Symbility Sketch XML, detailing conversion from Xactimate, interior sketching, symbol usage, and best practices for insurance and restoration professionals." />
+</head>
      <header   style={{
               background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",
               
