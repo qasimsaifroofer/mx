@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState , useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from './components/Header';
@@ -149,7 +148,7 @@ const Home = () => {
 
   return (
     <>
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Xactimate Services in the USA: Precision Estimating with MX Estimation | Professional Xactimate Estimator</title>
@@ -210,7 +209,7 @@ const Home = () => {
             -moz-osx-font-smoothing: grayscale;
           }
         `}</style>
-      </Head>
+      </head>
       <div className="bg-black text-white overflow-x-hidden">
       <Header />
         <main>
