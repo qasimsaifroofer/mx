@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import { Cormorant } from 'next/font/google';
 
@@ -174,7 +173,7 @@ ${formData.firstName} ${formData.lastName}
 
   return (
     <>
-      <Head>
+      <head>
         <title>Contact - Estimation Xactimate</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -185,7 +184,7 @@ ${formData.firstName} ${formData.lastName}
         <style>{`
           :where([class^="ri-"])::before { content: "\\f3c2"; }
         `}</style>
-      </Head>
+      </head>
       <div className="bg-black text-white min-h-screen">
         {/* Header */}
         <header style={{
