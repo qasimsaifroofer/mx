@@ -12,8 +12,8 @@ export default function AerialRoofMeasurementsGuide() {
     { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
     { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
     { id: "aerial-roof-measurements-pdf", title: "Aerial Roof Measurements PDF", href: "/aerial-roof-measurements-pdf" },
-    { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/symbility-sketch-xml" },
-    { id: "xactimate-roof-sketch", title: "Xactimate Roof Sketch", href: "/xactimate-roof-sketch" },
+    { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
+    { id: "xactimate-roof-sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
   ];
 
   const dropdownRef = useRef(null);
@@ -26,8 +26,6 @@ export default function AerialRoofMeasurementsGuide() {
   let hoverTimeout;
 
   useEffect(() => {
-    // Dynamically set the document title when the page loads
-    document.title = "Aerial Roof Measurements PDF";
 
     // Handle click outside for dropdown
     function handleClickOutside(event) {
@@ -53,6 +51,10 @@ export default function AerialRoofMeasurementsGuide() {
   };
 
   return (
+    <>
+      <head>
+      <title>Aerial Roof Measurements PDF</title>
+<meta name="description" content="Master Xactimate with precise aerial roof measurements. Learn how to leverage aerial imagery for accurate, efficient, and profitable roofing estimates with our comprehensive guide." />      </head>
     <div className="min-h-screen bg-black text-orange-300">
       <header
         style={{
@@ -870,5 +872,6 @@ export default function AerialRoofMeasurementsGuide() {
       </main>
       <Footer />
     </div>
+            </>
   );
 }
