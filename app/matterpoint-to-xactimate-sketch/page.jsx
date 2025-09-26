@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
@@ -35,13 +34,13 @@ export default function MatterportPage() {
 
   return (
     <>
-      <Head>
+      <head>
         <title>Convert Matterport Scans to Xactimate Easily</title>
         <meta
           name="description"
           content="Learn how to convert Matterport to Xactimate sketch easily. Discover fast, accurate methods to streamline claims, boost efficiency, and simplify workflows."
         />
-      </Head>
+      </head>
       <header
         style={{
           background: "linear-gradient(100deg, rgba(238, 210, 86, 0.98) 40%, black 100%)",
