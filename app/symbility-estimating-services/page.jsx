@@ -1,6 +1,4 @@
 'use client';
-
-import Head from 'next/head';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 
@@ -36,13 +34,13 @@ export default function InteriorDamageEstimate() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      <Head>
+      <head>
         <title>Symbility Estimating Services | Insurance & Claims Estimating Solutions</title>
         <meta
           name="description"
           content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims."
         />
-      </Head>
+      </head>
 
       <header
         style={{
