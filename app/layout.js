@@ -13,8 +13,6 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children, pageProps }) {
 
   const isAerialRoofPage = pageProps?.pageName === "aerial-roof-measurements-pdf" || false;
-  const metadata = isAerialRoofPage ? aerialRoofMetadata : defaultMetadata;
-
   return (
     <html lang="en">
       <head>
@@ -44,7 +42,4 @@ export default function RootLayout({ children, pageProps }) {
   );
 }
 
-export const metadata = (pageProps) => {
-  const isAerialRoofPage = pageProps?.pageName === "aerial-roof-measurements-pdf" || false;
-  return isAerialRoofPage ? aerialRoofMetadata : defaultMetadata;
-};
+
