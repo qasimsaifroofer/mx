@@ -1,0 +1,7 @@
+User-agent: * 
+Disallow: /contact
+Disallow: /about
+Disallow: /pricing
+Disallow: /work
+
+Sitemap: https://mxestimation.com/sitemap.xml
