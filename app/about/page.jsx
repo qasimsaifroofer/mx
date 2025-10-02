@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 
 export default function About() {
 
@@ -207,6 +208,31 @@ export default function About() {
           }
         `}</style>
       </head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/about",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
       <div className="bg-black text-white">
 
       {/* Header */}

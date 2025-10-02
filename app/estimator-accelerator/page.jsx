@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useRef, useState } from 'react';
+import Script from 'next/script';
 
 export default function EstimatorAccelerator() {
   const [activeSection, setActiveSection] = useState(null);
@@ -46,6 +47,31 @@ export default function EstimatorAccelerator() {
         <meta name="description" content="Get our Xactimate Estimator Training which helps people to beginner to expert level of insurance restoration estimating in just 4 weeks, quote now." />
          <link rel="canonical" href="https://mxestimation.com/estimator-accelerator" />
       </head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/estimator-accelerator",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
       <header
         style={{
           background: "linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)",

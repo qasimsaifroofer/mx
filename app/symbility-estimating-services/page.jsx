@@ -1,6 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
+import Head from 'next/head';
+import Script from 'next/script';
 
 export default function InteriorDamageEstimate() {
   const dropdownRef = useRef(null);
@@ -34,13 +36,39 @@ export default function InteriorDamageEstimate() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      <head>
+      <Head>
         <title>Symbility Estimating Services | Insurance & Claims Estimating Solutions</title>
         <meta
           name="description"
           content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims."
         />
-      </head>
+        <link rel="canonical" href="https://mxestimation.com/symbility-estimating-services" />
+      </Head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/symbility-estimating-services",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
 
       <header
         style={{

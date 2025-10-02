@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Cormorant } from 'next/font/google';
+import Script from 'next/script';
 
 const ContactPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -186,6 +187,31 @@ ${formData.firstName} ${formData.lastName}
           :where([class^="ri-"])::before { content: "\\f3c2"; }
         `}</style>
       </head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/contact",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
       <div className="bg-black text-white min-h-screen">
         {/* Header */}
         <header style={{

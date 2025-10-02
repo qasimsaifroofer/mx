@@ -45,6 +45,31 @@ export default function InteriorDamageEstimate() {
                 />
                 <link rel="canonical" href="https://mxestimation.com/xactimate-interior-estimate" />
             </Head>
+            <Script 
+                id="matterport-schema"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "MX Estimation",
+                        "url": "https://mxestimation.com/xactimate-interior-estimate",
+                        "logo": "https://mxestimation.com/logo.jpeg",
+                        "alternateName": "Xactimate Estimation",
+                        "contactPoint": [
+                          {
+                            "@type": "ContactPoint",
+                            "telephone": "+923034297361",
+                            "contactType": "customer service",
+                            "email": "qasimroofer@gmail.com",
+                            "areaServed": "PK",
+                            "availableLanguage": "en"
+                          }
+                        ]
+                    })
+                }}
+            />
 
             {/* Schema.org structured data for Organization */}
             <Script 

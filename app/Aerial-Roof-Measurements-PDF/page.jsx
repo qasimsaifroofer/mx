@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
+import Script from "next/script";
 import { useEffect, useState, useRef } from "react";
 import Footer from "../components/Footer";
 
@@ -52,11 +54,37 @@ export default function AerialRoofMeasurementsGuide() {
 
   return (
     <>
-      <head>
-      <title>Aerial Roof Measurements PDF</title>
-<meta name="description" content="Master Xactimate with precise aerial roof measurements. Learn how to leverage aerial imagery for accurate, efficient, and profitable roofing estimates with our comprehensive guide." />      </head>
+      <Head>
+        <title>Aerial Roof Measurements PDF</title>
+        <meta name="description" content="Master Xactimate with precise aerial roof measurements. Learn how to leverage aerial imagery for accurate, efficient, and profitable roofing estimates with our comprehensive guide." />
+        <link rel="canonical" href="https://mxestimation.com/Aerial-Roof-Measurements-PDF" />
+      </Head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/Aerial-Roof-Measurements-PDF",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
     <div className="min-h-screen bg-black text-orange-300">
-    <link rel="canonical" href="https://mxestimation.com/Aerial-Roof-Measurements-PDF" />
 
       <header
         style={{

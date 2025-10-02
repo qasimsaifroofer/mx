@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
+import Script from 'next/script';
 import { useState, useRef, useEffect } from 'react';
 import Footer from '../components/Footer';
 
@@ -50,7 +52,7 @@ export default function XactimateRoofSketchGuide() {
 
   return (
     <>
-      <head>
+      <Head>
         <title>Master Xactimate Roof Sketching for Faster Estimates</title>
         <meta
           name="description"
@@ -61,7 +63,32 @@ export default function XactimateRoofSketchGuide() {
           href="https://cdn.jsdelivr.net/npm/@heroicons/react/24/outline/index.css"
         />
         <link rel="canonical" href="https://mxestimation.com/Xactimate-Roof-Sketch" />
-      </head>
+      </Head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com/Xactimate-Roof-Sketch",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
       <header
         style={{
           background: 'linear-gradient(100deg,rgba(238, 210, 86, 0.98) 40%, black 100%)',

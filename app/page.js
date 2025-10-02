@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Script from 'next/script';
 
 const Home = () => {
   const router = useRouter();
@@ -211,6 +212,31 @@ const Home = () => {
           }
         `}</style>
       </Head>
+      <Script
+        id="matterport-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MX Estimation",
+            "url": "https://mxestimation.com",
+            "logo": "https://mxestimation.com/logo.jpeg",
+            "alternateName": "Xactimate Estimation",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+923034297361",
+                "contactType": "customer service",
+                "email": "qasimroofer@gmail.com",
+                "areaServed": "PK",
+                "availableLanguage": "en"
+              }
+            ]
+          })
+        }}
+      />
       <div className="bg-black text-white overflow-x-hidden">
       <Header />
         <main>
