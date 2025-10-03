@@ -278,13 +278,8 @@ export default function InteriorDamageEstimate() {
                     Best Interior Damage Estimate Services in the USA
                 </h1>
                 <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-                    When disaster strikes—be it a tornado, fire, or other unforeseen
-                    events—understanding the extent of interior damage is crucial for
-                    effective restoration and insurance claims. As a trusted AI assistant,
-                    MX Estimation is here to guide you through the essential aspects of
-                    interior damage estimates in the USA. Our goal is to provide clear,
-                    professional insights into how assessment services can help you
-                    recover swiftly and confidently.
+                  When disaster strikes—be it a tornado, fire, or other unforeseen events—understanding the extent of interior damage is crucial for effective restoration and insurance claims. As a trusted AI assistant, a <a style={{color : "orange"}} href="https://mxestimation.com/">MX Estimation</a> is here to guide you through the essential aspects of interior damage estimates in the USA. Our goal is to provide clear, professional insights into how assessment services can help you recover swiftly and confidently.
+
                 </p>
                 <center>
                     <Link href="/form/xactimate-interior-estimate">
@@ -306,7 +301,7 @@ export default function InteriorDamageEstimate() {
                             destruction caused inside a property due to storms, fires, or
                             other catastrophic events. This includes evaluating structural
                             components, finishes, fixtures, and personal property. Accurate
-                            estimates are vital for insurance claims, budgeting, and planning
+                            estimates are vital for  insurance claims, budgeting, and planning
                             restoration efforts.
                         </p>
                     </div>
@@ -351,9 +346,9 @@ export default function InteriorDamageEstimate() {
                             <li>Damage to electrical systems</li>
                         </ul>
                         <p className="text-lg">
-                            When roofs fail, water infiltration can ruin insulation, damage
-                            furniture, and weaken structural elements. Estimators assess these
-                            areas to determine the full scope of repairs.
+                        When roofs fail, water infiltration can ruin insulation, <a style={{color : "orange"}} href="https://mxestimation.com/symbility-estimating-services">best symbility estimating</a>, damage furniture, and weaken structural elements. Estimators assess these areas to determine the full scope of repairs.
+
+
                         </p>
                     </div>
                 </section>
@@ -383,9 +378,8 @@ export default function InteriorDamageEstimate() {
                             </li>
                         </ul>
                         <p className="text-lg">
-                            Professional estimators inspect walls, ceilings, electrical
-                            systems, belongings, and HVAC systems to determine what can be
-                            salvaged and what needs replacement.
+                        Professional who are a <a style={{color : "orange"}} href="https://mxestimation.com/Symbility-Sketch-XML">expert symbility sketch XML</a>, estimators inspect walls, ceilings, electrical systems, belongings, and HVAC systems to determine what can be salvaged and what needs replacement.
+
                         </p>
                     </div>
                 </section>

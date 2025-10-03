@@ -359,13 +359,15 @@ export default function MatterportPage() {
             <div>
               <h3 className="text-lg font-semibold text-orange-300">What is the Matterpoint to Xactimate Converter?</h3>
               <p className="mt-2 text-orange-200/80 text-sm leading-relaxed">
-                The Matterpoint to Xactimate converter is a specialized tool that seamlessly transfers data from Matterport scans and Matterpoint AI analyses into Xactimate, a widely used estimating software in the USA. This integration simplifies the workflow by eliminating manual data entry, reducing errors, and speeding up the claims process.
+              The Matterpoint to Xactimate converter is a specialized tool that seamlessly transfers data from Matterport scans and Matterpoint AI analyses into Xactimate, very useful in  <a style={{color : "orange"}} href="https://mxestimation.com/xactimate-estimation">xactimate estimating service</a>  and widely used estimating software in the USA. This integration simplifies the workflow by eliminating manual data entry, reducing errors, and speeding up the claims process.
+
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-orange-300">How Does It Benefit US-Based Professionals?</h3>
               <p className="mt-2 text-orange-200/80 text-sm leading-relaxed">
-                In the USA, insurance companies and restoration contractors rely heavily on Xactimate for accurate cost estimation. The converter ensures that spatial measurements, damage details, and property data captured via Matterport are directly imported into Xactimate. This integration results in more precise estimates, faster claim settlements, and improved customer trust. It also aligns with industry standards and regulatory requirements across different states.
+              In the USA, insurance companies and restoration contractors rely heavily on Xactimate for accurate cost estimation. The converter ensures that spatial measurements, damage details, and property data captured via Matterport are directly imported into Xactimate. Also providing a <a style={{color : "orange"}} href="https://mxestimation.com/aerial-roof-measurements-pdf">Areil roof measurement PDF services</a> and integration results in more precise estimates, faster claim settlements, and improved customer trust. It also aligns with industry standards and regulatory requirements across different states.
+
               </p>
             </div>
           </div>
@@ -376,7 +378,8 @@ export default function MatterportPage() {
             <div>
               <h3 className="text-lg font-semibold text-orange-300">Innovation Driven by AI</h3>
               <p className="mt-2 text-orange-200/80 text-sm leading-relaxed">
-                The combination of Matterport, Matterpoint AI, and the converter exemplifies how AI-driven products are revolutionizing property assessment and claims management. These tools enable professionals to operate more efficiently while maintaining a human touch—listening to clients, understanding their needs, and providing empathetic service.
+              The combination of Matterport, Matterpoint AI, and the converter exemplifies how AI-driven products are revolutionizing property assessment and claims management. Also offering a <a style={{color : "orange"}} href="https://mxestimation.com/xactimate-Roof-sketch">Xactimate roof sketch</a> and helping tools enable professionals to operate more efficiently while maintaining a human touch—listening to clients, understanding their needs, and providing empathetic service.
+
               </p>
             </div>
             <div>

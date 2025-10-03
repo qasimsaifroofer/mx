@@ -318,7 +318,8 @@ export default function XactimateGuide() {
           Comprehensive Guide to Xactimate Estimation for Contractors in the USA
         </h1>
         <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-          In the competitive world of construction and restoration, accurate cost estimation is crucial for project success. Xactimate, a leading software developed by Xactware, has become the industry standard for property insurance claims, restoration, and construction estimates across the United States. This guide provides an in-depth look at Xactimate estimation, highlighting the best online options, its application for contractors, roofing estimates, and cost considerations for remodel projects.
+        In the competitive world of construction and restoration, accurate cost estimation is crucial for project success. Xactimate, a leading software developed by Xactware who are handling <a style={{color : "orange"}} href="https://mxestimation.com/estimator-accelerator">Xactimate accelerator services</a>, has become the industry standard for property insurance claims, restoration, and construction estimates across the United States. This guide provides an in-depth look at Xactimate estimation, highlighting the best online options, its application for contractors, roofing estimates, and cost considerations for remodel projects.
+
         </p>
         <center>
           <Link href="/form/xactimate-estimate">
@@ -370,7 +371,8 @@ export default function XactimateGuide() {
           </h2>
           <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
             <p className="text-lg">
-              Contractors across the USA rely on Xactimate to improve accuracy and efficiency in their estimating process. Here's how Xactimate benefits contractors:
+            Contractors across the USA rely on <a style={{color : "orange"}} href="https://mxestimation.com/estimator-accelerator">Xactimate estimating</a>  to improve accuracy and efficiency in their estimating process. Here's how Xactimate benefits contractors:
+
             </p>
             <ul className="list-disc pl-6 space-y-3">
               <li>
@@ -429,7 +431,9 @@ export default function XactimateGuide() {
           </h2>
           <div className="bg-zinc-900 rounded-2xl p-6 shadow-md space-y-4">
             <p className="text-lg">
-              Remodel projects can vary significantly in scope and complexity. Xactimate provides contractors with the tools needed to produce reliable remodel estimates, covering everything from minor upgrades to extensive renovations.
+             
+Remodel projects can vary significantly in scope and complexity. <a style={{color : "orange"}} href="https://mxestimation.com/ xactimate-interior-estimate">Xactimate Interior estimate</a>  provides contractors with the tools needed to produce reliable remodel estimates, covering everything from minor upgrades to extensive renovations.
+
             </p>
             <ul className="list-disc pl-6 space-y-3">
               <li>

@@ -322,7 +322,8 @@ export default function EstimatorAccelerator() {
                   In the competitive landscape of the insurance restoration industry in the United States, having the right skills and knowledge is essential for success. Insurance estimator training provides professionals with the tools they need to excel in this field, ensuring accurate assessments and efficient claims processing.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Whether you're a seasoned contractor or new to the industry, investing in estimator training can significantly enhance your capabilities and career prospects.
+                Whether you're a seasoned contractor or new to the industry, investing in estimator training can significantly enhance of <a style={{color : "orange"}} href="https://mxestimation.com/xactimate-estimation">Xactimate estimation</a> work and your capabilities and career prospects.
+
                 </p>
               </div>
               <div className="bg-gradient-to-br from-[#0b0b0b] to-[#0f0a00] border border-orange-900/40 p-8 rounded-2xl shadow-lg">

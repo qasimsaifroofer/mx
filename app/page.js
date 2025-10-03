@@ -150,7 +150,7 @@ const Home = () => {
 
   return (
     <>
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Xactimate Services in the USA: Precision Estimating with MX Estimation | Professional Xactimate Estimator</title>
@@ -211,7 +211,7 @@ const Home = () => {
             -moz-osx-font-smoothing: grayscale;
           }
         `}</style>
-      </Head>
+      </head>
       <Script
         id="matterport-schema"
         type="application/ld+json"
@@ -339,7 +339,10 @@ const Home = () => {
                 <div className="space-y-6" data-aos="fade-left" data-aos-delay="500">
                   <div className="bg-gray-900 rounded-2xl p-8 border border-orange-400" data-aos="fade-up" data-aos-delay="600">
                     <h4 className="text-2xl font-bold text-orange-400 mb-4">🛠 What Makes a Great Xactimate Estimator?</h4>
-                    <p className="text-gray-300 text-lg mb-6">A skilled Xactimate estimator doesn't just crunch numbers—they understand the nuances of property damage, regional pricing, and insurance protocols. In the USA, top estimation companies rely on certified professionals who combine technical expertise with real-world insight.</p>
+                    <p className="text-gray-300 text-lg mb-6">A skilled Xactimate estimator doesn't just crunch numbers—they understand the nuances of property damage, regional pricing, and insurance protocols. With <a style={{color : "orange"}} href="https://mxestimation.com/xactimate-estimation">
+                    our best xactimate estimation
+                      </a>  In the USA, top estimation companies rely on certified professionals who combine technical expertise with real-world insight.
+                    </p>
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3">
                         <div className="w-6 h-6 flex items-center justify-center bg-orange-500 rounded-full">
@@ -786,7 +789,8 @@ const Home = () => {
           Xactimate Roof Sketch ESX gives you the ability to create professional and accurate roof designs. With this tool, contractors, estimators, and insurance adjusters can easily create complex roof layouts.
           </p>
           <p className="text-white-700 text-xl leading-relaxed">
-          This software provides precise measurements and automated calculations that save time and minimize errors, making it a must-have solution for roofing projects.
+          This software provides precise measurements on the <a href="https://mxestimation.com/xactimate-Roof-sketch">complicated roof in sketch</a> and their automated calculations that save time and minimize errors, making it a must-have solution for roofing projects.
+
           </p>
         </div>
         <div>
@@ -821,7 +825,8 @@ const Home = () => {
           Matterport to xactimate ESX
           </h2>
           <p className="text-white-700 text-xl leading-relaxed mb-6">
-          Converting Matterport scans into Xactimate ESX files helps contractors, estimators, and insurance adjusters save valuable time while ensuring accuracy. With this process, you can transform 3D scans into detailed, ready-to-use roof or property sketches compatible with Xactimate.
+          Converting Matterport scans into Xactimate ESX files helps contractors, estimators, and insurance adjusters save valuable time while ensuring accuracy. With this process <a style={{color : "orange"}} href="https://mxestimation.com/matterpoint-to-xactimate-sketch">matterport to xactimate sketch</a>  that you can transform 3D scans into detailed, ready-to-use roof or property sketches compatible with Xactimate.
+
           </p>
           <p className="text-white-700 text-xl leading-relaxed">
           This service eliminates the need for manual measurements by providing precise dimensions and automated calculations directly from Matterport data. It speeds up project estimates, reduces errors, and ensures that your reports are professional and reliable.

@@ -291,7 +291,8 @@ export default function AerialRoofMeasurementsGuide() {
           From Sky to Estimate: Mastering Xactimate with Aerial Roof Measurements
         </h1>
         <p className="text-xl text-orange-200 text-center max-w-4xl mx-auto leading-relaxed">
-          The foundation of a flawless claim lies in the sky. Accurate aerial roof measurements transform the estimation process, delivering irrefutable precision. By leveraging property aerial imagery and detailed measurement reports, you can create bulletproof Xactimate Roof Sketches that ensure fast approvals and maximize profitability. This guide walks you through the journey from aerial data to a professional estimate.
+        The foundation of a flawless claim lies in the sky. Accurate aerial roof measurements transform the estimation process by correct , delivering irrefutable precision. By leveraging property aerial imagery and detailed measurement reports, you can create bulletproof Xactimate Roof Sketches that ensure fast approvals and maximize profitability. Also providing <a style={{color : "orange"}} href="https://mxestimation.com/matterpoint-to-xactimate-sketch">matterpoint to xactimate services</a> this guide walks you through the journey from aerial data to a professional estimate.
+
         </p>
         <center>
           <Image
@@ -351,7 +352,8 @@ export default function AerialRoofMeasurementsGuide() {
                   />
                 </svg>
                 <span>
-                  <strong>Eliminated Errors:</strong> Avoid costly mistakes in hips, valleys, or pitch.
+                  <strong>Fast Reliable:</strong> <a style={{color : "orange"}} href="https://mxestimation.com/xactimate-estimation">xactimate estimating services</a> which will help you a lot. 
+                  .
                 </span>
               </li>
               <li className="flex items-start">
@@ -836,7 +838,7 @@ export default function AerialRoofMeasurementsGuide() {
                   />
                 </svg>
                 <span>
-                  <strong>Eliminate Mistakes:</strong> Avoid under-scoping projects.
+                  <strong>Eliminate Mistakes:</strong> Also easily get the <a style={{color : "orange"}} href="https://mxestimation.com/Symbility-Sketch-XML">Symbility Claims Estimating Solutions</a> within a short span of time
                 </span>
               </li>
               <li className="flex items-start">
