@@ -120,6 +120,24 @@ const Header = () => {
               <i className="ri-exchange-dollar-line mr-2"></i>
               Pricing
             </Link>
+            <Link href="/blogs" className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl" data-aos="fade-left" data-aos-delay="575">
+              <i className="ri-article-line mr-2"></i>
+              Blogs
+            </Link>
+            <div className="flex items-center space-x-3 border-l border-gray-300/40 pl-4">
+              <a href="https://youtube.com/@malikxactimator" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="YouTube">
+                <i className="ri-youtube-fill text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/malik-saif-a56510249" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="LinkedIn">
+                <i className="ri-linkedin-fill text-xl"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1KY72nkShY/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Facebook">
+                <i className="ri-facebook-fill text-xl"></i>
+              </a>
+              <a href="https://www.instagram.com/mx_estimation" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Instagram">
+                <i className="ri-instagram-fill text-xl"></i>
+              </a>
+            </div>
           </div>
           <a
             href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
@@ -140,7 +158,8 @@ const Header = () => {
           <div className="flex flex-col space-y-4">
             <a
               style={{ color: "black" }}
-              href="/" className="text-gray-300 hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="750">
+              href="/"
+              className="text-gray-300 hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="750">
               <i className="ri-home-line mr-3"></i>
               Home
             </a>
@@ -200,6 +219,12 @@ const Header = () => {
               Pricing
             </a>
             <a
+              style={{ color: "black" }}
+              href="/blogs" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1085">
+              <i className="ri-article-line mr-3"></i>
+              Blogs
+            </a>
+            <a
               href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
               className="mt-2 inline-flex items-center justify-center bg-white text-black px-3 py-2 rounded-md text-sm hover:bg-gray-300 transition-colors"
               data-aos="fade-up"
@@ -208,6 +233,20 @@ const Header = () => {
             >
               Get Quote
             </a>
+            <div className="mt-3 flex items-center space-x-4">
+              <a href="https://youtube.com/@malikxactimator" target="_blank" rel="noopener noreferrer" className="text-black" aria-label="YouTube">
+                <i className="ri-youtube-fill text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/malik-saif-a56510249" target="_blank" rel="noopener noreferrer" className="text-black" aria-label="LinkedIn">
+                <i className="ri-linkedin-fill text-xl"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1KY72nkShY/" target="_blank" rel="noopener noreferrer" className="text-black" aria-label="Facebook">
+                <i className="ri-facebook-fill text-xl"></i>
+              </a>
+              <a href="https://www.instagram.com/mx_estimation" target="_blank" rel="noopener noreferrer" className="text-black" aria-label="Instagram">
+                <i className="ri-instagram-fill text-xl"></i>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

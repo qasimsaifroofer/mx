@@ -195,6 +195,29 @@ export default function XactimateRoofSketchGuide() {
                 <i className="ri-exchange-dollar-line mr-2"></i>
                 Pricing
               </Link>
+              <Link
+                href="/blogs"
+                className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl"
+                data-aos="fade-left"
+                data-aos-delay="575"
+              >
+                <i className="ri-article-line mr-2"></i>
+                Blogs
+              </Link>
+              <div className="flex items-center space-x-3 border-l border-gray-300/40 pl-4">
+                <a href="https://youtube.com/@malikxactimator" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="YouTube">
+                  <i className="ri-youtube-fill text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/malik-saif-a56510249" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="LinkedIn">
+                  <i className="ri-linkedin-fill text-xl"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1KY72nkShY/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Facebook">
+                  <i className="ri-facebook-fill text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/mx_estimation" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Instagram">
+                  <i className="ri-instagram-fill text-xl"></i>
+                </a>
+              </div>
             </div>
             <a
               href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
