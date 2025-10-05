@@ -507,6 +507,15 @@ export default function OurWork() {
                 </ul>
               </div>
             
+              <div>
+                <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Quick Action</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li><a href="http://mxestimation.com/terms-and-conditions.html" className="hover:text-white transition-colors">Terms and Conditions</a></li>
+                  <li><a href="http://mxestimation.com/privacy-policy.html" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                  <li><a href="http://mxestimation.com/cookies-policy.html" className="hover:text-white transition-colors">Cookies Policy</a></li>
+                </ul>
+              </div>
+
               <div  data-aos-delay="1050">
                 <h4 style={{color : "orange"}} className="font-bold text-white mb-4">Contact Info</h4>
                 <ul className="space-y-2 text-gray-400">
@@ -544,9 +553,9 @@ export default function OurWork() {
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <p className="text-gray-400 text-sm" data-aos-delay="1300">© 2024 MX Estimation. All rights reserved.</p>
                 <div className="flex space-x-6 mt-4 md:mt-0">
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1350">Privacy Policy</a>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1400">Terms of Service</a>
-                  <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1450">Cookie Policy</a>
+                  <a href="http://mxestimation.com/privacy-policy.html" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1350">Privacy Policy</a>
+                  <a href="http://mxestimation.com/terms-and-conditions.html" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1400">Terms and Conditions</a>
+                  <a href="http://mxestimation.com/cookies-policy.html" className="text-gray-400 hover:text-white text-sm transition-colors"  data-aos-delay="1450">Cookies Policy</a>
                 </div>
               </div>
             </div>

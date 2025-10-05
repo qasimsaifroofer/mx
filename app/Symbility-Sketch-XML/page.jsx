@@ -252,7 +252,7 @@ export default function SymbilitySketchGuide() {
           Understanding Symbility Sketch XML: A Comprehensive Guide
         </h1>
         <p className="text-xl text-orange-200 text-center max-w-4xl mx-auto leading-relaxed">
-          In the ever-evolving landscape of property insurance and restoration, technology plays a pivotal role in enhancing efficiency and accuracy. One of the most significant tools in this domain is Symbility Sketch, a software solution that streamlines the process of creating detailed building sketches for claims processing and assessments. This guide aims to delve into the intricacies of Symbility Sketch XML and provide valuable insights and tips for maximizing its potential in your workflows.
+        In the ever-evolving landscape of <a   className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/estimator-accelerator">property insurance estimator and restoration</a>, technology plays a pivotal role in enhancing efficiency and accuracy. One of the most significant tools in this domain is Symbility Sketch, a software solution that streamlines the process of creating detailed building sketches for claims processing and assessments. This guide aims to delve into the intricacies of Symbility Sketch XML and provide valuable insights and tips for maximizing its potential in your workflows.
         </p>
 
 
@@ -280,7 +280,8 @@ className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg
           </div>
           <div className="bg-gray-900 rounded-2xl p-6 shadow-md">
             <p className="text-lg leading-relaxed text-orange-200">
-              Symbility Sketch XML is a file format used to store and exchange sketches created within the Symbility platform. This powerful tool allows users to create accurate and detailed floor plans, structural sketches, and other critical visual documentation required in the insurance claims process. The XML format ensures that all the data related to the sketches can be easily shared and integrated with various systems, contributing to a more seamless workflow. The benefits of using Symbility Sketch include high-resolution output, compatibility with various platforms, and the ability to easily update and modify sketches. One of the common requirements among users is converting Xactimate sketches to Symbility formats. This is often needed when companies transition from Xactimate to Symbility for a more robust sketching experience.
+            Symbility Sketch XML is a file format used to store and exchange sketches created within the Symbility platform. We are also providing <a  className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/Aerial-Roof-Measurements-PDF">Arial roof measurements PDF Document</a> and this powerful tool allows users to create accurate and detailed floor plans, structural sketches, and other critical visual documentation required in the insurance claims process. The XML format ensures that all the data related to the sketches can be easily shared and integrated with various systems, contributing to a more seamless workflow. The benefits of using Symbility Sketch include high-resolution output, compatibility with various platforms, and the ability to easily update and modify sketches. One of the common requirements among users is converting Xactimate sketches to Symbility formats. This is often needed when companies transition from Xactimate to Symbility for a more robust sketching experience.
+
             </p>
           </div>
         </section>
@@ -418,7 +419,8 @@ className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg
           </div>
           <div className="bg-gray-900 rounded-2xl p-6 shadow-md">
             <p className="text-lg leading-relaxed text-orange-200">
-              In insurance claims, it’s particularly essential to include specific symbols that represent fire damage and safety features. Sketches of fire symbols can highlight crucial elements related to fire safety protocols, such as smoke detectors, sprinklers, and emergency exits. Ensuring these symbols are prominent in your sketches provides critical information to claim adjusters, paving the way for smoother processing of insurance claims.
+            In insurance claims, it’s particularly essential to include specific symbols that represent fire damage and safety features. Properly providing to our customer the <a className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/Xactimate-Roof-Sketch">xactimate roof sketches</a> of fire symbols can highlight crucial elements related to fire safety protocols, such as smoke detectors, sprinklers, and emergency exits. Ensuring these symbols are prominent in your sketches provides critical information to claim adjusters, paving the way for smoother processing of insurance claims.
+
             </p>
           </div>
         </section>

@@ -638,13 +638,34 @@ export default function EstimatorAccelerator() {
 
         {/* Footer */}
         <footer className="bg-black py-12 px-4 border-t border-orange-900/40">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-gray-400 mb-4">
-              © 2024 Insurance Estimator Training. All rights reserved.
-            </p>
-            <p className="text-gray-500 text-sm">
-              Enhance your skills. Boost your career. Excel in the insurance restoration industry.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center">
+              <p className="text-gray-400 mb-4">
+                © 2024 Insurance Estimator Training. All rights reserved.
+              </p>
+              <p className="text-gray-500 text-sm mb-8">
+                Enhance your skills. Boost your career. Excel in the insurance restoration industry.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div></div>
+              <div>
+                <h4 className="font-bold text-white mb-4" style={{color: 'orange'}}>Quick Action</h4>
+                <ul className="space-y-2 text-gray-400">
+                  <li>
+                    <a href="http://mxestimation.com/terms-and-conditions.html" className="hover:text-white transition-colors">Terms and Conditions</a>
+                  </li>
+                  <li>
+                    <a href="http://mxestimation.com/privacy-policy.html" className="hover:text-white transition-colors">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="http://mxestimation.com/cookies-policy.html" className="hover:text-white transition-colors">Cookies Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div></div>
+            </div>
           </div>
         </footer>
       </div>

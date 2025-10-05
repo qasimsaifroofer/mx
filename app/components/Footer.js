@@ -76,7 +76,20 @@ const Footer = () => {
             <div style={{ color: "orange" }} className="font-['Pacifico'] text-2xl text-white mb-4">MX Estimation</div>
             <p className="text-gray-400 mb-6">Professional Xactimate estimation services with Level 3 certification and 7+ years of experience.</p>
           </div>
-      
+          <div>
+            <h4 style={{ color: "orange" }} className="font-bold text-white mb-4">Quick Action</h4>
+            <ul className="space-y-2 text-gray-400">
+              <li>
+                <a href="http://mxestimation.com/terms-and-conditions.html" className="hover:text-white transition-colors">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="http://mxestimation.com/privacy-policy.html" className="hover:text-white transition-colors">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="http://mxestimation.com/cookies-policy.html" className="hover:text-white transition-colors">Cookies Policy</a>
+              </li>
+            </ul>
+          </div>
           <div data-aos-delay="1050">
             <h4 style={{ color: "orange" }} className="font-bold text-white mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-400">

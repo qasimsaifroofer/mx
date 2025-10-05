@@ -309,7 +309,7 @@ export default function XactimateRoofSketchGuide() {
             Master Your Roof Estimates: The Ultimate Guide to Xactimate Roof Sketch
           </h1>
           <p className="text-xl text-orange-200 text-center max-w-4xl mx-auto leading-relaxed">
-            The accuracy of your roof estimate can make or break a job. It’s the foundation of your claim, the blueprint for your work, and the key to your profitability. In today’s fast-paced market, guessing doesn’t cut it. You need precision, speed, and clarity. This guide dives deep into mastering the Xactimate Roof Sketch, transforming complex roof structures into detailed, data-driven estimates that insurance carriers respect and approve.
+          The accuracy of your roof estimate can make or break a job done from <a className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/xactimate-estimation">xactimate estimator</a>. It’s the foundation of your claim, the blueprint for your work, and the key to your profitability. In today’s fast-paced market, guessing doesn’t cut it. You need precision, speed, and clarity. This guide dives deep into mastering the Xactimate Roof Sketch, transforming complex roof structures into detailed, data-driven estimates that insurance carriers respect and approve.
           </p>
           <center>
             <Image src="/xactimate roof ESX.jpeg" alt="Xactimate Roof Sketch" width={800} height={600} />
@@ -338,7 +338,8 @@ export default function XactimateRoofSketchGuide() {
                   <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                   </svg>
-                  <span><strong>Unmatched Accuracy:</strong> Eliminates human error in measurements for precise material and labor costs.</span>
+                  <span><strong>Unmatched Accuracy:</strong> Eliminates human error in measurements and pointing to <a className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/matterpoint-to-xactimate-sketch">matterport xactimate conversion</a> for precise material and labor costs.
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +411,8 @@ export default function XactimateRoofSketchGuide() {
                   <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7v8m4-8v8m4-8v8M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
                   </svg>
-                  <span><strong>Start with the Basics:</strong> Trace roof planes using the "Add Surface" tool.</span>
+                  <span><strong>Start with the Basics:</strong> Trace roof planes using the "Add Surface" tool and also survey for <a className="text-orange-400 hover:text-orange-600" href="https://mxestimation.com/aerial-roof-measurements-pdf">measure square footage of roof arial</a> because it’s really essential job for our customers.
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-orange-400 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
