@@ -7,6 +7,12 @@ import Footer from "../components/Footer";
 
 const dummyPosts = [
   {
+    slug: "streamline-property-claims-estimating",
+    title: "Streamline Property Claims Estimating",
+    excerpt: "Discover efficient strategies to optimize property claims estimation processes.",
+    date: "2025-10-10",
+  },
+  {
     slug: "getting-started-xactimate",
     title: "Getting Started with Xactimate: Tips for Beginners",
     excerpt: "Learn the fundamentals and quick tips to become productive in Xactimate.",
@@ -69,4 +75,3 @@ export default function BlogsPage() {
     </>
   );
 }
-
