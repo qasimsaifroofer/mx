@@ -2,8 +2,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export default function BlogPost() {
   return (
@@ -18,7 +16,7 @@ export default function BlogPost() {
       </Head>
 
       <div className="bg-black text-white min-h-screen">
-        <Header />
+
 
         <main className="max-w-4xl mx-auto px-6 py-12">
           <Link href="/blogs" className="text-orange-400 hover:text-white transition-colors mb-6 inline-block">
@@ -206,8 +204,9 @@ export default function BlogPost() {
           </article>
         </main>
 
-        <Footer />
+   
       </div>
     </>
   );
 }
+
