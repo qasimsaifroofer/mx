@@ -328,7 +328,7 @@ export default function About() {
             </div>
           </div>
           <a
-  href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+  href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
   className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
   data-aos="fade-left"
   data-aos-delay="600"
@@ -337,26 +337,26 @@ export default function About() {
 >
   Get Quote
 </a>
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} data-aos="fade-left" data-aos-delay="650">
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <div className="w-6 h-6 flex items-center justify-center">
               <i           
  className="ri-menu-line text-xl text-white"></i>
             </div>
           </button>
         </div>
-        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`} data-aos="fade-up" data-aos-delay="700">
+        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`}>
           <div className="flex flex-col space-y-4">
             <a
             
             style={{color : "black"}}
-            href="/" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="750">
+            href="/" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i   
  className="ri-home-line mr-3"></i>
               Home
             </a>
             <a
             style={{color : "black"}}
-            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="800">
+            href="/about" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i style={{color : "black"}} className="ri-information-line mr-3"></i>
               About
             </a>
@@ -364,8 +364,6 @@ export default function About() {
               <button
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                data-aos="fade-up"
-                data-aos-delay="850"
                 style={{color : "black"}}
               >
                 <i
@@ -378,17 +376,12 @@ export default function About() {
               </button>
               <div
                 className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
-                data-aos="fade-up"
-                data-aos-delay="900"
-               
               >
-                {services.map((service, index) => (
+                {services.map((service) => (
                   <Link
                     key={service.id}
                     href={service.href}
                     className="text-black-900 hover:text-white transition-colors"
-                    data-aos="fade-up"
-                    data-aos-delay={950 + index * 50}
                     style={{color : "black"}}
                   >
                     {service.title}
@@ -398,13 +391,13 @@ export default function About() {
             </div>
             <a
             style={{color : "black"}}
-            href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1000">
+            href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-star-line mr-3"></i>
               Our  Work
             </a>
             <a 
             style={{color : "black"}}
-            href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1050">
+            href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-contacts-line mr-3"></i>
               Contact
             </a>
@@ -773,8 +766,8 @@ export default function About() {
                     <div className="w-4 h-4 flex items-center justify-center mr-2">
                       <i className="ri-mail-line"></i>
                     </div>
-                    <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
-                      contact@mxestimation.com
+                    <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
+                      mxestimation@gmail.com
                     </a>
                   </li>
                  

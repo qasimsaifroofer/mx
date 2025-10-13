@@ -93,14 +93,11 @@ const Header = () => {
                 } z-50`}
               >
                 <div className="py-2">
-                  {services.map((service, index) => (
+                  {services.map((service) => (
                     <Link
                       key={service.id}
                       href={service.href}
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                      data-aos="fade-up"
-                      data-aos-delay={450 + index * 50}
-                      onClick={() => setDesktopDropdownOpen(false)}
                     >
                       {service.title}
                     </Link>
@@ -140,7 +137,7 @@ const Header = () => {
             </div>
           </div>
           <a
-            href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+            href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
             className="hidden md:inline-block bg-white text-black px-6 lg:px-8 py-3 lg:py-4 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap"
             data-aos="fade-left"
             data-aos-delay="600"
@@ -148,24 +145,24 @@ const Header = () => {
           >
             Get Quote
           </a>
-          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} data-aos="fade-left" data-aos-delay="650">
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <div className="w-6 h-6 flex items-center justify-center">
               <i className="ri-menu-line text-xl text-white"></i>
             </div>
           </button>
         </div>
-        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`} data-aos="fade-up" data-aos-delay="700">
+        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`}>
           <div className="flex flex-col space-y-4">
             <a
               style={{ color: "black" }}
               href="/"
-              className="text-gray-300 hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="750">
+              className="text-gray-300 hover:text-white transition-colors">
               <i className="ri-home-line mr-3"></i>
               Home
             </a>
             <a
               style={{ color: "black" }}
-              href="/about" className="text-gray-300 hover:text-white transition-colors" data-aos="fade-up" data-aos-delay="800">
+              href="/about" className="text-gray-300 hover:text-white transition-colors">
               <i className="ri-information-line mr-3"></i>
               About
             </a>
@@ -173,8 +170,6 @@ const Header = () => {
               <button
                 className="text-gray-300 hover:text-white transition-colors flex items-center"
                 onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                data-aos="fade-up"
-                data-aos-delay="850"
                 style={{ color: "black" }}
               >
                 <i className="ri-service-line mr-3"></i>
@@ -183,16 +178,12 @@ const Header = () => {
               </button>
               <div
                 className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
-                data-aos="fade-up"
-                data-aos-delay="900"
               >
-                {services.map((service, index) => (
+                {services.map((service) => (
                   <Link
                     key={service.id}
                     href={service.href}
                     className="text-black-900 hover:text-white transition-colors"
-                    data-aos="fade-up"
-                    data-aos-delay={950 + index * 50}
                     style={{ color: "black" }}
                   >
                     {service.title}
@@ -202,33 +193,31 @@ const Header = () => {
             </div>
             <a
               style={{ color: "black" }}
-              href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1000">
+              href="/work" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-star-line mr-3"></i>
               Our  Work
             </a>
             <a
               style={{ color: "black" }}
-              href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1050">
+              href="/contact" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-contacts-line mr-3"></i>
               Contact
             </a>
             <a
               style={{ color: "black" }}
-              href="/pricing" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1075">
+              href="/pricing" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-exchange-dollar-line mr-3"></i>
               Pricing
             </a>
             <a
               style={{ color: "black" }}
-              href="/blogs" className="text-gray-300 hover:text-white transition-colors flex items-center" data-aos="fade-up" data-aos-delay="1085">
+              href="/blogs" className="text-gray-300 hover:text-white transition-colors flex items-center">
               <i className="ri-article-line mr-3"></i>
               Blogs
             </a>
             <a
-              href="mailto:contact@mxestimation.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
+              href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
               className="mt-2 inline-flex items-center justify-center bg-white text-black px-3 py-2 rounded-md text-sm hover:bg-gray-300 transition-colors"
-              data-aos="fade-up"
-              data-aos-delay="1100"
               target="_blank"
             >
               Get Quote

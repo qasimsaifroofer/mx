@@ -97,8 +97,8 @@ const Footer = () => {
                 <div className="w-4 h-4 flex items-center justify-center mr-2">
                   <i className="ri-mail-line"></i>
                 </div>
-                <a href="mailto:contact@mxestimation.com" className="hover:text-white transition-colors">
-                  contact@mxestimation.com
+                <a href="mailto:mxestimation@gmail.com" className="hover:text-white transition-colors">
+                  mxestimation@gmail.com
                 </a>
               </li>
               <li className="flex items-center" data-aos-delay="1200">

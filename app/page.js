@@ -1226,7 +1226,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-1">Email</h4>
-                  <p className="text-black-900">contact@mxestimation.com</p>
+                  <p className="text-black-900">mxestimation@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4"  data-aos-delay="700">
