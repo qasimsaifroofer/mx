@@ -30,3 +30,22 @@ body {
 html, body {
   overflow-x: hidden;
 }
+a {
+  color: #1a1a1a; /* Almost black */
+  text-decoration: underline;
+  text-decoration-color: #007bff; /* Adds a blue underline */
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: #4c4c4c; /* Dark gray */
+}
+
+a:hover {
+  color: #007bff; /* Blue */
+  text-decoration-color: #1a1a1a; /* Underline becomes dark */
+}
+
+a:active {
+  color: #e74c3c; /* Red */
+}
