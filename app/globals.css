@@ -36,7 +36,16 @@ html, body {
   color: #c0392b;
   /* ... add the rest of your blog link styles here ... */
 }
+ /* Anchor link style */
+  .blog-anchor {
+    color: #decb81;         /* Default link color */
+    text-decoration: none;    
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
 
-.single-post a:hover {
-  color: #e74c3c;
-}
+  /* Hover effect */
+  .blog-anchor:hover {
+    color: #5137fa;           /* Hover color */
+    
+  }
