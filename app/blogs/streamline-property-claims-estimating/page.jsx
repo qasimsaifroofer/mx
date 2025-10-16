@@ -97,7 +97,7 @@ export default function BlogPost() {
             <h2 className="text-2xl font-semibold mb-4 text-white">Boost Accuracy with Insurance Estimator Training</h2>
             <p className="text-gray-300 mb-6">
               While automation helps, the human element still plays a crucial role. Even the most advanced software is only
-              as good as the person operating it. That’s where <a href="https://mxestimation.com/estimator-accelerator">insurance estimator training</a> comes in.
+              as good as the person operating it. That’s where <a class="blog-anchor" href="https://mxestimation.com/estimator-accelerator">insurance estimator training</a> comes in.
             </p>
             <p className="text-gray-300 mb-6">
               Comprehensive training programs teach adjusters and contractors how to navigate Xactimate’s interface,
@@ -209,6 +209,7 @@ export default function BlogPost() {
     </>
   );
 }
+
 
 
 
