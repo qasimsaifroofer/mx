@@ -32,7 +32,6 @@ html, body {
 }
 a {
   color: #1a1a1a; /* Almost black */
-  text-decoration: underline;
   text-decoration-color: #007bff; /* Adds a blue underline */
   transition: color 0.2s ease;
 }
