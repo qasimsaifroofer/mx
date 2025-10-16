@@ -31,11 +31,12 @@ html, body {
   overflow-x: hidden;
 }
 
-.post a {
+/* Blog-specific link styles using a body class */
+.single-post a {
   color: #c0392b;
   /* ... add the rest of your blog link styles here ... */
 }
 
-.post a:hover {
+.single-post a:hover {
   color: #e74c3c;
 }
