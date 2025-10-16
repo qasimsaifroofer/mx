@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 
 export default function TenCommonXactimateMistakes() {
   return (
@@ -17,7 +14,7 @@ export default function TenCommonXactimateMistakes() {
         <link rel="canonical" href="https://mxestimation.com/blogs/ten-common-xactimate-mistakes" />
       </Head>
 
-      <Header />
+   
 
       <main className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">
@@ -141,8 +138,6 @@ export default function TenCommonXactimateMistakes() {
           </p>
         </section>
       </main>
-
-      <Footer />
     </div>
   );
 }
