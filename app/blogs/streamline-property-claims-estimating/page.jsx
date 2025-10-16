@@ -37,7 +37,7 @@ export default function BlogPost() {
               Xactimate, developed by Verisk, remains the industry’s gold standard for property claims estimating software.
               Yet, despite its widespread use, many professionals only scratch the surface of its potential. In this guide,
               we’ll explore how to streamline property claims using Xactimate, improve estimate precision, and leverage
-              professional Xactimate estimating services to boost business efficiency.
+              professional <a href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4 text-white">
@@ -97,7 +97,7 @@ export default function BlogPost() {
             <h2 className="text-2xl font-semibold mb-4 text-white">Boost Accuracy with Insurance Estimator Training</h2>
             <p className="text-gray-300 mb-6">
               While automation helps, the human element still plays a crucial role. Even the most advanced software is only
-              as good as the person operating it. That’s where insurance estimator training comes in.
+              as good as the person operating it. That’s where <a href="https://mxestimation.com/estimator-accelerator">insurance estimator training</a> comes in.
             </p>
             <p className="text-gray-300 mb-6">
               Comprehensive training programs teach adjusters and contractors how to navigate Xactimate’s interface,
@@ -209,4 +209,5 @@ export default function BlogPost() {
     </>
   );
 }
+
 
