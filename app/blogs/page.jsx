@@ -12,6 +12,12 @@ const dummyPosts = [
     excerpt: "Discover efficient strategies to optimize property claims estimation processes.",
     date: "2025-10-10",
   },
+  {
+    slug: "ten-common-xactimate-mistakes",
+    title: "Ten Common Xactimate Mistakes",
+    excerpt: "Learn the top 10 Xactimate mistakes that could cost you money and how to avoid them.",
+    date: "2025-10-16",
+  },
 ];
 
 export default function BlogsPage() {
@@ -40,7 +46,7 @@ export default function BlogsPage() {
                 <div className="text-xs text-gray-400 mb-2">{new Date(post.date).toLocaleDateString()}</div>
                 <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
                 <p className="text-gray-400 mb-4">{post.excerpt}</p>
-                <Link href={`/blogs/${post.slug}`} className="text-orange-400 hover:text-white transition-colors">Read more →</Link>
+                <Link href={post.slug === "ten-common-xactimate-mistakes" ? "https://mxestimation.com/blogs/ten-common-xactimate-mistakes" : `/blogs/${post.slug}`} className="text-orange-400 hover:text-white transition-colors">Read more →</Link>
               </article>
             ))}
           </div>
