@@ -12,30 +12,6 @@ const dummyPosts = [
     excerpt: "Discover efficient strategies to optimize property claims estimation processes.",
     date: "2025-10-10",
   },
-  {
-    slug: "getting-started-xactimate",
-    title: "Getting Started with Xactimate: Tips for Beginners",
-    excerpt: "Learn the fundamentals and quick tips to become productive in Xactimate.",
-    date: "2025-09-28",
-  },
-  {
-    slug: "roof-measurements-pdf-guide",
-    title: "Roof Measurements PDF: Fast, Accurate, and Affordable",
-    excerpt: "How to streamline your workflows with aerial roof measurement PDFs.",
-    date: "2025-09-20",
-  },
-  {
-    slug: "matterport-to-xactimate",
-    title: "Matterport to Xactimate: A Practical Conversion Guide",
-    excerpt: "A step-by-step walkthrough to convert scans into reliable sketches and estimates.",
-    date: "2025-09-10",
-  },
-  {
-    slug: "estimator-accelerator-intro",
-    title: "Introducing Estimator Accelerator",
-    excerpt: "Level up your estimation skills with our focused accelerator program.",
-    date: "2025-08-30",
-  },
 ];
 
 export default function BlogsPage() {
