@@ -12,10 +12,7 @@ export default function TenCommonXactimateMistakes() {
           content="Discover the top 10 Xactimate mistakes made by insurance adjusters and contractors, and learn how to avoid them to improve accuracy and profitability in your estimates."
         />
         <link rel="canonical" href="https://mxestimation.com/blogs/ten-common-xactimate-mistakes" />
-      </Head>
-
-   
-
+     </Head>
       <main className="max-w-4xl mx-auto px-6 py-12">
         <h1 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">
           Ten Common Xactimate Mistakes That Could Be Costing You Money
@@ -34,7 +31,7 @@ export default function TenCommonXactimateMistakes() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-           </div>
+            </div>
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">1. Lack of Line Item Detail</h2>
           <p className="text-gray-300">
