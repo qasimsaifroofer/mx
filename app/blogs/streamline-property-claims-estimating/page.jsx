@@ -16,8 +16,6 @@ export default function BlogPost() {
       </Head>
 
       <div className="bg-black text-white min-h-screen">
-
-
         <main className="max-w-4xl mx-auto px-6 py-12">
           <Link href="/blogs" className="text-orange-400 hover:text-white transition-colors mb-6 inline-block">
             ← Back to Blogs
@@ -67,7 +65,7 @@ export default function BlogPost() {
               specific property types, claim categories, or damage scopes — helping you streamline property claims from
               start to finish.
             </p>
-   <h3 className="text-xl font-medium mb-2 text-white">2. Use Sketch and 3D Tools for Precision</h3>
+            <h3 className="text-xl font-medium mb-2 text-white">2. Use Sketch and 3D Tools for Precision</h3>
             <p className="text-gray-300 mb-6">
               Accuracy is the cornerstone of trust in the insurance industry. Xactimate’s advanced sketching tools let users
               draw floor plans, measure areas, and visualize spaces in 3D. This feature is especially useful for <a class="blog-anchor" href="https://www.mxestimation.com/xactimate-estimation/">Xactimate
@@ -201,24 +199,19 @@ export default function BlogPost() {
               enhancing client satisfaction.
             </p>
           </article>
+          <div className="video-container mt-8">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/sSOnYbcN0XQ"
+              title="YouTube Shorts Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </main>
-
-   
       </div>
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
