@@ -39,6 +39,14 @@ export default function BlogPost() {
               we’ll explore how to streamline property claims using Xactimate, improve estimate precision, and leverage
               professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
+            <br/>
+               <iframe width="420" height="315"
+src="https://youtube.com/shorts/Df7laCe4B1M">
+</iframe>
+
+             <iframe width="420" height="315"
+src="https://youtube.com/shorts/sSOnYbcN0XQ">
+</iframe>
             <h2 className="text-2xl font-semibold mb-4 text-white">
               Why Xactimate is Essential for Property Claim Professionals
             </h2>
@@ -71,7 +79,7 @@ export default function BlogPost() {
             <p className="text-gray-300 mb-6">
               Accuracy is the cornerstone of trust in the insurance industry. Xactimate’s advanced sketching tools let users
               draw floor plans, measure areas, and visualize spaces in 3D. This feature is especially useful for <a class="blog-anchor" href="https://www.mxestimation.com/xactimate-estimation/">Xactimate
-              for contractors who need to ensure materials and labor estimates match real-world conditions.
+              for contractors</a> who need to ensure materials and labor estimates match real-world conditions.
             </p>
             <h3 className="text-xl font-medium mb-2 text-white">3. Sync Estimates Across Devices and Teams</h3>
             <p className="text-gray-300 mb-6">
@@ -208,6 +216,7 @@ export default function BlogPost() {
     </>
   );
 }
+
 
 
 
