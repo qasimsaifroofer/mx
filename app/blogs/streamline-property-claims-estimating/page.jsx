@@ -37,7 +37,7 @@ export default function BlogPost() {
               Xactimate, developed by Verisk, remains the industry’s gold standard for property claims estimating software.
               Yet, despite its widespread use, many professionals only scratch the surface of its potential. In this guide,
               we’ll explore how to streamline property claims using Xactimate, improve estimate precision, and leverage
-              professional <a class="single-post" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
+              professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4 text-white">
@@ -209,6 +209,7 @@ export default function BlogPost() {
     </>
   );
 }
+
 
 
 
