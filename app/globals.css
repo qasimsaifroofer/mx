@@ -38,6 +38,13 @@ body {
     color: #5137fa;           /* Hover color */
     
   }
+/* In your global.css or component.module.css */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
 /* Prevent horizontal scroll caused by animations/transforms */
 html, body {
   overflow-x: hidden;
