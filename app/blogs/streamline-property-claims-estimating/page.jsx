@@ -40,11 +40,13 @@ export default function BlogPost() {
               professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
             <br/>
-  <iframe
+<div class=video-container>   <iframe
     src="https://youtube.com/shorts/Df7laCe4B1M"
     title="Property Claim Process Xactimate"
     allowFullScreen
   ></iframe>
+            
+            
 </div>           
             <h2 className="text-2xl font-semibold mb-4 text-white">
               Why Xactimate is Essential for Property Claim Professionals
@@ -75,7 +77,7 @@ export default function BlogPost() {
               start to finish.
             </p>
           <br/>
-        <div className="video-container">
+        <div class="video-container">
   <iframe
     src="https://youtube.com/shorts/sSOnYbcN0XQ"
     title="Stremline Property Claiming"
@@ -223,6 +225,7 @@ export default function BlogPost() {
     </>
   );
 }
+
 
 
 
