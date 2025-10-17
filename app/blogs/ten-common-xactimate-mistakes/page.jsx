@@ -34,6 +34,7 @@ export default function TenCommonXactimateMistakes() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
+           </div>
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">1. Lack of Line Item Detail</h2>
           <p className="text-gray-300">
