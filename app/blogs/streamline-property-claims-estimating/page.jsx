@@ -40,13 +40,12 @@ export default function BlogPost() {
               professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
             <br/>
-               <iframe width="420" height="315"
-src="https://youtube.com/shorts/Df7laCe4B1M">
-</iframe>
-
-             <iframe width="420" height="315"
-src="https://youtube.com/shorts/sSOnYbcN0XQ">
-</iframe>
+  <iframe
+    src="https://youtube.com/shorts/Df7laCe4B1M"
+    title="Property Claim Process Xactimate"
+    allowFullScreen
+  ></iframe>
+</div>           
             <h2 className="text-2xl font-semibold mb-4 text-white">
               Why Xactimate is Essential for Property Claim Professionals
             </h2>
@@ -75,6 +74,14 @@ src="https://youtube.com/shorts/sSOnYbcN0XQ">
               specific property types, claim categories, or damage scopes — helping you streamline property claims from
               start to finish.
             </p>
+          <br/>
+        <div className="video-container">
+  <iframe
+    src="https://youtube.com/shorts/sSOnYbcN0XQ"
+    title="Stremline Property Claiming"
+    allowFullScreen
+  ></iframe>
+</div>          
             <h3 className="text-xl font-medium mb-2 text-white">2. Use Sketch and 3D Tools for Precision</h3>
             <p className="text-gray-300 mb-6">
               Accuracy is the cornerstone of trust in the insurance industry. Xactimate’s advanced sketching tools let users
@@ -216,6 +223,7 @@ src="https://youtube.com/shorts/sSOnYbcN0XQ">
     </>
   );
 }
+
 
 
 
