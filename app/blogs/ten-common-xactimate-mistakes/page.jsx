@@ -24,7 +24,16 @@ export default function TenCommonXactimateMistakes() {
         <p className="text-gray-300 mb-6">
           Xactimate is a powerful tool for insurance adjusters, restoration contractors, and construction professionals to create accurate property damage estimates. However, even experienced professionals can make costly mistakes that reduce profits or harm client relationships. Here are the top 10 Xactimate mistakes and how to avoid them to ensure accurate and profitable estimates.
         </p>
-
+         <div className="video-container mt-8">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://youtube.com/shorts/2aXL9qPyH30"
+              title="YouTube Shorts Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">1. Lack of Line Item Detail</h2>
           <p className="text-gray-300">
@@ -49,7 +58,7 @@ export default function TenCommonXactimateMistakes() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">4. Inaccurate Roof Sketches</h2>
           <p className="text-gray-300">
-            Xactimate's Roof Sketch tool is powerful but often misunderstood. Inaccurate measurements can lead to thousands in lost revenue or disputes. Double-check dimensions, slopes, and waste factors, and use aerial measurements or drone data for precision.
+            Tool is powerful but often misunderstood in <a class="blog-anchor" href="https://mxestimation.com/Xactimate-Roof-Sketch">xactimate's Roof Sketch</a>. Inaccurate measurements can lead to thousands in lost revenue or disputes. Double-check dimensions, slopes, and waste factors, and use aerial measurements or drone data for precision.
           </p>
         </section>
 
@@ -77,7 +86,7 @@ export default function TenCommonXactimateMistakes() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">8. Not Cross-Checking with Symbility</h2>
           <p className="text-gray-300">
-            If you use multiple estimating platforms, failing to compare Xactimate data with Symbility Estimating Services can cause discrepancies. Cross-checking ensures fairness and accuracy in insurance claims, building trust with carriers and clients.
+            If you use multiple estimating platforms, failing to compare Xactimate data with <a class="blog-anchor" href="https://mxestimation.com/symbility-estimating-services">symbility estimating services</a> can cause discrepancies. Cross-checking ensures fairness and accuracy in insurance claims, building trust with carriers and clients.
           </p>
         </section>
 
