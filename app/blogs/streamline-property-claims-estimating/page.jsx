@@ -40,7 +40,7 @@ export default function BlogPost() {
               professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
             <br/>
-<div class=video-container>   <iframe
+<div class="video-container">   <iframe
     src="https://youtube.com/shorts/Df7laCe4B1M"
     title="Property Claim Process Xactimate"
     allowFullScreen
@@ -225,6 +225,7 @@ export default function BlogPost() {
     </>
   );
 }
+
 
 
 
