@@ -37,6 +37,17 @@ export default function BlogPost() {
               we’ll explore how to streamline property claims using Xactimate, improve estimate precision, and leverage
               professional <a class="blog-anchor" href="https://mxestimation.com/">Xactimate estimating services</a> to boost business efficiency.
             </p>
+             <div className="video-container mt-8">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/sSOnYbcN0XQ"
+              title="YouTube Shorts Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
             <h2 className="text-2xl font-semibold mb-4 text-white">
               Why Xactimate is Essential for Property Claim Professionals
             </h2>
@@ -199,19 +210,9 @@ export default function BlogPost() {
               enhancing client satisfaction.
             </p>
           </article>
-          <div className="video-container mt-8">
-            <iframe
-              width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/sSOnYbcN0XQ"
-              title="YouTube Shorts Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </main>
+         </main>
       </div>
     </>
   );
 }
+
