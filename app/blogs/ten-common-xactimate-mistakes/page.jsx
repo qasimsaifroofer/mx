@@ -21,6 +21,17 @@ export default function TenCommonXactimateMistakes() {
         <p className="text-gray-300 mb-6">
           Xactimate is a powerful tool for insurance adjusters, restoration contractors, and construction professionals to create accurate property damage estimates. However, even experienced professionals can make costly mistakes that reduce profits or harm client relationships. Here are the top 10 Xactimate mistakes and how to avoid them to ensure accurate and profitable estimates.
         </p>
+        <div className="video-container mb-8">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/2aXL9qPyH30"
+            title="YouTube Shorts Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-white mb-3">1. Lack of Line Item Detail</h2>
           <p className="text-gray-300">
