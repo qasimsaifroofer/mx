@@ -575,6 +575,28 @@ ${formData.firstName} ${formData.lastName}
                   <div className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-700 hover:border-orange-500 transition-colors">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
+                        <i className="ri-map-pin-line text-xl text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Our Address</h3>
+                      <p className="text-gray-400 mb-2">Send us mail or visit our office</p>
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=20712+SW+87th+Ct%2C+Miami%2C+Florida%2C+33189%2C+United+States" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-orange-500 hover:text-orange-400 transition-colors font-medium break-words"
+                      >
+                        20712 SW 87th Ct<br />
+                        Miami, Florida(FL), 33189<br />
+                        United States
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4 p-6 bg-gray-900 rounded-xl border border-gray-700 hover:border-orange-500 transition-colors">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center">
                         <i className="ri-time-line text-xl text-white"></i>
                       </div>
                     </div>
