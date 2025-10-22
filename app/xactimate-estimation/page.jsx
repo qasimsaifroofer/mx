@@ -44,16 +44,7 @@ export default function XactimateGuide() {
           content="Get the accuract xactimate estimationfor your project with our experienced and skillful engineers lines. get the 100% accurate estimate for your work quote now!"
         />
         <link rel="canonical" href="https://mxestimation.com/xactimate-estimation" />
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ML5BTCL6RB');
-</script>
-      </head>
+       </head>
 
       <Script
         id="organization-schema-1"
