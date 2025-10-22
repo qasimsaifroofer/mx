@@ -37,14 +37,23 @@ export default function XactimateGuide() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      <Head>
+      <head>
         <title>Xactimate Estimation Online | Freelance Xactimation Services</title>
         <meta
           name="description"
           content="Get the accuract xactimate estimationfor your project with our experienced and skillful engineers lines. get the 100% accurate estimate for your work quote now!"
         />
         <link rel="canonical" href="https://mxestimation.com/xactimate-estimation" />
-      </Head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ML5BTCL6RB');
+</script>
+      </head>
 
       <Script
         id="organization-schema-1"
