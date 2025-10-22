@@ -22,6 +22,15 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ML5BTCL6RB');
+</script>
       <body
         style={{ backgroundColor: "black" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
