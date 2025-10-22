@@ -16,13 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ AOS CSS CDN */}
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-          rel="stylesheet"
-        />
-      </head>
-      <!-- Google tag (gtag.js) -->
+        <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ML5BTCL6RB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -31,6 +25,12 @@ export default function RootLayout({ children }) {
 
   gtag('config', 'G-ML5BTCL6RB');
 </script>
+        {/* ✅ AOS CSS CDN */}
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          rel="stylesheet"
+        />
+      </head>
       <body
         style={{ backgroundColor: "black" }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
