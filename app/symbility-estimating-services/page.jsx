@@ -1,7 +1,7 @@
 'use client';
+
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import Head from 'next/head';
 import Script from 'next/script';
 
 export default function InteriorDamageEstimate() {
