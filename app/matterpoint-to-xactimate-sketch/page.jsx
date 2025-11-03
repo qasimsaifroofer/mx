@@ -36,14 +36,14 @@ export default function MatterportPage() {
 
   return (
     <>
-      <Head>
+      <head>
         <title>Convert Matterport Scans to Xactimate Easily</title>
         <meta
           name="description"
           content="Learn how to convert Matterport to Xactimate sketch easily. Discover fast, accurate methods to streamline claims, boost efficiency, and simplify workflows."
         />
         <link rel="canonical" href="https://mxestimation.com/matterpoint-to-xactimate-sketch" />
-      </Head>
+      </head>
 
       <Script
         id="matterport-schema"
