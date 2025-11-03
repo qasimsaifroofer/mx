@@ -1,4 +1,4 @@
-export const metadata = {
+export default {
   title: 'Symbility Estimating Services | Insurance & Claims Estimating Solutions',
   description: 'Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims.',
   alternates: {

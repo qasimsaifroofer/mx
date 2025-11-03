@@ -36,21 +36,6 @@ export default function InteriorDamageEstimate() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      {/* SEO metadata is handled by metadata.js */}
-      {/* Social sharing tags */}
-      <head>
-        <title>Symbility Estimating Services | Insurance & Claims Estimating Solutions</title>
-        <meta name="description" content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims." />
-        <link rel="canonical" href="https://mxestimation.com/symbility-estimating-services" />
-        <meta property="og:title" content="Symbility Estimating Services | Insurance & Claims Estimating Solutions" />
-        <meta property="og:description" content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims." />
-        <meta property="og:url" content="https://mxestimation.com/symbility-estimating-services" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="MX Estimation" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Symbility Estimating Services | Insurance & Claims Estimating Solutions" />
-        <meta name="twitter:description" content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims." />
-      </head>
 
       <Script
         id="matterport-schema"
