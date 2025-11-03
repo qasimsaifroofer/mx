@@ -1,7 +1,27 @@
+export const metadata = {
+  title: 'Symbility Estimating Services | Insurance & Claims Estimating Solutions',
+  description: 'Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims.',
+  alternates: {
+    canonical: 'https://mxestimation.com/symbility-estimating-services',
+  },
+  openGraph: {
+    title: 'Symbility Estimating Services | Insurance & Claims Estimating Solutions',
+    description: 'Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims.',
+    url: 'https://mxestimation.com/symbility-estimating-services',
+    siteName: 'MX Estimation',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Symbility Estimating Services | Insurance & Claims Estimating Solutions',
+    description: 'Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims.',
+  },
+};
+
 'use client';
 import Link from 'next/link';
 import { useRef, useState } from 'react';
-import Head from 'next/head';
 import Script from 'next/script';
 
 export default function InteriorDamageEstimate() {
@@ -36,18 +56,11 @@ export default function InteriorDamageEstimate() {
 
   return (
     <div className="min-h-screen bg-black text-gray-200">
-      {/* === UPDATED HEAD WITH SEO === */}
-      <Head>
-        <title>Symbility Estimating Services | Insurance & Claims Estimating Solutions</title>
-        <meta
-          name="description"
-          content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims."
-        />
-        <link rel="canonical" href="https://mxestimation.com/symbility-estimating-services" />
-        {/* Optional social sharing tags */}
-        <meta property="og:title" content="Symbility Estimating Services | Insurance & Claims Estimating Solutions" />
-        <meta
-          property="og:description"
+      {/* SEO metadata is now handled by Next.js metadata API */}
+      {/* Optional social sharing tags in JSX if needed */}
+      <meta property="og:title" content="Symbility Estimating Services | Insurance & Claims Estimating Solutions" />
+      <meta
+        property="og:description"
           content="Professional Symbility Estimating Services for accurate insurance estimates. We provide reliable Symbility Insurance Estimating Services and Symbility Claims."
         />
         <meta property="og:url" content="https://mxestimation.com/symbility-estimating-services" />
