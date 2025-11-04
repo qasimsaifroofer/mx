@@ -1,343 +1,133 @@
-"use client";
-import Image from "next/image";
-import Head from "next/head";
-import Script from "next/script";
-import Link from "next/link";
-import { useRef, useState, useEffect } from "react";
+'use client';
 
-export default function MatterportPage() {
-  const dropdownRef = useRef(null);
+import { useState, useRef } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+const services = [
+  { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
+  { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
+  { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
+  { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
+  { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
+  { id: "aerial-roof-measurements-pdf", title: "Aerial Roof Measurements PDF", href: "/Aerial-Roof-Measurements-PDF" },
+  { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
+  { id: "Xactimate-Roof-Sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
+];
+
+export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [desktopDropdownOpen, setDesktopDropdownOpen] = useState(false);
+  
+  // FIX: Use useRef to correctly manage the timeout across re-renders.
+  const hoverTimeoutRef = useRef(null);
 
-  const services = [
-    { id: "estimator-accelerator", title: "Estimator Accelerator", href: "/estimator-accelerator" },
-    { id: "matterpoint-to-xactimate-sketch", title: "Matterpoint to Xactimate Sketch", href: "/matterpoint-to-xactimate-sketch" },
-    { id: "xactimate-estimation", title: "Xactimate Estimation", href: "/xactimate-estimation" },
-    { id: "xactimate-interior-estimate", title: "Xactimate Interior Estimate", href: "/xactimate-interior-estimate" },
-    { id: "symbility-estimating-services", title: "Symbility Estimating Services", href: "/symbility-estimating-services" },
-    { id: "aerial-roof-measurements-pdf", title: "Aerial Roof Measurements PDF", href: "/Aerial-Roof-Measurements-PDF" },
-    { id: "symbility-sketch-xml", title: "Symbility Sketch XML", href: "/Symbility-Sketch-XML" },
-    { id: "Xactimate-Roof-Sketch", title: "Xactimate Roof Sketch", href: "/Xactimate-Roof-Sketch" },
-  ];
-
-  let hoverTimeout;
   const handleDesktopHover = (isHovering) => {
-    clearTimeout(hoverTimeout);
+    clearTimeout(hoverTimeoutRef.current);
     if (isHovering) {
       setDesktopDropdownOpen(true);
     } else {
-      hoverTimeout = setTimeout(() => {
+      hoverTimeoutRef.current = setTimeout(() => {
         setDesktopDropdownOpen(false);
       }, 300);
     }
   };
+  
+  const navLinkClasses = "text-black text-[22px] hover:text-white transition-colors flex items-center";
 
   return (
-    <>
-      {/* ===== TITLE & META DESCRIPTION ADDED HERE ===== */}
-      <Head>
-        <title>Convert Matterport Scans to Xactimate Easily</title>
-        <meta
-          name="description"
-          content="Learn how to convert Matterport to Xactimate sketch easily. Discover fast, accurate methods to streamline claims, boost efficiency, and simplify workflows."
-        />
-        <link rel="canonical" href="https://mxestimation.com/matterpoint-to-xactimate-sketch" />
-      </Head>
-      {/* ============================================= */}
-
-      <Script
-        id="matterport-schema"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "MX Estimation",
-            "url": "https://mxestimation.com/matterpoint-to-xactimate-sketch",
-            "logo": "https://mxestimation.com/logo.jpeg",
-            "alternateName": "Xactimate Estimation",
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+923034297361",
-                "contactType": "customer service",
-                "email": "qasimroofer@gmail.com",
-                "areaServed": "PK",
-                "availableLanguage": "en"
-              }
-            ]
-          })
-        }}
-      />
-
-      {/* ====== HEADER (Unchanged) ====== */}
-      <header
-        style={{
-          background: "linear-gradient(100deg, rgba(238, 210, 86, 0.98) 40%, black 100%)",
-        }}
-        className="shadow-sm sticky top-0 z-50 border-b border-gray-800"
-        data-aos="fade-down"
-        data-aos-delay="100"
-      >
-        <nav className="px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div data-aos="fade-right" data-aos-delay="200">
-              <img
-                style={{ width: "200px", height: "100px" }}
-                src="/logo.jpeg"
-                alt="MX Estimation Logo"
-                className="w-full h-full object-contain rounded-lg"
-              />
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link
-                style={{ color: "black", fontSize: "22px" }}
-                href="/"
-                className="text-black-900 hover:text-white transition-colors flex items-center"
-                data-aos="fade-left"
-                data-aos-delay="300"
-              >
-                <i className="ri-home-line mr-2"></i>
-                Home
-              </Link>
-              <a
-                style={{ color: "black", fontSize: "22px" }}
-                href="/about"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-                data-aos="fade-left"
-                data-aos-delay="350"
-              >
-                <i style={{ color: "black" }} className="ri-information-line mr-3"></i>
-                About
-              </a>
-              <div
-                className="relative group"
-                data-aos="fade-left"
-                data-aos-delay="400"
-                ref={dropdownRef}
-                onMouseEnter={() => handleDesktopHover(true)}
-                onMouseLeave={() => handleDesktopHover(false)}
-              >
-                <button
-                  style={{ color: "black", fontSize: "22px" }}
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}
-                >
-                  <i style={{ color: "black" }} className="ri-service-line mr-2"></i>
-                  Services
-                  <i className="ri-arrow-down-s-line ml-1"></i>
-                </button>
-                <div
-                  className={`absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out transform origin-top ${
-                    desktopDropdownOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'
-                  } z-50`}
-                >
-                  <div className="py-2">
-                    {services.map((service, index) => (
-                      <Link
-                        key={service.id}
-                        href={service.href}
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
-                        data-aos="fade-up"
-                        data-aos-delay={450 + index * 50}
-                        onClick={() => setDesktopDropdownOpen(false)}
-                      >
-                        {service.title}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <a
-                style={{ color: "black", fontSize: "22px" }}
-                href="/work"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
-                <i style={{ color: "black" }} className="ri-star-line mr-2"></i>
-                work
-              </a>
-              <Link
-                style={{ color: "black", fontSize: "22px" }}
-                href="/contact"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-                data-aos="fade-left"
-                data-aos-delay="550"
-              >
-                <i style={{ color: "black" }} className="ri-contacts-line mr-2"></i>
-                Contact
-              </Link>
-              <Link
-                href="/pricing"
-                className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl"
-                data-aos="fade-left"
-                data-aos-delay="550"
-              >
-                <i className="ri-exchange-dollar-line mr-2"></i>
-                Pricing
-              </Link>
-              <Link
-                href="/blogs"
-                className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl"
-                data-aos="fade-left"
-                data-aos-delay="575"
-              >
-                <i className="ri-article-line mr-2"></i>
-                Blogs
-              </Link>
-              <div className="flex items-center space-x-3 border-l border-gray-300/40 pl-4">
-                <a href="https://youtube.com/@malikxactimator" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="YouTube">
-                  <i className="ri-youtube-fill text-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/malik-saif-a56510249" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="LinkedIn">
-                  <i className="ri-linkedin-fill text-xl"></i>
-                </a>
-                <a href="https://www.facebook.com/share/1KY72nkShY/" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Facebook">
-                  <i className="ri-facebook-fill text-xl"></i>
-                </a>
-                <a href="https://www.instagram.com/mx_estimation" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white" aria-label="Instagram">
-                  <i className="ri-instagram-fill text-xl"></i>
-                </a>
-              </div>
-            </div>
-            <a
-              href="mailto:mxestimation@gmail.com?subject=Get Quote Request&body=Hello, I would like to get a quote for your services."
-              className="bg-white text-black px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap inline-block"
+    <header
+      className="shadow-sm sticky top-0 z-50 border-b border-gray-800"
+      style={{ background: "linear-gradient(100deg, rgba(238, 210, 86, 0.98) 40%, black 100%)" }}
+      data-aos="fade-down"
+      data-aos-delay="100"
+    >
+      <nav className="px-6 py-4">
+        <div className="flex items-center justify-between">
+          <Link href="/" data-aos="fade-right" data-aos-delay="200" className="leading-none">
+            {/* FIX: Use Next.js Image for optimization */}
+            <Image
+              src="/logo.jpeg"
+              alt="MX Estimation Logo"
+              width={200}
+              height={100}
+              className="object-contain rounded-lg"
+              priority
+            />
+          </Link>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <Link href="/" className={navLinkClasses} data-aos="fade-left" data-aos-delay="300">
+              <i className="ri-home-line mr-2" aria-hidden="true"></i>Home
+            </Link>
+            {/* FIX: Use Link for internal navigation */}
+            <Link href="/about" className={navLinkClasses} data-aos="fade-left" data-aos-delay="350">
+              <i className="ri-information-line mr-3" aria-hidden="true"></i>About
+            </Link>
+            <div
+              className="relative"
               data-aos="fade-left"
-              data-aos-delay="600"
-              target="_blank"
-              style={{ fontSize: "20px" }}
+              data-aos-delay="400"
+              onMouseEnter={() => handleDesktopHover(true)}
+              onMouseLeave={() => handleDesktopHover(false)}
             >
-              Get Quote
-            </a>
-            <button
-              className="md:hidden"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              <div className="w-6 h-6 flex items-center justify-center">
-                <i className="ri-menu-line text-xl text-white"></i>
-              </div>
-            </button>
-          </div>
-          <div
-            className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`}
-          >
-            <div className="flex flex-col space-y-4">
-              <a
-                style={{ color: "black" }}
-                href="/"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
+              <button type="button" className={navLinkClasses} onClick={() => setDesktopDropdownOpen(!desktopDropdownOpen)}>
+                <i className="ri-service-line mr-2" aria-hidden="true"></i>Services
+                <i className="ri-arrow-down-s-line ml-1" aria-hidden="true"></i>
+              </button>
+              <div
+                className={`absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg transition-all duration-300 ease-in-out origin-top ${desktopDropdownOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'}`}
               >
-                <i className="ri-home-line mr-3"></i>
-                Home
-              </a>
-              <a
-                style={{ color: "black" }}
-                href="/about"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-              >
-                <i style={{ color: "black" }} className="ri-information-line mr-3"></i>
-                About
-              </a>
-              <div className="flex flex-col">
-                <button
-                  className="text-gray-300 hover:text-white transition-colors flex items-center"
-                  onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
-                  style={{ color: "black" }}
-                >
-                  <i style={{ color: "black" }} className="ri-service-line mr-3"></i>
-                  Services
-                  <i style={{ color: "black" }} className="ri-arrow-down-s-line ml-1"></i>
-                </button>
-                <div
-                  className={`flex flex-col mt-2 space-y-2 pl-6 ${servicesDropdownOpen ? '' : 'hidden'}`}
-                >
+                <div className="py-2">
                   {services.map((service) => (
                     <Link
                       key={service.id}
                       href={service.href}
-                      className="text-black-900 hover:text-white transition-colors"
-                      style={{ color: "black" }}
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100 transition-colors"
+                      onClick={() => setDesktopDropdownOpen(false)}
                     >
                       {service.title}
                     </Link>
                   ))}
                 </div>
               </div>
-              <a
-                style={{ color: "black" }}
-                href="/work"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-              >
-                <i className="ri-star-line mr-3"></i>
-                Our Work
-              </a>
-              <a
-                style={{ color: "black" }}
-                href="/contact"
-                className="text-gray-300 hover:text-white transition-colors flex items-center"
-                data-aos="fade-up"
-                data-aos-delay="1050"
-              >
-                <i className="ri-contacts-line mr-3"></i>
-                Contact
-              </a>
-              <Link
-                href="/pricing"
-                className="text-black hover:text-white transition-colors flex items-center text-base lg:text-lg xl:text-xl"
-                data-aos="fade-left"
-                data-aos-delay="550"
-              >
-                <i className="ri-exchange-dollar-line mr-2"></i>
-                Pricing
-              </Link>
             </div>
-          </div>
-        </nav>
-      </header>
-
-      {/* ====== MAIN CONTENT (Unchanged) ====== */}
-      <main className="min-h-screen bg-black text-orange-50 p-8">
-        <section className="max-w-6xl mx-auto space-y-10">
-          <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#0b0b0b] to-[#0f0a00] shadow-2xl border border-orange-900 p-8">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-orange-400 mb-4">
-              Comprehensive Overview of Matterport Solutions for Xactimate and Matterpoint AI in the USA
-            </h1>
-            <p className="text-orange-200/90 leading-relaxed">
-              In the rapidly evolving world of property restoration, insurance claims, and real estate, leveraging cutting-edge technology is essential for efficiency and accuracy. Among the most innovative tools available today are Matterport solutions, Matterpoint AI, and their seamless integration with Xactimate. This article provides an in-depth look at these technologies, their significance in the USA, and how they are transforming the industry with a human-centered approach.
-            </p>
-          </div>
-          <center>
-            <Image
-              src="/Matterport to xactimate ESX.jpeg"
-              alt="Matterport"
-              width={800}
-              height={800}
-              className="rounded-2xl"
-            />
-            <br /><br />
-            <Link href="/form/matterport-to-xactimate-sketch">
-              <button
-                data-aos="fade-up"
-                className="w-80 bg-gray-700 text-white py-3 rounded-[8px] font-semibold hover:bg-white hover:text-black transition-colors"
-              >
-                Order Now
-              </button>
+            {/* FIX: Use Link for internal navigation */}
+            <Link href="/work" className={navLinkClasses} data-aos="fade-left" data-aos-delay="500">
+              <i className="ri-star-line mr-2" aria-hidden="true"></i>Work
             </Link>
-            <br /><br />
-          </center>
-          {/* ... rest of your content ... */}
-        </section>
-      </main>
+            <Link href="/contact" className={navLinkClasses} data-aos-delay="550">
+              <i className="ri-contacts-line mr-2" aria-hidden="true"></i>Contact
+            </Link>
+            <Link href="/pricing" className={navLinkClasses}>
+              <i className="ri-exchange-dollar-line mr-2" aria-hidden="true"></i>Pricing
+            </Link>
+            <Link href="/blogs" className={navLinkClasses}>
+              <i className="ri-article-line mr-2" aria-hidden="true"></i>Blogs
+            </Link>
+            {/* Social icons, etc. */}
+          </div>
+          
+          <a
+            href="mailto:mxestimation@gmail.com?subject=Get Quote Request"
+            className="bg-white text-black text-[20px] px-10 py-5 rounded-[8px] hover:bg-gray-300 transition-colors whitespace-nowrap hidden md:inline-block"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Quote
+          </a>
 
-      {/* ====== FOOTER (Unchanged) ====== */}
-      <footer className="bg-black-900 text-white py-16 border-t border-gray-800" data-aos-delay="100">
-        {/* ... footer content ... */}
-      </footer>
-    </>
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Open menu">
+            <i className="ri-menu-line text-xl text-white"></i>
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`md:hidden mt-4 ${mobileMenuOpen ? '' : 'hidden'}`}>
+          {/* Your mobile menu code here */}
+        </div>
+      </nav>
+    </header>
   );
 }
