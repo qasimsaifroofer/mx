@@ -18,7 +18,6 @@ const posts = [
     excerpt: "Learn the top 10 Xactimate mistakes that could cost you money and how to avoid them.",
     date: "2025-10-16",
   },
-  // NEW CARD ADDED BELOW
   {
     slug: "1esx-roof-report",
     title: "1ESX Roof Report – Win Claims & Bids with One Click",
