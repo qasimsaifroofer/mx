@@ -1,12 +1,10 @@
-// app/blogs/1esx-roof-report/page.tsx
 "use client";
-
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function RoofReportBlog() {
-  const heroRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef(null); // ← Fixed: Removed <HTMLDivElement>
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,10 +85,10 @@ export default function RoofReportBlog() {
               everything needed to validate claims fast.
             </p>
             <ul className="space-y-3 text-lg">
-              <li>✔ No more manual measurements</li>
-              <li>✔ High-res aerial imagery included</li>
-              <li>✔ Diagrams, pitch, facets, ridges & valleys</li>
-              <li>✔ Instant ESX for Xactimate & XML for Symbility</li>
+              <li>No more manual measurements</li>
+              <li>High-res aerial imagery included</li>
+              <li>Diagrams, pitch, facets, ridges & valleys</li>
+              <li>Instant ESX for Xactimate & XML for Symbility</li>
             </ul>
           </div>
           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-96" />
@@ -108,10 +106,10 @@ export default function RoofReportBlog() {
               you present precise estimates, stand out, and win more jobs.
             </p>
             <ul className="space-y-3 text-lg">
-              <li>✔ Bid with confidence — no guesswork</li>
-              <li>✔ 3D roof model + linear measurements</li>
-              <li>✔ One-page summary for fast quoting</li>
-              <li>✔ PDF, ESX, XML delivered in 24h</li>
+              <li>Bid with confidence — no guesswork</li>
+              <li>3D roof model + linear measurements</li>
+              <li>One-page summary for fast quoting</li>
+              <li>PDF, ESX, XML delivered in 24h</li>
             </ul>
           </div>
         </section>
@@ -199,6 +197,8 @@ const style = `
     .parallax { background-attachment: scroll !important; }
   }
 `;
+
+// Use Next.js <head> via `Head` export
 export function Head() {
   return (
     <>
