@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -41,4 +42,55 @@ export default function BlogsPage() {
 
         <main className="max-w-7xl mx-auto px-6 py-12">
           <div className="mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold" style={{ color: "
+            <h1 className="text-3xl md:text-4xl font-bold" style={{ color: "orange" }}>
+              Latest Articles
+            </h1>
+            <p className="text-gray-400 mt-2">Industry insights, how-tos, and best practices.</p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {posts.map((post) => (
+              <article
+                key={post.slug}
+                className="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-orange-500 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10"
+              >
+                <div className="text-xs text-gray-400 mb-2">
+                  {new Date(post.date).toLocaleDateString("en-US", {
+                    month: "long",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </div>
+
+                <h2 className="text-xl font-semibold mb-2 line-clamp-2">{post.title}</h2>
+
+                <p className="text-gray-400 mb-4 text-sm line-clamp-3">{post.excerpt}</p>
+
+                {post.externalUrl ? (
+                  <a
+                    href={post.externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-orange-400 hover:text-white transition-colors font-medium"
+                  >
+                    Read more
+                    <span className="ml-1">External Link</span>
+                  </a>
+                ) : (
+                  <Link
+                    href={`/blogs/${post.slug}`}
+                    className="text-orange-400 hover:text-white transition-colors font-medium"
+                  >
+                    Read more
+                  </Link>
+                )}
+              </article>
+            ))}
+          </div>
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+}
